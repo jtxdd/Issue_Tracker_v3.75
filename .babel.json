@@ -1,0 +1,3140 @@
+{
+  "{\"filename\":\"/app/server/index.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/server\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server/index.js",
+      "filenameRelative": "/app/server/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/app/server",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/server",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nrequire('babel-register');\nrequire('babel-polyfill');\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static('public'));\n\napp.get(\"/\", function (request, response) {\n  response.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbInJlcXVpcmUiLCJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJnZXQiLCJyZXF1ZXN0IiwicmVzcG9uc2UiLCJzZW5kRmlsZSIsIl9fZGlybmFtZSIsImxpc3RlbmVyIiwibGlzdGVuIiwicHJvY2VzcyIsImVudiIsIlBPUlQiLCJjb25zb2xlIiwibG9nIiwiYWRkcmVzcyIsInBvcnQiXSwibWFwcGluZ3MiOiI7O0FBR0E7Ozs7OztBQUhBQSxRQUFRLGdCQUFSO0FBQ0FBLFFBQVEsZ0JBQVI7O0FBSUEsSUFBTUMsTUFBTSx3QkFBWjs7QUFFQUEsSUFBSUMsR0FBSixDQUFRLGtCQUFRQyxNQUFSLENBQWUsUUFBZixDQUFSOztBQUVBRixJQUFJRyxHQUFKLENBQVEsR0FBUixFQUFhLFVBQUNDLE9BQUQsRUFBVUMsUUFBVixFQUF1QjtBQUNsQ0EsV0FBU0MsUUFBVCxDQUFxQkMsU0FBckI7QUFDRCxDQUZEOztBQUlBLElBQU1DLFdBQVdSLElBQUlTLE1BQUosQ0FBV0MsUUFBUUMsR0FBUixDQUFZQyxJQUF2QixFQUE2QixZQUFNO0FBQ2xEQyxVQUFRQyxHQUFSLENBQVksbUNBQW1DTixTQUFTTyxPQUFULEdBQW1CQyxJQUFsRTtBQUNELENBRmdCLENBQWpCIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlUm9vdCI6Ii9hcHAvc2VydmVyIiwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnYmFiZWwtcmVnaXN0ZXInKTtcbnJlcXVpcmUoJ2JhYmVsLXBvbHlmaWxsJyk7XG5cbmltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnO1xuXG5jb25zdCBhcHAgPSBleHByZXNzKCk7XG5cbmFwcC51c2UoZXhwcmVzcy5zdGF0aWMoJ3B1YmxpYycpKTtcblxuYXBwLmdldChcIi9cIiwgKHJlcXVlc3QsIHJlc3BvbnNlKSA9PiB7XG4gIHJlc3BvbnNlLnNlbmRGaWxlKGAke19fZGlybmFtZX0vdmlld3MvaW5kZXguaHRtbGApO1xufSk7XG5cbmNvbnN0IGxpc3RlbmVyID0gYXBwLmxpc3Rlbihwcm9jZXNzLmVudi5QT1JULCAoKSA9PiB7XG4gIGNvbnNvbGUubG9nKCdZb3VyIGFwcCBpcyBsaXN0ZW5pbmcgb24gcG9ydCAnICsgbGlzdGVuZXIuYWRkcmVzcygpLnBvcnQpO1xufSk7XG5cbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "require",
+        "app",
+        "use",
+        "static",
+        "get",
+        "request",
+        "response",
+        "sendFile",
+        "__dirname",
+        "listener",
+        "listen",
+        "process",
+        "env",
+        "PORT",
+        "console",
+        "log",
+        "address",
+        "port"
+      ],
+      "mappings": ";;AAGA;;;;;;AAHAA,QAAQ,gBAAR;AACAA,QAAQ,gBAAR;;AAIA,IAAMC,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,QAAf,CAAR;;AAEAF,IAAIG,GAAJ,CAAQ,GAAR,EAAa,UAACC,OAAD,EAAUC,QAAV,EAAuB;AAClCA,WAASC,QAAT,CAAqBC,SAArB;AACD,CAFD;;AAIA,IAAMC,WAAWR,IAAIS,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAM;AAClDC,UAAQC,GAAR,CAAY,mCAAmCN,SAASO,OAAT,GAAmBC,IAAlE;AACD,CAFgB,CAAjB",
+      "file": "index.js",
+      "sourceRoot": "/app/server",
+      "sourcesContent": [
+        "require('babel-register');\nrequire('babel-polyfill');\n\nimport express from 'express';\n\nconst app = express();\n\napp.use(express.static('public'));\n\napp.get(\"/\", (request, response) => {\n  response.sendFile(`${__dirname}/views/index.html`);\n});\n\nconst listener = app.listen(process.env.PORT, () => {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n\n"
+      ]
+    },
+    "mtime": 1497985239458
+  },
+  "{\"filename\":\"/app/server.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static('public'));\n\napp.get(\"/\", function (request, response) {\n  response.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJnZXQiLCJyZXF1ZXN0IiwicmVzcG9uc2UiLCJzZW5kRmlsZSIsIl9fZGlybmFtZSIsImxpc3RlbmVyIiwibGlzdGVuIiwicHJvY2VzcyIsImVudiIsIlBPUlQiLCJjb25zb2xlIiwibG9nIiwiYWRkcmVzcyIsInBvcnQiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7OztBQUVBLElBQU1BLE1BQU0sd0JBQVo7O0FBRUFBLElBQUlDLEdBQUosQ0FBUSxrQkFBUUMsTUFBUixDQUFlLFFBQWYsQ0FBUjs7QUFFQUYsSUFBSUcsR0FBSixDQUFRLEdBQVIsRUFBYSxVQUFDQyxPQUFELEVBQVVDLFFBQVYsRUFBdUI7QUFDbENBLFdBQVNDLFFBQVQsQ0FBcUJDLFNBQXJCO0FBQ0QsQ0FGRDs7QUFJQSxJQUFNQyxXQUFXUixJQUFJUyxNQUFKLENBQVdDLFFBQVFDLEdBQVIsQ0FBWUMsSUFBdkIsRUFBNkIsWUFBTTtBQUNsREMsVUFBUUMsR0FBUixDQUFZLG1DQUFtQ04sU0FBU08sT0FBVCxHQUFtQkMsSUFBbEU7QUFDRCxDQUZnQixDQUFqQiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnO1xuXG5jb25zdCBhcHAgPSBleHByZXNzKCk7XG5cbmFwcC51c2UoZXhwcmVzcy5zdGF0aWMoJ3B1YmxpYycpKTtcblxuYXBwLmdldChcIi9cIiwgKHJlcXVlc3QsIHJlc3BvbnNlKSA9PiB7XG4gIHJlc3BvbnNlLnNlbmRGaWxlKGAke19fZGlybmFtZX0vdmlld3MvaW5kZXguaHRtbGApO1xufSk7XG5cbmNvbnN0IGxpc3RlbmVyID0gYXBwLmxpc3Rlbihwcm9jZXNzLmVudi5QT1JULCAoKSA9PiB7XG4gIGNvbnNvbGUubG9nKCdZb3VyIGFwcCBpcyBsaXN0ZW5pbmcgb24gcG9ydCAnICsgbGlzdGVuZXIuYWRkcmVzcygpLnBvcnQpO1xufSk7XG5cbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "app",
+        "use",
+        "static",
+        "get",
+        "request",
+        "response",
+        "sendFile",
+        "__dirname",
+        "listener",
+        "listen",
+        "process",
+        "env",
+        "PORT",
+        "console",
+        "log",
+        "address",
+        "port"
+      ],
+      "mappings": ";;AAAA;;;;;;AAEA,IAAMA,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,QAAf,CAAR;;AAEAF,IAAIG,GAAJ,CAAQ,GAAR,EAAa,UAACC,OAAD,EAAUC,QAAV,EAAuB;AAClCA,WAASC,QAAT,CAAqBC,SAArB;AACD,CAFD;;AAIA,IAAMC,WAAWR,IAAIS,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAM;AAClDC,UAAQC,GAAR,CAAY,mCAAmCN,SAASO,OAAT,GAAmBC,IAAlE;AACD,CAFgB,CAAjB",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "import express from 'express';\n\nconst app = express();\n\napp.use(express.static('public'));\n\napp.get(\"/\", (request, response) => {\n  response.sendFile(`${__dirname}/views/index.html`);\n});\n\nconst listener = app.listen(process.env.PORT, () => {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n\n"
+      ]
+    },
+    "mtime": 1497985631657
+  },
+  "{\"filename\":\"/app/server.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar express = require('express');\nvar bodyParser = require('body-parser');\nvar helmet = require('helmet');\nvar expect = require('chai').expect;\nvar cors = require('cors');\nvar PORT = process.env.PORT;\nvar TEST = process.env.NODE_ENV === 'test';\nvar apiRoutes = require('./routes/api.js');\nvar fccTestingRoutes = require('./routes/fcctesting.js');\nvar runner = require('./test-runner');\nvar app = express();\n\nvar MongoClient = require('mongodb').MongoClient;\nvar URL = process.env.DB;\nvar dbName = 'fcc_jtodd';\nvar client = new MongoClient(URL, { useNewUrlParser: true });\n\n//app.use('/public', express.static(process.cwd() + '/public'));\napp.use(express.static('public'));\napp.use(cors({ origin: '*' }));\napp.use(bodyParser.json());\napp.use(bodyParser.urlencoded({ extended: true }));\napp.use(helmet.xssFilter());\n\n//For FCC testing purposes\nfccTestingRoutes(app);\n\nclient.connect(function (err) {\n  if (err) console.log('Db connection error');\n  var db = client.db(dbName);\n  apiRoutes(app, db);\n  app.listen(PORT, function () {\n    console.log('Your app is listening on port ' + PORT);\n    if (TEST) {\n      console.log('Running Tests...');\n      setTimeout(function () {\n        try {\n          runner.run();\n        } catch (e) {\n          var error = e;\n          console.log('Tests are not valid:');\n          console.log(error);\n        }\n      }, 3500);\n    }\n  });\n});\n\nmodule.exports = app; //for testing\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJleHByZXNzIiwicmVxdWlyZSIsImJvZHlQYXJzZXIiLCJoZWxtZXQiLCJleHBlY3QiLCJjb3JzIiwiUE9SVCIsInByb2Nlc3MiLCJlbnYiLCJURVNUIiwiTk9ERV9FTlYiLCJhcGlSb3V0ZXMiLCJmY2NUZXN0aW5nUm91dGVzIiwicnVubmVyIiwiYXBwIiwiTW9uZ29DbGllbnQiLCJVUkwiLCJEQiIsImRiTmFtZSIsImNsaWVudCIsInVzZU5ld1VybFBhcnNlciIsInVzZSIsInN0YXRpYyIsIm9yaWdpbiIsImpzb24iLCJ1cmxlbmNvZGVkIiwiZXh0ZW5kZWQiLCJ4c3NGaWx0ZXIiLCJjb25uZWN0IiwiZXJyIiwiY29uc29sZSIsImxvZyIsImRiIiwibGlzdGVuIiwic2V0VGltZW91dCIsInJ1biIsImUiLCJlcnJvciIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTUEsVUFBb0JDLFFBQVEsU0FBUixDQUExQjtBQUNBLElBQU1DLGFBQW9CRCxRQUFRLGFBQVIsQ0FBMUI7QUFDQSxJQUFNRSxTQUFvQkYsUUFBUSxRQUFSLENBQTFCO0FBQ0EsSUFBTUcsU0FBb0JILFFBQVEsTUFBUixFQUFnQkcsTUFBMUM7QUFDQSxJQUFNQyxPQUFvQkosUUFBUSxNQUFSLENBQTFCO0FBQ0EsSUFBTUssT0FBb0JDLFFBQVFDLEdBQVIsQ0FBWUYsSUFBdEM7QUFDQSxJQUFNRyxPQUFvQkYsUUFBUUMsR0FBUixDQUFZRSxRQUFaLEtBQXlCLE1BQW5EO0FBQ0EsSUFBTUMsWUFBb0JWLFFBQVEsaUJBQVIsQ0FBMUI7QUFDQSxJQUFNVyxtQkFBb0JYLFFBQVEsd0JBQVIsQ0FBMUI7QUFDQSxJQUFNWSxTQUFvQlosUUFBUSxlQUFSLENBQTFCO0FBQ0EsSUFBTWEsTUFBb0JkLFNBQTFCOztBQUVBLElBQU1lLGNBQWNkLFFBQVEsU0FBUixFQUFtQmMsV0FBdkM7QUFDQSxJQUFNQyxNQUFjVCxRQUFRQyxHQUFSLENBQVlTLEVBQWhDO0FBQ0EsSUFBTUMsU0FBYyxXQUFwQjtBQUNBLElBQU1DLFNBQWMsSUFBSUosV0FBSixDQUFnQkMsR0FBaEIsRUFBcUIsRUFBQ0ksaUJBQWlCLElBQWxCLEVBQXJCLENBQXBCOztBQUVBO0FBQ0FOLElBQUlPLEdBQUosQ0FBUXJCLFFBQVFzQixNQUFSLENBQWUsUUFBZixDQUFSO0FBQ0FSLElBQUlPLEdBQUosQ0FBUWhCLEtBQUssRUFBQ2tCLFFBQVEsR0FBVCxFQUFMLENBQVI7QUFDQVQsSUFBSU8sR0FBSixDQUFRbkIsV0FBV3NCLElBQVgsRUFBUjtBQUNBVixJQUFJTyxHQUFKLENBQVFuQixXQUFXdUIsVUFBWCxDQUFzQixFQUFFQyxVQUFVLElBQVosRUFBdEIsQ0FBUjtBQUNBWixJQUFJTyxHQUFKLENBQVFsQixPQUFPd0IsU0FBUCxFQUFSOztBQUVBO0FBQ0FmLGlCQUFpQkUsR0FBakI7O0FBRUFLLE9BQU9TLE9BQVAsQ0FBZSxlQUFPO0FBQ3BCLE1BQUlDLEdBQUosRUFBU0MsUUFBUUMsR0FBUixDQUFZLHFCQUFaO0FBQ1QsTUFBTUMsS0FBS2IsT0FBT2EsRUFBUCxDQUFVZCxNQUFWLENBQVg7QUFDQVAsWUFBVUcsR0FBVixFQUFla0IsRUFBZjtBQUNBbEIsTUFBSW1CLE1BQUosQ0FBVzNCLElBQVgsRUFBaUIsWUFBTTtBQUNyQndCLFlBQVFDLEdBQVIsQ0FBWSxtQ0FBbUN6QixJQUEvQztBQUNBLFFBQUlHLElBQUosRUFBVTtBQUNScUIsY0FBUUMsR0FBUixDQUFZLGtCQUFaO0FBQ0FHLGlCQUFXLFlBQU07QUFDZixZQUFJO0FBQ0ZyQixpQkFBT3NCLEdBQVA7QUFDRCxTQUZELENBRUUsT0FBTUMsQ0FBTixFQUFTO0FBQ1QsY0FBSUMsUUFBUUQsQ0FBWjtBQUNBTixrQkFBUUMsR0FBUixDQUFZLHNCQUFaO0FBQ0FELGtCQUFRQyxHQUFSLENBQVlNLEtBQVo7QUFDRDtBQUNGLE9BUkQsRUFRRyxJQVJIO0FBU0Q7QUFDRixHQWREO0FBZUQsQ0FuQkQ7O0FBc0JBQyxPQUFPQyxPQUFQLEdBQWlCekIsR0FBakIsQyxDQUFzQiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGV4cHJlc3MgICAgICAgICAgID0gcmVxdWlyZSgnZXhwcmVzcycpO1xuY29uc3QgYm9keVBhcnNlciAgICAgICAgPSByZXF1aXJlKCdib2R5LXBhcnNlcicpO1xuY29uc3QgaGVsbWV0ICAgICAgICAgICAgPSByZXF1aXJlKCdoZWxtZXQnKTtcbmNvbnN0IGV4cGVjdCAgICAgICAgICAgID0gcmVxdWlyZSgnY2hhaScpLmV4cGVjdDtcbmNvbnN0IGNvcnMgICAgICAgICAgICAgID0gcmVxdWlyZSgnY29ycycpO1xuY29uc3QgUE9SVCAgICAgICAgICAgICAgPSBwcm9jZXNzLmVudi5QT1JUO1xuY29uc3QgVEVTVCAgICAgICAgICAgICAgPSBwcm9jZXNzLmVudi5OT0RFX0VOViA9PT0gJ3Rlc3QnO1xuY29uc3QgYXBpUm91dGVzICAgICAgICAgPSByZXF1aXJlKCcuL3JvdXRlcy9hcGkuanMnKTtcbmNvbnN0IGZjY1Rlc3RpbmdSb3V0ZXMgID0gcmVxdWlyZSgnLi9yb3V0ZXMvZmNjdGVzdGluZy5qcycpO1xuY29uc3QgcnVubmVyICAgICAgICAgICAgPSByZXF1aXJlKCcuL3Rlc3QtcnVubmVyJyk7XG5jb25zdCBhcHAgICAgICAgICAgICAgICA9IGV4cHJlc3MoKTtcblxuY29uc3QgTW9uZ29DbGllbnQgPSByZXF1aXJlKCdtb25nb2RiJykuTW9uZ29DbGllbnQ7XG5jb25zdCBVUkwgICAgICAgICA9IHByb2Nlc3MuZW52LkRCO1xuY29uc3QgZGJOYW1lICAgICAgPSAnZmNjX2p0b2RkJztcbmNvbnN0IGNsaWVudCAgICAgID0gbmV3IE1vbmdvQ2xpZW50KFVSTCwge3VzZU5ld1VybFBhcnNlcjogdHJ1ZX0pO1xuXG4vL2FwcC51c2UoJy9wdWJsaWMnLCBleHByZXNzLnN0YXRpYyhwcm9jZXNzLmN3ZCgpICsgJy9wdWJsaWMnKSk7XG5hcHAudXNlKGV4cHJlc3Muc3RhdGljKCdwdWJsaWMnKSk7XG5hcHAudXNlKGNvcnMoe29yaWdpbjogJyonfSkpO1xuYXBwLnVzZShib2R5UGFyc2VyLmpzb24oKSk7XG5hcHAudXNlKGJvZHlQYXJzZXIudXJsZW5jb2RlZCh7IGV4dGVuZGVkOiB0cnVlIH0pKTtcbmFwcC51c2UoaGVsbWV0Lnhzc0ZpbHRlcigpKTtcblxuLy9Gb3IgRkNDIHRlc3RpbmcgcHVycG9zZXNcbmZjY1Rlc3RpbmdSb3V0ZXMoYXBwKTtcbiAgICBcbmNsaWVudC5jb25uZWN0KGVyciA9PiB7XG4gIGlmIChlcnIpIGNvbnNvbGUubG9nKCdEYiBjb25uZWN0aW9uIGVycm9yJyk7XG4gIGNvbnN0IGRiID0gY2xpZW50LmRiKGRiTmFtZSk7XG4gIGFwaVJvdXRlcyhhcHAsIGRiKTtcbiAgYXBwLmxpc3RlbihQT1JULCAoKSA9PiB7XG4gICAgY29uc29sZS5sb2coJ1lvdXIgYXBwIGlzIGxpc3RlbmluZyBvbiBwb3J0ICcgKyBQT1JUKTtcbiAgICBpZiAoVEVTVCkge1xuICAgICAgY29uc29sZS5sb2coJ1J1bm5pbmcgVGVzdHMuLi4nKTtcbiAgICAgIHNldFRpbWVvdXQoKCkgPT4ge1xuICAgICAgICB0cnkge1xuICAgICAgICAgIHJ1bm5lci5ydW4oKTtcbiAgICAgICAgfSBjYXRjaChlKSB7XG4gICAgICAgICAgdmFyIGVycm9yID0gZTtcbiAgICAgICAgICBjb25zb2xlLmxvZygnVGVzdHMgYXJlIG5vdCB2YWxpZDonKTtcbiAgICAgICAgICBjb25zb2xlLmxvZyhlcnJvcik7XG4gICAgICAgIH1cbiAgICAgIH0sIDM1MDApO1xuICAgIH1cbiAgfSk7XG59KTtcblxuXG5tb2R1bGUuZXhwb3J0cyA9IGFwcDsgLy9mb3IgdGVzdGluZyJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "express",
+        "require",
+        "bodyParser",
+        "helmet",
+        "expect",
+        "cors",
+        "PORT",
+        "process",
+        "env",
+        "TEST",
+        "NODE_ENV",
+        "apiRoutes",
+        "fccTestingRoutes",
+        "runner",
+        "app",
+        "MongoClient",
+        "URL",
+        "DB",
+        "dbName",
+        "client",
+        "useNewUrlParser",
+        "use",
+        "static",
+        "origin",
+        "json",
+        "urlencoded",
+        "extended",
+        "xssFilter",
+        "connect",
+        "err",
+        "console",
+        "log",
+        "db",
+        "listen",
+        "setTimeout",
+        "run",
+        "e",
+        "error",
+        "module",
+        "exports"
+      ],
+      "mappings": ";;AAAA,IAAMA,UAAoBC,QAAQ,SAAR,CAA1B;AACA,IAAMC,aAAoBD,QAAQ,aAAR,CAA1B;AACA,IAAME,SAAoBF,QAAQ,QAAR,CAA1B;AACA,IAAMG,SAAoBH,QAAQ,MAAR,EAAgBG,MAA1C;AACA,IAAMC,OAAoBJ,QAAQ,MAAR,CAA1B;AACA,IAAMK,OAAoBC,QAAQC,GAAR,CAAYF,IAAtC;AACA,IAAMG,OAAoBF,QAAQC,GAAR,CAAYE,QAAZ,KAAyB,MAAnD;AACA,IAAMC,YAAoBV,QAAQ,iBAAR,CAA1B;AACA,IAAMW,mBAAoBX,QAAQ,wBAAR,CAA1B;AACA,IAAMY,SAAoBZ,QAAQ,eAAR,CAA1B;AACA,IAAMa,MAAoBd,SAA1B;;AAEA,IAAMe,cAAcd,QAAQ,SAAR,EAAmBc,WAAvC;AACA,IAAMC,MAAcT,QAAQC,GAAR,CAAYS,EAAhC;AACA,IAAMC,SAAc,WAApB;AACA,IAAMC,SAAc,IAAIJ,WAAJ,CAAgBC,GAAhB,EAAqB,EAACI,iBAAiB,IAAlB,EAArB,CAApB;;AAEA;AACAN,IAAIO,GAAJ,CAAQrB,QAAQsB,MAAR,CAAe,QAAf,CAAR;AACAR,IAAIO,GAAJ,CAAQhB,KAAK,EAACkB,QAAQ,GAAT,EAAL,CAAR;AACAT,IAAIO,GAAJ,CAAQnB,WAAWsB,IAAX,EAAR;AACAV,IAAIO,GAAJ,CAAQnB,WAAWuB,UAAX,CAAsB,EAAEC,UAAU,IAAZ,EAAtB,CAAR;AACAZ,IAAIO,GAAJ,CAAQlB,OAAOwB,SAAP,EAAR;;AAEA;AACAf,iBAAiBE,GAAjB;;AAEAK,OAAOS,OAAP,CAAe,eAAO;AACpB,MAAIC,GAAJ,EAASC,QAAQC,GAAR,CAAY,qBAAZ;AACT,MAAMC,KAAKb,OAAOa,EAAP,CAAUd,MAAV,CAAX;AACAP,YAAUG,GAAV,EAAekB,EAAf;AACAlB,MAAImB,MAAJ,CAAW3B,IAAX,EAAiB,YAAM;AACrBwB,YAAQC,GAAR,CAAY,mCAAmCzB,IAA/C;AACA,QAAIG,IAAJ,EAAU;AACRqB,cAAQC,GAAR,CAAY,kBAAZ;AACAG,iBAAW,YAAM;AACf,YAAI;AACFrB,iBAAOsB,GAAP;AACD,SAFD,CAEE,OAAMC,CAAN,EAAS;AACT,cAAIC,QAAQD,CAAZ;AACAN,kBAAQC,GAAR,CAAY,sBAAZ;AACAD,kBAAQC,GAAR,CAAYM,KAAZ;AACD;AACF,OARD,EAQG,IARH;AASD;AACF,GAdD;AAeD,CAnBD;;AAsBAC,OAAOC,OAAP,GAAiBzB,GAAjB,C,CAAsB",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "const express           = require('express');\nconst bodyParser        = require('body-parser');\nconst helmet            = require('helmet');\nconst expect            = require('chai').expect;\nconst cors              = require('cors');\nconst PORT              = process.env.PORT;\nconst TEST              = process.env.NODE_ENV === 'test';\nconst apiRoutes         = require('./routes/api.js');\nconst fccTestingRoutes  = require('./routes/fcctesting.js');\nconst runner            = require('./test-runner');\nconst app               = express();\n\nconst MongoClient = require('mongodb').MongoClient;\nconst URL         = process.env.DB;\nconst dbName      = 'fcc_jtodd';\nconst client      = new MongoClient(URL, {useNewUrlParser: true});\n\n//app.use('/public', express.static(process.cwd() + '/public'));\napp.use(express.static('public'));\napp.use(cors({origin: '*'}));\napp.use(bodyParser.json());\napp.use(bodyParser.urlencoded({ extended: true }));\napp.use(helmet.xssFilter());\n\n//For FCC testing purposes\nfccTestingRoutes(app);\n    \nclient.connect(err => {\n  if (err) console.log('Db connection error');\n  const db = client.db(dbName);\n  apiRoutes(app, db);\n  app.listen(PORT, () => {\n    console.log('Your app is listening on port ' + PORT);\n    if (TEST) {\n      console.log('Running Tests...');\n      setTimeout(() => {\n        try {\n          runner.run();\n        } catch(e) {\n          var error = e;\n          console.log('Tests are not valid:');\n          console.log(error);\n        }\n      }, 3500);\n    }\n  });\n});\n\n\nmodule.exports = app; //for testing"
+      ]
+    },
+    "mtime": 1544836376000
+  },
+  "{\"filename\":\"/app/routes/api.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/routes\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongodb",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "MongoClient"
+              }
+            ]
+          },
+          {
+            "source": "mongodb",
+            "imported": [
+              "ObjectId"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "ObjectId",
+                "local": "ObjectId"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/routes/api.js",
+      "filenameRelative": "/app/routes/api.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "api.js",
+      "sourceFileName": "api.js",
+      "sourceRoot": "/app/routes",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/routes",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "api"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _mongodb = require('mongodb');\n\nvar _mongodb2 = _interopRequireDefault(_mongodb);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar issue = require('../zzz/models/Issue.js');\n\nmodule.exports = function (app, db) {\n  var Projects = db.collection('projects');\n  var Issues = db.collection('issues');\n\n  app.get('/', function (req, res) {\n    return res.sendFile(process.cwd() + '/views/index.html');\n  });\n\n  app.get('/projects', function (req, res) {\n    Projects.find({}).toArray(function (err, docs) {\n      if (err) return res.json({ docs: err });\n      return res.json({ docs: docs });\n    });\n  });\n\n  app.get('/api/issues/:project', function (req, res) {\n    var getAllIssues = function getAllIssues() {\n      var promise = new Promise(function (resolve, reject) {\n        Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n          if (err) return reject(err);\n          return Issues.find({ for_project: doc.project_id }).toArray(function (err, docs) {\n            return err ? reject(err) : resolve(docs);\n          });\n        });\n      });\n      return promise;\n    };\n\n    var filter = {\n      length: Object.keys(req.query).length,\n      names: Object.keys(req.query),\n      values: Object.values(req.query),\n      query: req.query,\n      get open() {\n        return this.names.includes('open');\n      }\n    };\n\n    if (filter.length) {\n      if (filter.open) {\n        filter.query['open'] = filter.query['open'] === 'true' ? true : false;\n      }\n      Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n        if (err) return res.json({ docs: err });\n        filter.query['for_project'] = doc.project_id;\n        Issues.find(filter.query).toArray(function (err, docs) {\n          if (err) {\n            return res.json({ docs: err });\n          } else {\n            return res.json({ docs: docs, url: req.url });\n          }\n        });\n      });\n    } else {\n      getAllIssues().then(function (docs) {\n        return docs.length ? res.json({ docs: docs }) : res.json({ docs: 'none' });\n      });\n    }\n  });\n\n  app.post('/api/issues/:project', function (req, res) {\n    Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n      if (err) return res.json({ docs: err });\n\n      req.body.for_project = doc.project_id;\n      var new_issue = new issue(req.body);\n\n      Issues.insertOne(new_issue, function (err, docs) {\n        if (err) return res.json({ docs: err });\n        return res.json({ docs: docs });\n      });\n    });\n  });\n\n  app.put('/api/issues/:project', function (req, res) {\n    if (Object.keys(req.body).length) {\n      var query = { _id: (0, _mongodb.ObjectId)(req.body._id) };\n      var update = {};\n\n      if (req.body.close) {\n        update = { $set: { open: false, updated_on: new Date().toISOString() } };\n      } else {\n        update = { $set: req.body };\n        delete update['$set']['_id'];\n      }\n      /*Issues.findOne(query, (err, docs) => {\n        IF FOUND THEN ISSUES UPDATEONE\n          IF UPDATEONE FAIL \n            RETURN COULD NOT UPDATE\n      });*/\n      Issues.updateOne(query, update, function (err, docs) {\n        if (err) return res.json({ result: err });\n        if (docs.modifiedCount) {\n          Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n            if (err) return res.json({ docs: err });\n            Issues.find({ for_project: doc.project_id }).toArray(function (err, docs) {\n              return err ? res.json({ docs: err }) : res.json({ docs: docs, message: 'Successfully Updated' });\n            });\n          });\n        } else {\n          return res.json({ docs: '', message: 'could not update' });\n        }\n      });\n    } else {\n      return res.json({ docs: '', message: 'no updated field sent' });\n    }\n  });\n\n  app.delete('/api/issues/:project', function (req, res) {\n    /*\n      with an _id to completely delete an issue\n        If no _id is sent \n          return '_id error'\n        If success\n          return 'deleted _id: ' + _id\n        If fail\n          return 'could not delete _id: ' + _id\n    */\n  });\n\n  app.use(function (req, res) {\n    return res.status(404).type('text').send('Not Found');\n  });\n};\n\n/*Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n       if (err) return res.json({docs: err});\n       Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));\n     });*/\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwaS5qcyJdLCJuYW1lcyI6WyJpc3N1ZSIsInJlcXVpcmUiLCJtb2R1bGUiLCJleHBvcnRzIiwiYXBwIiwiZGIiLCJQcm9qZWN0cyIsImNvbGxlY3Rpb24iLCJJc3N1ZXMiLCJnZXQiLCJyZXEiLCJyZXMiLCJzZW5kRmlsZSIsInByb2Nlc3MiLCJjd2QiLCJmaW5kIiwidG9BcnJheSIsImVyciIsImRvY3MiLCJqc29uIiwiZ2V0QWxsSXNzdWVzIiwicHJvbWlzZSIsIlByb21pc2UiLCJyZXNvbHZlIiwicmVqZWN0IiwiZmluZE9uZSIsInRpdGxlIiwicGFyYW1zIiwicHJvamVjdCIsInJlcGxhY2UiLCJkb2MiLCJmb3JfcHJvamVjdCIsInByb2plY3RfaWQiLCJmaWx0ZXIiLCJsZW5ndGgiLCJPYmplY3QiLCJrZXlzIiwicXVlcnkiLCJuYW1lcyIsInZhbHVlcyIsIm9wZW4iLCJpbmNsdWRlcyIsInVybCIsInRoZW4iLCJwb3N0IiwiYm9keSIsIm5ld19pc3N1ZSIsImluc2VydE9uZSIsInB1dCIsIl9pZCIsInVwZGF0ZSIsImNsb3NlIiwiJHNldCIsInVwZGF0ZWRfb24iLCJEYXRlIiwidG9JU09TdHJpbmciLCJ1cGRhdGVPbmUiLCJyZXN1bHQiLCJtb2RpZmllZENvdW50IiwibWVzc2FnZSIsImRlbGV0ZSIsInVzZSIsInN0YXR1cyIsInR5cGUiLCJzZW5kIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7QUFFQSxJQUFNQSxRQUFVQyxRQUFRLHdCQUFSLENBQWhCOztBQUVBQyxPQUFPQyxPQUFQLEdBQWlCLFVBQUNDLEdBQUQsRUFBTUMsRUFBTixFQUFhO0FBQzVCLE1BQU1DLFdBQVdELEdBQUdFLFVBQUgsQ0FBYyxVQUFkLENBQWpCO0FBQ0EsTUFBTUMsU0FBVUgsR0FBR0UsVUFBSCxDQUFjLFFBQWQsQ0FBaEI7O0FBRUFILE1BQUlLLEdBQUosQ0FBUSxHQUFSLEVBQWEsVUFBQ0MsR0FBRCxFQUFNQyxHQUFOO0FBQUEsV0FBY0EsSUFBSUMsUUFBSixD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LEVBQU1DLElBQU47QUFBQSxxQkFBZUQsTUFBTU4sSUFBSVEsSUFBSixDQUFTLEVBQUNELE1BQU1ELEdBQVAsRUFBVCxDQUFOLEdBQThCTixJQUFJUSxJQUFKLENBQVMsRUFBQ0QsTUFBTUEsSUFBUCxFQUFheUMsU0FBUyxzQkFBdEIsRUFBVCxDQUE3QztBQUFBLGFBQW5EO0FBQ0QsV0FIRDtBQUlELFNBTEQsTUFLTztBQUNMLGlCQUFPaEQsSUFBSVEsSUFBSixDQUFTLEVBQUNELE1BQU0sRUFBUCxFQUFXeUMsU0FBUyxrQkFBcEIsRUFBVCxDQUFQO0FBQ0Q7QUFDRixPQVZEO0FBV0QsS0ExQkQsTUEwQk87QUFDTCxhQUFPaEQsSUFBSVEsSUFBSixDQUFTLEVBQUNELE1BQU0sRUFBUCxFQUFXeUMsU0FBUyx1QkFBcEIsRUFBVCxDQUFQO0FBQ0Q7QUFDRixHQTlCRDs7QUFnQ0F2RCxNQUFJd0QsTUFBSixDQUFXLHNCQUFYLEVBQW1DLFVBQUNsRCxHQUFELEVBQU1DLEdBQU4sRUFBYztBQUMvQzs7Ozs7Ozs7O0FBU0QsR0FWRDs7QUFZQVAsTUFBSXlELEdBQUosQ0FBUSxVQUFDbkQsR0FBRCxFQUFNQyxHQUFOO0FBQUEsV0FBY0EsSUFBSW1ELE1BQUosQ0FBVyxHQUFYLEVBQWdCQyxJQUFoQixDQUFxQixNQUFyQixFQUE2QkMsSUFBN0IsQ0FBa0MsV0FBbEMsQ0FBZDtBQUFBLEdBQVI7QUFDRCxDQWpIRDs7QUFvSEMiLCJmaWxlIjoiYXBpLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvcm91dGVzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE1vbmdvQ2xpZW50IGZyb20gJ21vbmdvZGInO1xuaW1wb3J0IHsgT2JqZWN0SWQgfSBmcm9tICdtb25nb2RiJztcbmNvbnN0IGlzc3VlICAgPSByZXF1aXJlKCcuLi96enovbW9kZWxzL0lzc3VlLmpzJyk7XG5cbm1vZHVsZS5leHBvcnRzID0gKGFwcCwgZGIpID0+IHtcbiAgY29uc3QgUHJvamVjdHMgPSBkYi5jb2xsZWN0aW9uKCdwcm9qZWN0cycpO1xuICBjb25zdCBJc3N1ZXMgID0gZGIuY29sbGVjdGlvbignaXNzdWVzJyk7XG4gIFxuICBhcHAuZ2V0KCcvJywgKHJlcSwgcmVzKSA9PiByZXMuc2VuZEZpbGUocHJvY2Vzcy5jd2QoKSArICcvdmlld3MvaW5kZXguaHRtbCcpKTtcbiAgXG4gIGFwcC5nZXQoJy9wcm9qZWN0cycsIChyZXEsIHJlcykgPT4ge1xuICAgIFByb2plY3RzLmZpbmQoe30pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4ge1xuICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBlcnJ9KTtcbiAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogZG9jc30pXG4gICAgfSk7ICAgIFxuICB9KTtcbiAgXG4gIGFwcC5nZXQoJy9hcGkvaXNzdWVzLzpwcm9qZWN0JywgKHJlcSwgcmVzKSA9PiB7XG4gICAgY29uc3QgZ2V0QWxsSXNzdWVzID0gKCkgPT4ge1xuICAgICAgY29uc3QgcHJvbWlzZSA9IG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICAgICAgUHJvamVjdHMuZmluZE9uZSh7dGl0bGU6IHJlcS5wYXJhbXMucHJvamVjdC5yZXBsYWNlKC9cXF8vZywgJyAnKX0sIChlcnIsIGRvYykgPT4ge1xuICAgICAgICAgIGlmIChlcnIpIHJldHVybiByZWplY3QoZXJyKTtcbiAgICAgICAgICByZXR1cm4gSXNzdWVzLmZpbmQoe2Zvcl9wcm9qZWN0OiBkb2MucHJvamVjdF9pZH0pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4gZXJyID8gcmVqZWN0KGVycikgOiByZXNvbHZlKGRvY3MpKTtcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICAgIHJldHVybiBwcm9taXNlO1xuICAgIH07XG4gICAgXG4gICAgbGV0IGZpbHRlciA9IHtcbiAgICAgIGxlbmd0aDogT2JqZWN0LmtleXMocmVxLnF1ZXJ5KS5sZW5ndGgsXG4gICAgICBuYW1lczogT2JqZWN0LmtleXMocmVxLnF1ZXJ5KSxcbiAgICAgIHZhbHVlczogT2JqZWN0LnZhbHVlcyhyZXEucXVlcnkpLFxuICAgICAgcXVlcnk6IHJlcS5xdWVyeSxcbiAgICAgIGdldCBvcGVuKCkge1xuICAgICAgICByZXR1cm4gdGhpcy5uYW1lcy5pbmNsdWRlcygnb3BlbicpO1xuICAgICAgfVxuICAgIH07XG4gICAgXG4gICAgaWYgKGZpbHRlci5sZW5ndGgpIHtcbiAgICAgIGlmIChmaWx0ZXIub3Blbikge1xuICAgICAgICBmaWx0ZXIucXVlcnlbJ29wZW4nXSA9IGZpbHRlci5xdWVyeVsnb3BlbiddID09PSAndHJ1ZScgPyB0cnVlIDogZmFsc2U7XG4gICAgICB9XG4gICAgICBQcm9qZWN0cy5maW5kT25lKHt0aXRsZTogcmVxLnBhcmFtcy5wcm9qZWN0LnJlcGxhY2UoL1xcXy9nLCAnICcpfSwgKGVyciwgZG9jKSA9PiB7XG4gICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICAgIGZpbHRlci5xdWVyeVsnZm9yX3Byb2plY3QnXSA9IGRvYy5wcm9qZWN0X2lkO1xuICAgICAgICBJc3N1ZXMuZmluZChmaWx0ZXIucXVlcnkpLnRvQXJyYXkoKGVyciwgZG9jcykgPT4ge1xuICAgICAgICAgIGlmIChlcnIpIHtcbiAgICAgICAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSlcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCB1cmw6IHJlcS51cmx9KVxuICAgICAgICAgIH1cbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9IGVsc2Uge1xuICAgICAgZ2V0QWxsSXNzdWVzKCkudGhlbihkb2NzID0+IGRvY3MubGVuZ3RoID8gcmVzLmpzb24oe2RvY3M6IGRvY3N9KSA6IHJlcy5qc29uKHtkb2NzOiAnbm9uZSd9KSk7XG4gICAgfVxuICB9KTtcbiAgXG4gIGFwcC5wb3N0KCcvYXBpL2lzc3Vlcy86cHJvamVjdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIFByb2plY3RzLmZpbmRPbmUoe3RpdGxlOiByZXEucGFyYW1zLnByb2plY3QucmVwbGFjZSgvXFxfL2csICcgJyl9LCAoZXJyLCBkb2MpID0+IHtcbiAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICBcbiAgICAgIHJlcS5ib2R5LmZvcl9wcm9qZWN0ID0gZG9jLnByb2plY3RfaWQ7XG4gICAgICBsZXQgbmV3X2lzc3VlID0gbmV3IGlzc3VlKHJlcS5ib2R5KTtcbiAgICAgIFxuICAgICAgSXNzdWVzLmluc2VydE9uZShuZXdfaXNzdWUsIChlcnIsIGRvY3MpID0+IHtcbiAgICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBlcnJ9KTtcbiAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzfSk7XG4gICAgICB9KTtcbiAgICB9KTtcbiAgfSk7XG4gIFxuICBhcHAucHV0KCcvYXBpL2lzc3Vlcy86cHJvamVjdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIGlmIChPYmplY3Qua2V5cyhyZXEuYm9keSkubGVuZ3RoKSB7XG4gICAgICBsZXQgcXVlcnkgPSB7X2lkOiBPYmplY3RJZChyZXEuYm9keS5faWQpfTtcbiAgICAgIGxldCB1cGRhdGUgPSB7fTtcbiAgICBcbiAgICAgIGlmIChyZXEuYm9keS5jbG9zZSkge1xuICAgICAgICB1cGRhdGUgPSB7ICRzZXQ6IHtvcGVuOiBmYWxzZSwgdXBkYXRlZF9vbjogbmV3IERhdGUoKS50b0lTT1N0cmluZygpfSB9O1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgdXBkYXRlID0geyAkc2V0OiByZXEuYm9keSB9O1xuICAgICAgICBkZWxldGUgdXBkYXRlWyckc2V0J11bJ19pZCddO1xuICAgICAgfVxuICAgICAgLypJc3N1ZXMuZmluZE9uZShxdWVyeSwgKGVyciwgZG9jcykgPT4ge1xuICAgICAgICBJRiBGT1VORCBUSEVOIElTU1VFUyBVUERBVEVPTkVcbiAgICAgICAgICBJRiBVUERBVEVPTkUgRkFJTCBcbiAgICAgICAgICAgIFJFVFVSTiBDT1VMRCBOT1QgVVBEQVRFXG4gICAgICB9KTsqL1xuICAgICAgSXNzdWVzLnVwZGF0ZU9uZShxdWVyeSwgdXBkYXRlLCAoZXJyLCBkb2NzKSA9PiB7XG4gICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7cmVzdWx0OiBlcnJ9KTtcbiAgICAgICAgaWYgKGRvY3MubW9kaWZpZWRDb3VudCkge1xuICAgICAgICAgIFByb2plY3RzLmZpbmRPbmUoe3RpdGxlOiByZXEucGFyYW1zLnByb2plY3QucmVwbGFjZSgvXFxfL2csICcgJyl9LCAoZXJyLCBkb2MpID0+IHtcbiAgICAgICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICAgICAgICBJc3N1ZXMuZmluZCh7Zm9yX3Byb2plY3Q6IGRvYy5wcm9qZWN0X2lkfSkudG9BcnJheSgoZXJyLCBkb2NzKSA9PiBlcnIgPyByZXMuanNvbih7ZG9jczogZXJyfSkgOiByZXMuanNvbih7ZG9jczogZG9jcywgbWVzc2FnZTogJ1N1Y2Nlc3NmdWxseSBVcGRhdGVkJ30pKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICByZXR1cm4gcmVzLmpzb24oe2RvY3M6ICcnLCBtZXNzYWdlOiAnY291bGQgbm90IHVwZGF0ZSd9KTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogJycsIG1lc3NhZ2U6ICdubyB1cGRhdGVkIGZpZWxkIHNlbnQnfSk7XG4gICAgfVxuICB9KTtcbiAgXG4gIGFwcC5kZWxldGUoJy9hcGkvaXNzdWVzLzpwcm9qZWN0JywgKHJlcSwgcmVzKSA9PiB7XG4gICAgLypcbiAgICAgIHdpdGggYW4gX2lkIHRvIGNvbXBsZXRlbHkgZGVsZXRlIGFuIGlzc3VlXG4gICAgICAgIElmIG5vIF9pZCBpcyBzZW50IFxuICAgICAgICAgIHJldHVybiAnX2lkIGVycm9yJ1xuICAgICAgICBJZiBzdWNjZXNzXG4gICAgICAgICAgcmV0dXJuICdkZWxldGVkIF9pZDogJyArIF9pZFxuICAgICAgICBJZiBmYWlsXG4gICAgICAgICAgcmV0dXJuICdjb3VsZCBub3QgZGVsZXRlIF9pZDogJyArIF9pZFxuICAgICovXG4gIH0pO1xuICAgICAgXG4gIGFwcC51c2UoKHJlcSwgcmVzKSA9PiByZXMuc3RhdHVzKDQwNCkudHlwZSgndGV4dCcpLnNlbmQoJ05vdCBGb3VuZCcpKTtcbn07XG5cblxuIC8qUHJvamVjdHMuZmluZE9uZSh7dGl0bGU6IHJlcS5wYXJhbXMucHJvamVjdC5yZXBsYWNlKC9cXF8vZywgJyAnKX0sIChlcnIsIGRvYykgPT4ge1xuICAgICAgICBpZiAoZXJyKSByZXR1cm4gcmVzLmpzb24oe2RvY3M6IGVycn0pO1xuICAgICAgICBJc3N1ZXMuZmluZCh7Zm9yX3Byb2plY3Q6IGRvYy5wcm9qZWN0X2lkfSkudG9BcnJheSgoZXJyLCBkb2NzKSA9PiBlcnIgPyByZXMuanNvbih7ZG9jczogZXJyfSkgOiByZXMuanNvbih7ZG9jczogZG9jc30pKTtcbiAgICAgIH0pOyovIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "api.js"
+      ],
+      "names": [
+        "issue",
+        "require",
+        "module",
+        "exports",
+        "app",
+        "db",
+        "Projects",
+        "collection",
+        "Issues",
+        "get",
+        "req",
+        "res",
+        "sendFile",
+        "process",
+        "cwd",
+        "find",
+        "toArray",
+        "err",
+        "docs",
+        "json",
+        "getAllIssues",
+        "promise",
+        "Promise",
+        "resolve",
+        "reject",
+        "findOne",
+        "title",
+        "params",
+        "project",
+        "replace",
+        "doc",
+        "for_project",
+        "project_id",
+        "filter",
+        "length",
+        "Object",
+        "keys",
+        "query",
+        "names",
+        "values",
+        "open",
+        "includes",
+        "url",
+        "then",
+        "post",
+        "body",
+        "new_issue",
+        "insertOne",
+        "put",
+        "_id",
+        "update",
+        "close",
+        "$set",
+        "updated_on",
+        "Date",
+        "toISOString",
+        "updateOne",
+        "result",
+        "modifiedCount",
+        "message",
+        "delete",
+        "use",
+        "status",
+        "type",
+        "send"
+      ],
+      "mappings": "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",
+      "file": "api.js",
+      "sourceRoot": "/app/routes",
+      "sourcesContent": [
+        "import MongoClient from 'mongodb';\nimport { ObjectId } from 'mongodb';\nconst issue   = require('../zzz/models/Issue.js');\n\nmodule.exports = (app, db) => {\n  const Projects = db.collection('projects');\n  const Issues  = db.collection('issues');\n  \n  app.get('/', (req, res) => res.sendFile(process.cwd() + '/views/index.html'));\n  \n  app.get('/projects', (req, res) => {\n    Projects.find({}).toArray((err, docs) => {\n      if (err) return res.json({docs: err});\n      return res.json({docs: docs})\n    });    \n  });\n  \n  app.get('/api/issues/:project', (req, res) => {\n    const getAllIssues = () => {\n      const promise = new Promise((resolve, reject) => {\n        Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n          if (err) return reject(err);\n          return Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? reject(err) : resolve(docs));\n        });\n      });\n      return promise;\n    };\n    \n    let filter = {\n      length: Object.keys(req.query).length,\n      names: Object.keys(req.query),\n      values: Object.values(req.query),\n      query: req.query,\n      get open() {\n        return this.names.includes('open');\n      }\n    };\n    \n    if (filter.length) {\n      if (filter.open) {\n        filter.query['open'] = filter.query['open'] === 'true' ? true : false;\n      }\n      Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        filter.query['for_project'] = doc.project_id;\n        Issues.find(filter.query).toArray((err, docs) => {\n          if (err) {\n            return res.json({docs: err})\n          } else {\n            return res.json({docs: docs, url: req.url})\n          }\n        });\n      });\n    } else {\n      getAllIssues().then(docs => docs.length ? res.json({docs: docs}) : res.json({docs: 'none'}));\n    }\n  });\n  \n  app.post('/api/issues/:project', (req, res) => {\n    Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n      if (err) return res.json({docs: err});\n      \n      req.body.for_project = doc.project_id;\n      let new_issue = new issue(req.body);\n      \n      Issues.insertOne(new_issue, (err, docs) => {\n        if (err) return res.json({docs: err});\n        return res.json({docs: docs});\n      });\n    });\n  });\n  \n  app.put('/api/issues/:project', (req, res) => {\n    if (Object.keys(req.body).length) {\n      let query = {_id: ObjectId(req.body._id)};\n      let update = {};\n    \n      if (req.body.close) {\n        update = { $set: {open: false, updated_on: new Date().toISOString()} };\n      } else {\n        update = { $set: req.body };\n        delete update['$set']['_id'];\n      }\n      /*Issues.findOne(query, (err, docs) => {\n        IF FOUND THEN ISSUES UPDATEONE\n          IF UPDATEONE FAIL \n            RETURN COULD NOT UPDATE\n      });*/\n      Issues.updateOne(query, update, (err, docs) => {\n        if (err) return res.json({result: err});\n        if (docs.modifiedCount) {\n          Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n            if (err) return res.json({docs: err});\n            Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));\n          });\n        } else {\n          return res.json({docs: '', message: 'could not update'});\n        }\n      });\n    } else {\n      return res.json({docs: '', message: 'no updated field sent'});\n    }\n  });\n  \n  app.delete('/api/issues/:project', (req, res) => {\n    /*\n      with an _id to completely delete an issue\n        If no _id is sent \n          return '_id error'\n        If success\n          return 'deleted _id: ' + _id\n        If fail\n          return 'could not delete _id: ' + _id\n    */\n  });\n      \n  app.use((req, res) => res.status(404).type('text').send('Not Found'));\n};\n\n\n /*Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));\n      });*/"
+      ]
+    },
+    "mtime": 1545126803000
+  },
+  "{\"filename\":\"/app/routes/fcctesting.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/routes\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/routes/fcctesting.js",
+      "filenameRelative": "/app/routes/fcctesting.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "fcctesting.js",
+      "sourceFileName": "fcctesting.js",
+      "sourceRoot": "/app/routes",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/routes",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "fcctesting"
+    },
+    "ignored": false,
+    "code": "/*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*       DO NOT EDIT THIS FILE\n*       For FCC testing purposes!\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*/\n\n'use strict';\n\nvar cors = require('cors');\nvar fs = require('fs');\nvar runner = require('../test-runner');\n\nmodule.exports = function (app) {\n\n  app.route('/_api/server.js').get(function (req, res, next) {\n    console.log('requested');\n    fs.readFile(__dirname + '/server.js', function (err, data) {\n      if (err) return next(err);\n      res.send(data.toString());\n    });\n  });\n  app.route('/_api/routes/api.js').get(function (req, res, next) {\n    console.log('requested');\n    fs.readFile(__dirname + '/routes/api.js', function (err, data) {\n      if (err) return next(err);\n      res.type('txt').send(data.toString());\n    });\n  });\n  app.route('/_api/controllers/convertHandler.js').get(function (req, res, next) {\n    console.log('requested');\n    fs.readFile(__dirname + '/controllers/convertHandler.js', function (err, data) {\n      if (err) return next(err);\n      res.type('txt').send(data.toString());\n    });\n  });\n\n  var error;\n  app.get('/_api/get-tests', cors(), function (req, res, next) {\n    console.log(error);\n    if (!error && process.env.NODE_ENV === 'test') return next();\n    res.json({ status: 'unavailable' });\n  }, function (req, res, next) {\n    if (!runner.report) return next();\n    res.json(testFilter(runner.report, req.query.type, req.query.n));\n  }, function (req, res) {\n    runner.on('done', function (report) {\n      process.nextTick(function () {\n        return res.json(testFilter(runner.report, req.query.type, req.query.n));\n      });\n    });\n  });\n  app.get('/_api/app-info', function (req, res) {\n    var hs = Object.keys(res._headers).filter(function (h) {\n      return !h.match(/^access-control-\\w+/);\n    });\n    var hObj = {};\n    hs.forEach(function (h) {\n      hObj[h] = res._headers[h];\n    });\n    delete res._headers['strict-transport-security'];\n    res.json({ headers: hObj });\n  });\n};\n\nfunction testFilter(tests, type, n) {\n  var out;\n  switch (type) {\n    case 'unit':\n      out = tests.filter(function (t) {\n        return t.context.match('Unit Tests');\n      });\n      break;\n    case 'functional':\n      out = tests.filter(function (t) {\n        return t.context.match('Functional Tests') && !t.title.match('#example');\n      });\n      break;\n    default:\n      out = tests;\n  }\n  if (n !== undefined) {\n    return out[n] || out;\n  }\n  return out;\n}\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZjY3Rlc3RpbmcuanMiXSwibmFtZXMiOlsiY29ycyIsInJlcXVpcmUiLCJmcyIsInJ1bm5lciIsIm1vZHVsZSIsImV4cG9ydHMiLCJhcHAiLCJyb3V0ZSIsImdldCIsInJlcSIsInJlcyIsIm5leHQiLCJjb25zb2xlIiwibG9nIiwicmVhZEZpbGUiLCJfX2Rpcm5hbWUiLCJlcnIiLCJkYXRhIiwic2VuZCIsInRvU3RyaW5nIiwidHlwZSIsImVycm9yIiwicHJvY2VzcyIsImVudiIsIk5PREVfRU5WIiwianNvbiIsInN0YXR1cyIsInJlcG9ydCIsInRlc3RGaWx0ZXIiLCJxdWVyeSIsIm4iLCJvbiIsIm5leHRUaWNrIiwiaHMiLCJPYmplY3QiLCJrZXlzIiwiX2hlYWRlcnMiLCJmaWx0ZXIiLCJoIiwibWF0Y2giLCJoT2JqIiwiZm9yRWFjaCIsImhlYWRlcnMiLCJ0ZXN0cyIsIm91dCIsInQiLCJjb250ZXh0IiwidGl0bGUiLCJ1bmRlZmluZWQiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUEyQkE7O0FBRUEsSUFBSUEsT0FBT0MsUUFBUSxNQUFSLENBQVg7QUFDQSxJQUFJQyxLQUFLRCxRQUFRLElBQVIsQ0FBVDtBQUNBLElBQUlFLFNBQVNGLFFBQVEsZ0JBQVIsQ0FBYjs7QUFFQUcsT0FBT0MsT0FBUCxHQUFpQixVQUFVQyxHQUFWLEVBQWU7O0FBRTlCQSxNQUFJQyxLQUFKLENBQVUsaUJBQVYsRUFDR0MsR0FESCxDQUNPLFVBQVNDLEdBQVQsRUFBY0MsR0FBZCxFQUFtQkMsSUFBbkIsRUFBeUI7QUFDNUJDLFlBQVFDLEdBQVIsQ0FBWSxXQUFaO0FBQ0FYLE9BQUdZLFFBQUgsQ0FBWUMsWUFBWSxZQUF4QixFQUFzQyxVQUFTQyxHQUFULEVBQWNDLElBQWQsRUFBb0I7QUFDeEQsVUFBR0QsR0FBSCxFQUFRLE9BQU9MLEtBQUtLLEdBQUwsQ0FBUDtBQUNSTixVQUFJUSxJQUFKLENBQVNELEtBQUtFLFFBQUwsRUFBVDtB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U1osVUFBVCxDQUFvQmUsS0FBcEIsRUFBMkJ2QixJQUEzQixFQUFpQ1UsQ0FBakMsRUFBb0M7QUFDbEMsTUFBSWMsR0FBSjtBQUNBLFVBQVF4QixJQUFSO0FBQ0UsU0FBSyxNQUFMO0FBQ0V3QixZQUFNRCxNQUFNTixNQUFOLENBQWE7QUFBQSxlQUFLUSxFQUFFQyxPQUFGLENBQVVQLEtBQVYsQ0FBZ0IsWUFBaEIsQ0FBTDtBQUFBLE9BQWIsQ0FBTjtBQUNBO0FBQ0YsU0FBSyxZQUFMO0FBQ0VLLFlBQU1ELE1BQU1OLE1BQU4sQ0FBYTtBQUFBLGVBQUtRLEVBQUVDLE9BQUYsQ0FBVVAsS0FBVixDQUFnQixrQkFBaEIsS0FBdUMsQ0FBQ00sRUFBRUUsS0FBRixDQUFRUixLQUFSLENBQWMsVUFBZCxDQUE3QztBQUFBLE9BQWIsQ0FBTjtBQUNBO0FBQ0Y7QUFDRUssWUFBTUQsS0FBTjtBQVJKO0FBVUEsTUFBR2IsTUFBTWtCLFNBQVQsRUFBb0I7QUFDbEIsV0FBT0osSUFBSWQsQ0FBSixLQUFVYyxHQUFqQjtBQUNEO0FBQ0QsU0FBT0EsR0FBUDtBQUNEIiwiZmlsZSI6ImZjY3Rlc3RpbmcuanMiLCJzb3VyY2VSb290IjoiL2FwcC9yb3V0ZXMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKiAgICAgICBETyBOT1QgRURJVCBUSElTIEZJTEVcbiogICAgICAgRm9yIEZDQyB0ZXN0aW5nIHB1cnBvc2VzIVxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKlxuKi9cblxuJ3VzZSBzdHJpY3QnO1xuXG52YXIgY29ycyA9IHJlcXVpcmUoJ2NvcnMnKTtcbnZhciBmcyA9IHJlcXVpcmUoJ2ZzJyk7XG52YXIgcnVubmVyID0gcmVxdWlyZSgnLi4vdGVzdC1ydW5uZXInKTtcblxubW9kdWxlLmV4cG9ydHMgPSBmdW5jdGlvbiAoYXBwKSB7XG5cbiAgYXBwLnJvdXRlKCcvX2FwaS9zZXJ2ZXIuanMnKVxuICAgIC5nZXQoZnVuY3Rpb24ocmVxLCByZXMsIG5leHQpIHtcbiAgICAgIGNvbnNvbGUubG9nKCdyZXF1ZXN0ZWQnKTtcbiAgICAgIGZzLnJlYWRGaWxlKF9fZGlybmFtZSArICcvc2VydmVyLmpzJywgZnVuY3Rpb24oZXJyLCBkYXRhKSB7XG4gICAgICAgIGlmKGVycikgcmV0dXJuIG5leHQoZXJyKTtcbiAgICAgICAgcmVzLnNlbmQoZGF0YS50b1N0cmluZygpKTtcbiAgICAgIH0pO1xuICAgIH0pO1xuICBhcHAucm91dGUoJy9fYXBpL3JvdXRlcy9hcGkuanMnKVxuICAgIC5nZXQoZnVuY3Rpb24ocmVxLCByZXMsIG5leHQpIHtcbiAgICAgIGNvbnNvbGUubG9nKCdyZXF1ZXN0ZWQnKTtcbiAgICAgIGZzLnJlYWRGaWxlKF9fZGlybmFtZSArICcvcm91dGVzL2FwaS5qcycsIGZ1bmN0aW9uKGVyciwgZGF0YSkge1xuICAgICAgICBpZihlcnIpIHJldHVybiBuZXh0KGVycik7XG4gICAgICAgIHJlcy50eXBlKCd0eHQnKS5zZW5kKGRhdGEudG9TdHJpbmcoKSk7XG4gICAgICB9KTtcbiAgICB9KTtcbiAgYXBwLnJvdXRlKCcvX2FwaS9jb250cm9sbGVycy9jb252ZXJ0SGFuZGxlci5qcycpXG4gICAgLmdldChmdW5jdGlvbihyZXEsIHJlcywgbmV4dCkge1xuICAgICAgY29uc29sZS5sb2coJ3JlcXVlc3RlZCcpO1xuICAgICAgZnMucmVhZEZpbGUoX19kaXJuYW1lICsgJy9jb250cm9sbGVycy9jb252ZXJ0SGFuZGxlci5qcycsIGZ1bmN0aW9uKGVyciwgZGF0YSkge1xuICAgICAgICBpZihlcnIpIHJldHVybiBuZXh0KGVycik7XG4gICAgICAgIHJlcy50eXBlKCd0eHQnKS5zZW5kKGRhdGEudG9TdHJpbmcoKSk7XG4gICAgICB9KTtcbiAgICB9KTtcbiAgICBcbiAgdmFyIGVycm9yO1xuICBhcHAuZ2V0KCcvX2FwaS9nZXQtdGVzdHMnLCBjb3JzKCksIGZ1bmN0aW9uKHJlcSwgcmVzLCBuZXh0KXtcbiAgICBjb25zb2xlLmxvZyhlcnJvcik7XG4gICAgaWYoIWVycm9yICYmIHByb2Nlc3MuZW52Lk5PREVfRU5WID09PSAndGVzdCcpIHJldHVybiBuZXh0KCk7XG4gICAgcmVzLmpzb24oe3N0YXR1czogJ3VuYXZhaWxhYmxlJ30pO1xuICB9LFxuICBmdW5jdGlvbihyZXEsIHJlcywgbmV4dCl7XG4gICAgaWYoIXJ1bm5lci5yZXBvcnQpIHJldHVybiBuZXh0KCk7XG4gICAgcmVzLmpzb24odGVzdEZpbHRlcihydW5uZXIucmVwb3J0LCByZXEucXVlcnkudHlwZSwgcmVxLnF1ZXJ5Lm4pKTtcbiAgfSxcbiAgZnVuY3Rpb24ocmVxLCByZXMpe1xuICAgIHJ1bm5lci5vbignZG9uZScsIGZ1bmN0aW9uKHJlcG9ydCl7XG4gICAgICBwcm9jZXNzLm5leHRUaWNrKCgpID0+ICByZXMuanNvbih0ZXN0RmlsdGVyKHJ1bm5lci5yZXBvcnQsIHJlcS5xdWVyeS50eXBlLCByZXEucXVlcnkubikpKTtcbiAgICB9KTtcbiAgfSk7XG4gIGFwcC5nZXQoJy9fYXBpL2FwcC1pbmZvJywgZnVuY3Rpb24ocmVxLCByZXMpIHtcbiAgICB2YXIgaHMgPSBPYmplY3Qua2V5cyhyZXMuX2hlYWRlcnMpXG4gICAgICAuZmlsdGVyKGggPT4gIWgubWF0Y2goL15hY2Nlc3MtY29udHJvbC1cXHcrLykpO1xuICAgIHZhciBoT2JqID0ge307XG4gICAgaHMuZm9yRWFjaChoID0+IHtoT2JqW2hdID0gcmVzLl9oZWFkZXJzW2hdfSk7XG4gICAgZGVsZXRlIHJlcy5faGVhZGVyc1snc3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eSddO1xuICAgIHJlcy5qc29uKHtoZWFkZXJzOiBoT2JqfSk7XG4gIH0pO1xuICBcbn07XG5cbmZ1bmN0aW9uIHRlc3RGaWx0ZXIodGVzdHMsIHR5cGUsIG4pIHtcbiAgdmFyIG91dDtcbiAgc3dpdGNoICh0eXBlKSB7XG4gICAgY2FzZSAndW5pdCcgOlxuICAgICAgb3V0ID0gdGVzdHMuZmlsdGVyKHQgPT4gdC5jb250ZXh0Lm1hdGNoKCdVbml0IFRlc3RzJykpO1xuICAgICAgYnJlYWs7XG4gICAgY2FzZSAnZnVuY3Rpb25hbCc6XG4gICAgICBvdXQgPSB0ZXN0cy5maWx0ZXIodCA9PiB0LmNvbnRleHQubWF0Y2goJ0Z1bmN0aW9uYWwgVGVzdHMnKSAmJiAhdC50aXRsZS5tYXRjaCgnI2V4YW1wbGUnKSk7XG4gICAgICBicmVhaztcbiAgICBkZWZhdWx0OlxuICAgICAgb3V0ID0gdGVzdHM7XG4gIH1cbiAgaWYobiAhPT0gdW5kZWZpbmVkKSB7XG4gICAgcmV0dXJuIG91dFtuXSB8fCBvdXQ7XG4gIH1cbiAgcmV0dXJuIG91dDtcbn0iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "fcctesting.js"
+      ],
+      "names": [
+        "cors",
+        "require",
+        "fs",
+        "runner",
+        "module",
+        "exports",
+        "app",
+        "route",
+        "get",
+        "req",
+        "res",
+        "next",
+        "console",
+        "log",
+        "readFile",
+        "__dirname",
+        "err",
+        "data",
+        "send",
+        "toString",
+        "type",
+        "error",
+        "process",
+        "env",
+        "NODE_ENV",
+        "json",
+        "status",
+        "report",
+        "testFilter",
+        "query",
+        "n",
+        "on",
+        "nextTick",
+        "hs",
+        "Object",
+        "keys",
+        "_headers",
+        "filter",
+        "h",
+        "match",
+        "hObj",
+        "forEach",
+        "headers",
+        "tests",
+        "out",
+        "t",
+        "context",
+        "title",
+        "undefined"
+      ],
+      "mappings": "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",
+      "file": "fcctesting.js",
+      "sourceRoot": "/app/routes",
+      "sourcesContent": [
+        "/*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*       DO NOT EDIT THIS FILE\n*       For FCC testing purposes!\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*/\n\n'use strict';\n\nvar cors = require('cors');\nvar fs = require('fs');\nvar runner = require('../test-runner');\n\nmodule.exports = function (app) {\n\n  app.route('/_api/server.js')\n    .get(function(req, res, next) {\n      console.log('requested');\n      fs.readFile(__dirname + '/server.js', function(err, data) {\n        if(err) return next(err);\n        res.send(data.toString());\n      });\n    });\n  app.route('/_api/routes/api.js')\n    .get(function(req, res, next) {\n      console.log('requested');\n      fs.readFile(__dirname + '/routes/api.js', function(err, data) {\n        if(err) return next(err);\n        res.type('txt').send(data.toString());\n      });\n    });\n  app.route('/_api/controllers/convertHandler.js')\n    .get(function(req, res, next) {\n      console.log('requested');\n      fs.readFile(__dirname + '/controllers/convertHandler.js', function(err, data) {\n        if(err) return next(err);\n        res.type('txt').send(data.toString());\n      });\n    });\n    \n  var error;\n  app.get('/_api/get-tests', cors(), function(req, res, next){\n    console.log(error);\n    if(!error && process.env.NODE_ENV === 'test') return next();\n    res.json({status: 'unavailable'});\n  },\n  function(req, res, next){\n    if(!runner.report) return next();\n    res.json(testFilter(runner.report, req.query.type, req.query.n));\n  },\n  function(req, res){\n    runner.on('done', function(report){\n      process.nextTick(() =>  res.json(testFilter(runner.report, req.query.type, req.query.n)));\n    });\n  });\n  app.get('/_api/app-info', function(req, res) {\n    var hs = Object.keys(res._headers)\n      .filter(h => !h.match(/^access-control-\\w+/));\n    var hObj = {};\n    hs.forEach(h => {hObj[h] = res._headers[h]});\n    delete res._headers['strict-transport-security'];\n    res.json({headers: hObj});\n  });\n  \n};\n\nfunction testFilter(tests, type, n) {\n  var out;\n  switch (type) {\n    case 'unit' :\n      out = tests.filter(t => t.context.match('Unit Tests'));\n      break;\n    case 'functional':\n      out = tests.filter(t => t.context.match('Functional Tests') && !t.title.match('#example'));\n      break;\n    default:\n      out = tests;\n  }\n  if(n !== undefined) {\n    return out[n] || out;\n  }\n  return out;\n}"
+      ]
+    },
+    "mtime": 1544837460000
+  },
+  "{\"filename\":\"/app/test-runner.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/test-runner.js",
+      "filenameRelative": "/app/test-runner.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "test-runner.js",
+      "sourceFileName": "test-runner.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "test-runner"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\n/*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*       DO NOT EDIT THIS FILE\n*       For FCC testing purposes!\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*/\n\nvar analyser = require('./assertion-analyser');\nvar EventEmitter = require('events').EventEmitter;\n\nvar Mocha = require('mocha'),\n    fs = require('fs'),\n    path = require('path');\n\nvar mocha = new Mocha();\nvar testDir = './tests';\n\n// Add each .js file to the mocha instance\nfs.readdirSync(testDir).filter(function (file) {\n  // Only keep the .js files\n  return file.substr(-3) === '.js';\n}).forEach(function (file) {\n  mocha.addFile(path.join(testDir, file));\n});\n\nvar emitter = new EventEmitter();\nemitter.run = function () {\n\n  var tests = [];\n  var context = \"\";\n  var separator = ' -> ';\n  // Run the tests.\n  try {\n    var runner = mocha.ui('tdd').run().on('test end', function (test) {\n      // remove comments\n      var body = test.body.replace(/\\/\\/.*\\n|\\/\\*.*\\*\\//g, '');\n      // collapse spaces\n      body = body.replace(/\\s+/g, ' ');\n      var obj = {\n        title: test.title,\n        context: context.slice(0, -separator.length),\n        state: test.state,\n        // body: body,\n        assertions: analyser(body)\n      };\n      tests.push(obj);\n    }).on('end', function () {\n      emitter.report = tests;\n      emitter.emit('done', tests);\n    }).on('suite', function (s) {\n      context += s.title + separator;\n    }).on('suite end', function (s) {\n      context = context.slice(0, -(s.title.length + separator.length));\n    });\n  } catch (e) {\n    throw e;\n  }\n};\n\nmodule.exports = emitter;\n\n/*\n * Mocha.runner Events:\n * can be used to build a better custom report\n *\n *   - `start`  execution started\n *   - `end`  execution complete\n *   - `suite`  (suite) test suite execution started\n *   - `suite end`  (suite) all tests (and sub-suites) have finished\n *   - `test`  (test) test execution started\n *   - `test end`  (test) test completed\n *   - `hook`  (hook) hook execution started\n *   - `hook end`  (hook) hook complete\n *   - `pass`  (test) test passed\n *   - `fail`  (test, err) test failed\n *   - `pending`  (test) test pending\n */\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QtcnVubmVyLmpzIl0sIm5hbWVzIjpbImFuYWx5c2VyIiwicmVxdWlyZSIsIkV2ZW50RW1pdHRlciIsIk1vY2hhIiwiZnMiLCJwYXRoIiwibW9jaGEiLCJ0ZXN0RGlyIiwicmVhZGRpclN5bmMiLCJmaWx0ZXIiLCJmaWxlIiwic3Vic3RyIiwiZm9yRWFjaCIsImFkZEZpbGUiLCJqb2luIiwiZW1pdHRlciIsInJ1biIsInRlc3RzIiwiY29udGV4dCIsInNlcGFyYXRvciIsInJ1bm5lciIsInVpIiwib24iLCJ0ZXN0IiwiYm9keSIsInJlcGxhY2UiLCJvYmoiLCJ0aXRsZSIsInNsaWNlIiwibGVuZ3RoIiwic3RhdGUiLCJhc3NlcnRpb25zIiwicHVzaCIsInJlcG9ydCIsImVtaXQiLCJzIiwiZSIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQTJCQSxJQUFJQSxXQUFXQyxRQUFRLHNCQUFSLENBQWY7QUFDQSxJQUFJQyxlQUFlRCxRQUFRLFFBQVIsRUFBa0JDLFlBQXJDOztBQUVBLElBQUlDLFFBQVFGLFFBQVEsT0FBUixDQUFaO0FBQUEsSUFDSUcsS0FBS0gsUUFBUSxJQUFSLENBRFQ7QUFBQSxJQUVJSSxPQUFPSixRQUFRLE1BQVIsQ0FGWDs7QUFJQSxJQUFJSyxRQUFRLElBQUlILEtBQUosRUFBWjtBQUNBLElBQUlJLFVBQVUsU0FBZDs7QUFHQTtBQUNBSCxHQUFHSSxXQUFILENBQWVELE9BQWYsRUFBd0JFLE1BQXhCLENBQStCLFVBQVNDLElBQVQsRUFBYztBQUN6QztBQUNBLFNBQU9BLEtBQUtDLE1BQUwsQ0FBWSxDQUFDLENBQWIsTUFBb0IsS0FBM0I7QUFFSCxDQUpELEVBSUdDLE9BSkgsQ0FJVyxVQUFTRixJQUFULEVBQWM7QUFDckJKLFFBQU1PLE9BQU4sQ0FDSVIsS0FBS1MsSUFBTCxDQUFVUCxPQUFWLEVBQW1CRyxJQUFuQixDQURKO0FBR0gsQ0FSRDs7QUFVQSxJQUFJSyxVQUFVLElBQUliLFlBQUosRUFBZDtBQUNBYSxRQUFRQyxHQUFSLEdBQWMsWUFBVzs7QUFFdkIsTUFBSUMsUUFBUSxFQUFaO0FBQ0EsTUFBSUMsVUFBVSxFQUFkO0FBQ0EsTUFBSUMsWUFBWSxNQUFoQjtBQUNBO0FBQ0EsTUFBSTtBQUNKLFFBQUlDLFNBQVNkLE1BQU1lLEVBQU4sQ0FBUyxLQUFULEVBQWdCTCxHQUFoQixHQUNWTSxFQURVLENBQ1AsVUFETyxFQUNLLFVBQVNDLElBQVQsRUFBZTtBQUMzQjtBQUNBLFVBQUlDLE9BQU9ELEtBQUtDLElBQUwsQ0FBVUMsT0FBVixDQUFrQixzQkFBbEIsRUFBMEMsRUFBMUMsQ0FBWDtBQUNBO0FBQ0FELGFBQU9BLEtBQUtDLE9BQUwsQ0FBYSxNQUFiLEVBQW9CLEdBQXBCLENBQVA7QUFDQSxVQUFJQyxNQUFNO0FBQ1JDLGVBQU9KLEtBQUtJLEtBREo7QUFFUlQsaUJBQVNBLFFBQVFVLEtBQVIsQ0FBYyxDQUFkLEVBQWlCLENBQUNULFVBQVVVLE1BQTVCLENBRkQ7QUFHUkMsZUFBT1AsS0FBS08sS0FISjtBQUlSO0FBQ0FDLG9CQUFZL0IsU0FBU3dCLElBQVQ7QUFMSixPQUFWO0FBT0FQLFlBQU1lLElBQU4sQ0FBV04sR0FBWDtBQUNILEtBZFUsRUFlVkosRUFmVSxDQWVQLEtBZk8sRUFlQSxZQUFXO0FBQ2xCUCxjQUFRa0IsTUFBUixHQUFpQmhCLEtBQWpCO0FBQ0FGLGNBQVFtQixJQUFSLENBQWEsTUFBYixFQUFxQmpCLEtBQXJCO0FBQ0gsS0FsQlUsRUFtQlZLLEVBbkJVLENBbUJQLE9BbkJPLEVBbUJFLFVBQVNhLENBQVQsRUFBWTtBQUN2QmpCLGlCQUFZaUIsRUFBRVIsS0FBRixHQUFVUixTQUF0QjtBQUVELEtBdEJVLEVBdUJWRyxFQXZCVSxDQXVCUCxXQXZCTyxFQXVCTSxVQUFTYSxDQUFULEVBQVk7QUFDM0JqQixnQkFBVUEsUUFBUVUsS0FBUixDQUFjLENBQWQsRUFBaUIsRUFBRU8sRUFBRVIsS0FBRixDQUFRRSxNQUFSLEdBQWlCVixVQUFVVSxNQUE3QixDQUFqQixDQUFWO0FBQ0QsS0F6QlUsQ0FBYjtBQTBCQyxHQTNCRCxDQTJCRSxPQUFNTyxDQUFOLEVBQVM7QUFDVCxVQUFNQSxDQUFOO0FBQ0Q7QUFDRixDQXBDRDs7QUFzQ0FDLE9BQU9DLE9BQVAsR0FBaUJ2QixPQUFqQjs7QUFFQSIsImZpbGUiOiJ0ZXN0LXJ1bm5lci5qcyIsInNvdXJjZVJvb3QiOiIvYXBwIiwic291cmNlc0NvbnRlbnQiOlsiLypcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbiogICAgICAgRE8gTk9UIEVESVQgVEhJUyBGSUxFXG4qICAgICAgIEZvciBGQ0MgdGVzdGluZyBwdXJwb3NlcyFcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbiovXG5cbnZhciBhbmFseXNlciA9IHJlcXVpcmUoJy4vYXNzZXJ0aW9uLWFuYWx5c2VyJyk7XG52YXIgRXZlbnRFbWl0dGVyID0gcmVxdWlyZSgnZXZlbnRzJykuRXZlbnRFbWl0dGVyO1xuXG52YXIgTW9jaGEgPSByZXF1aXJlKCdtb2NoYScpLFxuICAgIGZzID0gcmVxdWlyZSgnZnMnKSxcbiAgICBwYXRoID0gcmVxdWlyZSgncGF0aCcpO1xuXG52YXIgbW9jaGEgPSBuZXcgTW9jaGEoKTtcbnZhciB0ZXN0RGlyID0gJy4vdGVzdHMnXG5cblxuLy8gQWRkIGVhY2ggLmpzIGZpbGUgdG8gdGhlIG1vY2hhIGluc3RhbmNlXG5mcy5yZWFkZGlyU3luYyh0ZXN0RGlyKS5maWx0ZXIoZnVuY3Rpb24oZmlsZSl7XG4gICAgLy8gT25seSBrZWVwIHRoZSAuanMgZmlsZXNcbiAgICByZXR1cm4gZmlsZS5zdWJzdHIoLTMpID09PSAnLmpzJztcblxufSkuZm9yRWFjaChmdW5jdGlvbihmaWxlKXtcbiAgICBtb2NoYS5hZGRGaWxlKFxuICAgICAgICBwYXRoLmpvaW4odGVzdERpciwgZmlsZSlcbiAgICApO1xufSk7XG5cbnZhciBlbWl0dGVyID0gbmV3IEV2ZW50RW1pdHRlcigpOyAgXG5lbWl0dGVyLnJ1biA9IGZ1bmN0aW9uKCkge1xuXG4gIHZhciB0ZXN0cyA9IFtdO1xuICB2YXIgY29udGV4dCA9IFwiXCI7XG4gIHZhciBzZXBhcmF0b3IgPSAnIC0+ICc7XG4gIC8vIFJ1biB0aGUgdGVzdHMuXG4gIHRyeSB7XG4gIHZhciBydW5uZXIgPSBtb2NoYS51aSgndGRkJykucnVuKClcbiAgICAub24oJ3Rlc3QgZW5kJywgZnVuY3Rpb24odGVzdCkge1xuICAgICAgICAvLyByZW1vdmUgY29tbWVudHNcbiAgICAgICAgdmFyIGJvZHkgPSB0ZXN0LmJvZHkucmVwbGFjZSgvXFwvXFwvLipcXG58XFwvXFwqLipcXCpcXC8vZywgJycpO1xuICAgICAgICAvLyBjb2xsYXBzZSBzcGFjZXNcbiAgICAgICAgYm9keSA9IGJvZHkucmVwbGFjZSgvXFxzKy9nLCcgJyk7XG4gICAgICAgIHZhciBvYmogPSB7XG4gICAgICAgICAgdGl0bGU6IHRlc3QudGl0bGUsXG4gICAgICAgICAgY29udGV4dDogY29udGV4dC5zbGljZSgwLCAtc2VwYXJhdG9yLmxlbmd0aCksXG4gICAgICAgICAgc3RhdGU6IHRlc3Quc3RhdGUsXG4gICAgICAgICAgLy8gYm9keTogYm9keSxcbiAgICAgICAgICBhc3NlcnRpb25zOiBhbmFseXNlcihib2R5KVxuICAgICAgICB9O1xuICAgICAgICB0ZXN0cy5wdXNoKG9iaik7XG4gICAgfSlcbiAgICAub24oJ2VuZCcsIGZ1bmN0aW9uKCkge1xuICAgICAgICBlbWl0dGVyLnJlcG9ydCA9IHRlc3RzO1xuICAgICAgICBlbWl0dGVyLmVtaXQoJ2RvbmUnLCB0ZXN0cylcbiAgICB9KVxuICAgIC5vbignc3VpdGUnLCBmdW5jdGlvbihzKSB7XG4gICAgICBjb250ZXh0ICs9IChzLnRpdGxlICsgc2VwYXJhdG9yKTtcblxuICAgIH0pXG4gICAgLm9uKCdzdWl0ZSBlbmQnLCBmdW5jdGlvbihzKSB7XG4gICAgICBjb250ZXh0ID0gY29udGV4dC5zbGljZSgwLCAtKHMudGl0bGUubGVuZ3RoICsgc2VwYXJhdG9yLmxlbmd0aCkpXG4gICAgfSlcbiAgfSBjYXRjaChlKSB7XG4gICAgdGhyb3coZSk7XG4gIH1cbn07XG5cbm1vZHVsZS5leHBvcnRzID0gZW1pdHRlcjtcblxuLypcbiAqIE1vY2hhLnJ1bm5lciBFdmVudHM6XG4gKiBjYW4gYmUgdXNlZCB0byBidWlsZCBhIGJldHRlciBjdXN0b20gcmVwb3J0XG4gKlxuICogICAtIGBzdGFydGAgIGV4ZWN1dGlvbiBzdGFydGVkXG4gKiAgIC0gYGVuZGAgIGV4ZWN1dGlvbiBjb21wbGV0ZVxuICogICAtIGBzdWl0ZWAgIChzdWl0ZSkgdGVzdCBzdWl0ZSBleGVjdXRpb24gc3RhcnRlZFxuICogICAtIGBzdWl0ZSBlbmRgICAoc3VpdGUpIGFsbCB0ZXN0cyAoYW5kIHN1Yi1zdWl0ZXMpIGhhdmUgZmluaXNoZWRcbiAqICAgLSBgdGVzdGAgICh0ZXN0KSB0ZXN0IGV4ZWN1dGlvbiBzdGFydGVkXG4gKiAgIC0gYHRlc3QgZW5kYCAgKHRlc3QpIHRlc3QgY29tcGxldGVkXG4gKiAgIC0gYGhvb2tgICAoaG9vaykgaG9vayBleGVjdXRpb24gc3RhcnRlZFxuICogICAtIGBob29rIGVuZGAgIChob29rKSBob29rIGNvbXBsZXRlXG4gKiAgIC0gYHBhc3NgICAodGVzdCkgdGVzdCBwYXNzZWRcbiAqICAgLSBgZmFpbGAgICh0ZXN0LCBlcnIpIHRlc3QgZmFpbGVkXG4gKiAgIC0gYHBlbmRpbmdgICAodGVzdCkgdGVzdCBwZW5kaW5nXG4gKi8iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "test-runner.js"
+      ],
+      "names": [
+        "analyser",
+        "require",
+        "EventEmitter",
+        "Mocha",
+        "fs",
+        "path",
+        "mocha",
+        "testDir",
+        "readdirSync",
+        "filter",
+        "file",
+        "substr",
+        "forEach",
+        "addFile",
+        "join",
+        "emitter",
+        "run",
+        "tests",
+        "context",
+        "separator",
+        "runner",
+        "ui",
+        "on",
+        "test",
+        "body",
+        "replace",
+        "obj",
+        "title",
+        "slice",
+        "length",
+        "state",
+        "assertions",
+        "push",
+        "report",
+        "emit",
+        "s",
+        "e",
+        "module",
+        "exports"
+      ],
+      "mappings": ";;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2BA,IAAIA,WAAWC,QAAQ,sBAAR,CAAf;AACA,IAAIC,eAAeD,QAAQ,QAAR,EAAkBC,YAArC;;AAEA,IAAIC,QAAQF,QAAQ,OAAR,CAAZ;AAAA,IACIG,KAAKH,QAAQ,IAAR,CADT;AAAA,IAEII,OAAOJ,QAAQ,MAAR,CAFX;;AAIA,IAAIK,QAAQ,IAAIH,KAAJ,EAAZ;AACA,IAAII,UAAU,SAAd;;AAGA;AACAH,GAAGI,WAAH,CAAeD,OAAf,EAAwBE,MAAxB,CAA+B,UAASC,IAAT,EAAc;AACzC;AACA,SAAOA,KAAKC,MAAL,CAAY,CAAC,CAAb,MAAoB,KAA3B;AAEH,CAJD,EAIGC,OAJH,CAIW,UAASF,IAAT,EAAc;AACrBJ,QAAMO,OAAN,CACIR,KAAKS,IAAL,CAAUP,OAAV,EAAmBG,IAAnB,CADJ;AAGH,CARD;;AAUA,IAAIK,UAAU,IAAIb,YAAJ,EAAd;AACAa,QAAQC,GAAR,GAAc,YAAW;;AAEvB,MAAIC,QAAQ,EAAZ;AACA,MAAIC,UAAU,EAAd;AACA,MAAIC,YAAY,MAAhB;AACA;AACA,MAAI;AACJ,QAAIC,SAASd,MAAMe,EAAN,CAAS,KAAT,EAAgBL,GAAhB,GACVM,EADU,CACP,UADO,EACK,UAASC,IAAT,EAAe;AAC3B;AACA,UAAIC,OAAOD,KAAKC,IAAL,CAAUC,OAAV,CAAkB,sBAAlB,EAA0C,EAA1C,CAAX;AACA;AACAD,aAAOA,KAAKC,OAAL,CAAa,MAAb,EAAoB,GAApB,CAAP;AACA,UAAIC,MAAM;AACRC,eAAOJ,KAAKI,KADJ;AAERT,iBAASA,QAAQU,KAAR,CAAc,CAAd,EAAiB,CAACT,UAAUU,MAA5B,CAFD;AAGRC,eAAOP,KAAKO,KAHJ;AAIR;AACAC,oBAAY/B,SAASwB,IAAT;AALJ,OAAV;AAOAP,YAAMe,IAAN,CAAWN,GAAX;AACH,KAdU,EAeVJ,EAfU,CAeP,KAfO,EAeA,YAAW;AAClBP,cAAQkB,MAAR,GAAiBhB,KAAjB;AACAF,cAAQmB,IAAR,CAAa,MAAb,EAAqBjB,KAArB;AACH,KAlBU,EAmBVK,EAnBU,CAmBP,OAnBO,EAmBE,UAASa,CAAT,EAAY;AACvBjB,iBAAYiB,EAAER,KAAF,GAAUR,SAAtB;AAED,KAtBU,EAuBVG,EAvBU,CAuBP,WAvBO,EAuBM,UAASa,CAAT,EAAY;AAC3BjB,gBAAUA,QAAQU,KAAR,CAAc,CAAd,EAAiB,EAAEO,EAAER,KAAF,CAAQE,MAAR,GAAiBV,UAAUU,MAA7B,CAAjB,CAAV;AACD,KAzBU,CAAb;AA0BC,GA3BD,CA2BE,OAAMO,CAAN,EAAS;AACT,UAAMA,CAAN;AACD;AACF,CApCD;;AAsCAC,OAAOC,OAAP,GAAiBvB,OAAjB;;AAEA",
+      "file": "test-runner.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "/*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*       DO NOT EDIT THIS FILE\n*       For FCC testing purposes!\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*/\n\nvar analyser = require('./assertion-analyser');\nvar EventEmitter = require('events').EventEmitter;\n\nvar Mocha = require('mocha'),\n    fs = require('fs'),\n    path = require('path');\n\nvar mocha = new Mocha();\nvar testDir = './tests'\n\n\n// Add each .js file to the mocha instance\nfs.readdirSync(testDir).filter(function(file){\n    // Only keep the .js files\n    return file.substr(-3) === '.js';\n\n}).forEach(function(file){\n    mocha.addFile(\n        path.join(testDir, file)\n    );\n});\n\nvar emitter = new EventEmitter();  \nemitter.run = function() {\n\n  var tests = [];\n  var context = \"\";\n  var separator = ' -> ';\n  // Run the tests.\n  try {\n  var runner = mocha.ui('tdd').run()\n    .on('test end', function(test) {\n        // remove comments\n        var body = test.body.replace(/\\/\\/.*\\n|\\/\\*.*\\*\\//g, '');\n        // collapse spaces\n        body = body.replace(/\\s+/g,' ');\n        var obj = {\n          title: test.title,\n          context: context.slice(0, -separator.length),\n          state: test.state,\n          // body: body,\n          assertions: analyser(body)\n        };\n        tests.push(obj);\n    })\n    .on('end', function() {\n        emitter.report = tests;\n        emitter.emit('done', tests)\n    })\n    .on('suite', function(s) {\n      context += (s.title + separator);\n\n    })\n    .on('suite end', function(s) {\n      context = context.slice(0, -(s.title.length + separator.length))\n    })\n  } catch(e) {\n    throw(e);\n  }\n};\n\nmodule.exports = emitter;\n\n/*\n * Mocha.runner Events:\n * can be used to build a better custom report\n *\n *   - `start`  execution started\n *   - `end`  execution complete\n *   - `suite`  (suite) test suite execution started\n *   - `suite end`  (suite) all tests (and sub-suites) have finished\n *   - `test`  (test) test execution started\n *   - `test end`  (test) test completed\n *   - `hook`  (hook) hook execution started\n *   - `hook end`  (hook) hook complete\n *   - `pass`  (test) test passed\n *   - `fail`  (test, err) test failed\n *   - `pending`  (test) test pending\n */"
+      ]
+    },
+    "mtime": 1544837515000
+  },
+  "{\"filename\":\"/app/assertion-analyser.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/assertion-analyser.js",
+      "filenameRelative": "/app/assertion-analyser.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "assertion-analyser.js",
+      "sourceFileName": "assertion-analyser.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "assertion-analyser"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\n/*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*       DO NOT EDIT THIS FILE\n*       For FCC testing purposes!\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*/\n\nfunction objParser(str, init) {\n  // finds objects, arrays, strings, and function arguments\n  // between parens, because they may contain ','\n  var openSym = ['[', '{', '\"', \"'\", '('];\n  var closeSym = [']', '}', '\"', \"'\", ')'];\n  var type;\n  for (var i = init || 0; i < str.length; i++) {\n    type = openSym.indexOf(str[i]);\n    if (type !== -1) break;\n  }\n  if (type === -1) return null;\n  var open = openSym[type];\n  var close = closeSym[type];\n  var count = 1;\n  for (var k = i + 1; k < str.length; k++) {\n    if (open === '\"' || open === \"'\") {\n      if (str[k] === close) count--;\n      if (str[k] === '\\\\') k++;\n    } else {\n      if (str[k] === open) count++;\n      if (str[k] === close) count--;\n    }\n    if (count === 0) break;\n  }\n  if (count !== 0) return null;\n  var obj = str.slice(i, k + 1);\n  return {\n    start: i,\n    end: k,\n    obj: obj\n  };\n}\n\nfunction replacer(str) {\n  // replace objects with a symbol ( __#n)\n  var obj;\n  var cnt = 0;\n  var data = [];\n  while (obj = objParser(str)) {\n    data[cnt] = obj.obj;\n    str = str.substring(0, obj.start) + '__#' + cnt++ + str.substring(obj.end + 1);\n  }\n  return {\n    str: str,\n    dictionary: data\n  };\n}\n\nfunction splitter(str) {\n  // split on commas, then restore the objects\n  var strObj = replacer(str);\n  var args = strObj.str.split(',');\n  args = args.map(function (a) {\n    var m = a.match(/__#(\\d+)/);\n    while (m) {\n      a = a.replace(/__#(\\d+)/, strObj.dictionary[m[1]]);\n      m = a.match(/__#(\\d+)/);\n    }\n    return a.trim();\n  });\n  return args;\n}\n\nfunction assertionAnalyser(body) {\n\n  // already filtered in the test runner\n  // // remove comments\n  // body = body.replace(/\\/\\/.*\\n|\\/\\*.*\\*\\//g, '');\n  // // get test function body\n  // body = body.match(/\\{\\s*([\\s\\S]*)\\}\\s*$/)[1];\n\n  if (!body) return \"invalid assertion\";\n  // replace assertions bodies, so that they cannot\n  // contain the word 'assertion'\n\n  var body = body.match(/(?:browser\\s*\\.\\s*)?assert\\s*\\.\\s*\\w*\\([\\s\\S]*\\)/)[0];\n  var s = replacer(body);\n  // split on 'assertion'\n  var splittedAssertions = s.str.split('assert');\n  var assertions = splittedAssertions.slice(1);\n  // match the METHODS\n\n  var assertionBodies = [];\n  var methods = assertions.map(function (a, i) {\n    var m = a.match(/^\\s*\\.\\s*(\\w+)__#(\\d+)/);\n    assertionBodies.push(parseInt(m[2]));\n    var pre = splittedAssertions[i].match(/browser\\s*\\.\\s*/) ? 'browser.' : '';\n    return pre + m[1];\n  });\n  if (methods.some(function (m) {\n    return !m;\n  })) return \"invalid assertion\";\n  // remove parens from the assertions bodies\n  var bodies = assertionBodies.map(function (b) {\n    return s.dictionary[b].slice(1, -1).trim();\n  });\n  assertions = methods.map(function (m, i) {\n    return {\n      method: m,\n      args: splitter(bodies[i]) //replace objects, split on ',' ,then restore objects\n    };\n  });\n  return assertions;\n}\n\nmodule.exports = assertionAnalyser;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2VydGlvbi1hbmFseXNlci5qcyJdLCJuYW1lcyI6WyJvYmpQYXJzZXIiLCJzdHIiLCJpbml0Iiwib3BlblN5bSIsImNsb3NlU3ltIiwidHlwZSIsImkiLCJsZW5ndGgiLCJpbmRleE9mIiwib3BlbiIsImNsb3NlIiwiY291bnQiLCJrIiwib2JqIiwic2xpY2UiLCJzdGFydCIsImVuZCIsInJlcGxhY2VyIiwiY250IiwiZGF0YSIsInN1YnN0cmluZyIsImRpY3Rpb25hcnkiLCJzcGxpdHRlciIsInN0ck9iaiIsImFyZ3MiLCJzcGxpdCIsIm1hcCIsImEiLCJtIiwibWF0Y2giLCJyZXBsYWNlIiwidHJpbSIsImFzc2VydGlvbkFuYWx5c2VyIiwiYm9keSIsInMiLCJzcGxpdHRlZEFzc2VydGlvbnMiLCJhc3NlcnRpb25zIiwiYXNzZXJ0aW9uQm9kaWVzIiwibWV0aG9kcyIsInB1c2giLCJwYXJzZUludCIsInByZSIsInNvbWUiLCJib2RpZXMiLCJiIiwibWV0aG9kIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBMkJBLFNBQVNBLFNBQVQsQ0FBbUJDLEdBQW5CLEVBQXdCQyxJQUF4QixFQUE4QjtBQUM1QjtBQUNBO0FBQ0EsTUFBSUMsVUFBVSxDQUFDLEdBQUQsRUFBTSxHQUFOLEVBQVcsR0FBWCxFQUFnQixHQUFoQixFQUFxQixHQUFyQixDQUFkO0FBQ0EsTUFBSUMsV0FBVyxDQUFDLEdBQUQsRUFBTSxHQUFOLEVBQVcsR0FBWCxFQUFnQixHQUFoQixFQUFxQixHQUFyQixDQUFmO0FBQ0EsTUFBSUMsSUFBSjtBQUNBLE9BQUksSUFBSUMsSUFBS0osUUFBUSxDQUFyQixFQUF5QkksSUFBSUwsSUFBSU0sTUFBakMsRUFBeUNELEdBQXpDLEVBQStDO0FBQzdDRCxXQUFPRixRQUFRSyxPQUFSLENBQWdCUCxJQUFJSyxDQUFKLENBQWhCLENBQVA7QUFDQSxRQUFJRCxTQUFTLENBQUMs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QUFrQixFQUF0QjtBQUNBLE1BQUlDLFVBQVVGLFdBQVdWLEdBQVgsQ0FBZSxVQUFTQyxDQUFULEVBQVlyQixDQUFaLEVBQWM7QUFDekMsUUFBSXNCLElBQUlELEVBQUVFLEtBQUYsQ0FBUSx3QkFBUixDQUFSO0FBQ0FRLG9CQUFnQkUsSUFBaEIsQ0FBcUJDLFNBQVNaLEVBQUUsQ0FBRixDQUFULENBQXJCO0FBQ0EsUUFBSWEsTUFBTU4sbUJBQW1CN0IsQ0FBbkIsRUFBc0J1QixLQUF0QixDQUE0QixpQkFBNUIsSUFBaUQsVUFBakQsR0FBOEQsRUFBeEU7QUFDQSxXQUFPWSxNQUFNYixFQUFFLENBQUYsQ0FBYjtBQUNELEdBTGEsQ0FBZDtBQU1BLE1BQUdVLFFBQVFJLElBQVIsQ0FBYSxVQUFTZCxDQUFULEVBQVc7QUFBRSxXQUFPLENBQUNBLENBQVI7QUFBVyxHQUFyQyxDQUFILEVBQTJDLE9BQU8sbUJBQVA7QUFDM0M7QUFDQSxNQUFJZSxTQUFTTixnQkFBZ0JYLEdBQWhCLENBQW9CLFVBQVNrQixDQUFULEVBQVc7QUFDMUMsV0FBT1YsRUFBRWIsVUFBRixDQUFhdUIsQ0FBYixFQUFnQjlCLEtBQWhCLENBQXNCLENBQXRCLEVBQXdCLENBQUMsQ0FBekIsRUFBNEJpQixJQUE1QixFQUFQO0FBQ0QsR0FGWSxDQUFiO0FBR0FLLGVBQWFFLFFBQVFaLEdBQVIsQ0FBWSxVQUFTRSxDQUFULEVBQVl0QixDQUFaLEVBQWU7QUFDdEMsV0FBTztBQUNMdUMsY0FBUWpCLENBREg7QUFFTEosWUFBTUYsU0FBU3FCLE9BQU9yQyxDQUFQLENBQVQsQ0FGRCxDQUVxQjtBQUZyQixLQUFQO0FBSUQsR0FMWSxDQUFiO0FBTUEsU0FBTzhCLFVBQVA7QUFDRDs7QUFFRFUsT0FBT0MsT0FBUCxHQUFpQmYsaUJBQWpCIiwiZmlsZSI6ImFzc2VydGlvbi1hbmFseXNlci5qcyIsInNvdXJjZVJvb3QiOiIvYXBwIiwic291cmNlc0NvbnRlbnQiOlsiLypcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbiogICAgICAgRE8gTk9UIEVESVQgVEhJUyBGSUxFXG4qICAgICAgIEZvciBGQ0MgdGVzdGluZyBwdXJwb3NlcyFcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbipcbiovXG5cbmZ1bmN0aW9uIG9ialBhcnNlcihzdHIsIGluaXQpIHtcbiAgLy8gZmluZHMgb2JqZWN0cywgYXJyYXlzLCBzdHJpbmdzLCBhbmQgZnVuY3Rpb24gYXJndW1lbnRzXG4gIC8vIGJldHdlZW4gcGFyZW5zLCBiZWNhdXNlIHRoZXkgbWF5IGNvbnRhaW4gJywnXG4gIHZhciBvcGVuU3ltID0gWydbJywgJ3snLCAnXCInLCBcIidcIiwgJygnXTtcbiAgdmFyIGNsb3NlU3ltID0gWyddJywgJ30nLCAnXCInLCBcIidcIiwgJyknXTtcbiAgdmFyIHR5cGU7XG4gIGZvcih2YXIgaSA9IChpbml0IHx8IDApOyBpIDwgc3RyLmxlbmd0aDsgaSsrICkge1xuICAgIHR5cGUgPSBvcGVuU3ltLmluZGV4T2Yoc3RyW2ldKTtcbiAgICBpZiggdHlwZSAhPT0gLTEpICBicmVhaztcbiAgfVxuICBpZiAodHlwZSA9PT0gLTEpIHJldHVybiBudWxsO1xuICB2YXIgb3BlbiA9IG9wZW5TeW1bdHlwZV07XG4gIHZhciBjbG9zZSA9IGNsb3NlU3ltW3R5cGVdO1xuICB2YXIgY291bnQgPSAxO1xuICBmb3IodmFyIGsgPSBpKzE7IGsgPCBzdHIubGVuZ3RoOyBrKyspIHtcbiAgICBpZihvcGVuID09PSAnXCInIHx8IG9wZW4gPT09IFwiJ1wiKSB7XG4gICAgICBpZihzdHJba10gPT09IGNsb3NlKSBjb3VudC0tO1xuICAgICAgaWYoc3RyW2tdID09PSAnXFxcXCcpIGsrKztcbiAgICB9IGVsc2Uge1xuICAgICAgaWYoc3RyW2tdID09PSBvcGVuKSBjb3VudCsrO1xuICAgICAgaWYoc3RyW2tdID09PSBjbG9zZSkgY291bnQtLTtcbiAgICB9XG4gICAgaWYoY291bnQgPT09IDApIGJyZWFrO1xuICB9XG4gIGlmKGNvdW50ICE9PSAwKSByZXR1cm4gbnVsbDtcbiAgdmFyIG9iaiA9IHN0ci5zbGljZShpLCBrKzEpO1xuICByZXR1cm4ge1xuICAgIHN0YXJ0IDogaSxcbiAgICBlbmQ6IGssXG4gICAgb2JqOiBvYmpcbiAgfTtcbn1cblxuZnVuY3Rpb24gcmVwbGFjZXIoc3RyKSB7XG4gIC8vIHJlcGxhY2Ugb2JqZWN0cyB3aXRoIGEgc3ltYm9sICggX18jbilcbiAgdmFyIG9iajtcbiAgdmFyIGNudCA9IDA7XG4gIHZhciBkYXRhID0gW107XG4gIHdoaWxlKG9iaiA9IG9ialBhcnNlcihzdHIpKSB7XG4gICAgZGF0YVtjbnRdID0gb2JqLm9iajtcbiAgICBzdHIgPSBzdHIuc3Vic3RyaW5nKDAsIG9iai5zdGFydCkgKyAnX18jJyArIGNudCsrICsgc3RyLnN1YnN0cmluZyhvYmouZW5kKzEpXG4gIH1cbiAgcmV0dXJuIHtcbiAgICBzdHIgOiBzdHIsXG4gICAgZGljdGlvbmFyeSA6IGRhdGFcbiAgfVxufVxuXG5mdW5jdGlvbiBzcGxpdHRlcihzdHIpIHtcbiAgLy8gc3BsaXQgb24gY29tbWFzLCB0aGVuIHJlc3RvcmUgdGhlIG9iamVjdHNcbiAgdmFyIHN0ck9iaiA9IHJlcGxhY2VyKHN0cik7XG4gIHZhciBhcmdzID0gc3RyT2JqLnN0ci5zcGxpdCgnLCcpO1xuICBhcmdzID0gYXJncy5tYXAoZnVuY3Rpb24oYSl7XG4gICAgdmFyIG0gPSBhLm1hdGNoKC9fXyMoXFxkKykvKTtcbiAgICB3aGlsZSAobSkge1xuICAgICAgYSA9IGEucmVwbGFjZSgvX18jKFxcZCspLywgc3RyT2JqLmRpY3Rpb25hcnlbbVsxXV0pO1xuICAgICAgbSA9IGEubWF0Y2goL19fIyhcXGQrKS8pO1xuICAgIH1cbiAgICByZXR1cm4gYS50cmltKCk7XG4gIH0pXG4gIHJldHVybiBhcmdzO1xufVxuXG5mdW5jdGlvbiBhc3NlcnRpb25BbmFseXNlcihib2R5KSB7XG4gIFxuICAvLyBhbHJlYWR5IGZpbHRlcmVkIGluIHRoZSB0ZXN0IHJ1bm5lclxuICAvLyAvLyByZW1vdmUgY29tbWVudHNcbiAgLy8gYm9keSA9IGJvZHkucmVwbGFjZSgvXFwvXFwvLipcXG58XFwvXFwqLipcXCpcXC8vZywgJycpO1xuICAvLyAvLyBnZXQgdGVzdCBmdW5jdGlvbiBib2R5XG4gIC8vIGJvZHkgPSBib2R5Lm1hdGNoKC9cXHtcXHMqKFtcXHNcXFNdKilcXH1cXHMqJC8pWzFdO1xuICBcbiAgaWYoIWJvZHkpIHJldHVybiBcImludmFsaWQgYXNzZXJ0aW9uXCI7XG4gIC8vIHJlcGxhY2UgYXNzZXJ0aW9ucyBib2RpZXMsIHNvIHRoYXQgdGhleSBjYW5ub3RcbiAgLy8gY29udGFpbiB0aGUgd29yZCAnYXNzZXJ0aW9uJ1xuXG4gIHZhciBib2R5ID0gYm9keS5tYXRjaCgvKD86YnJvd3NlclxccypcXC5cXHMqKT9hc3NlcnRcXHMqXFwuXFxzKlxcdypcXChbXFxzXFxTXSpcXCkvKVswXTtcbiAgdmFyIHMgPSByZXBsYWNlcihib2R5KTtcbiAgLy8gc3BsaXQgb24gJ2Fzc2VydGlvbidcbiAgdmFyIHNwbGl0dGVkQXNzZXJ0aW9ucyA9IHMuc3RyLnNwbGl0KCdhc3NlcnQnKTtcbiAgdmFyIGFzc2VydGlvbnMgPSBzcGxpdHRlZEFzc2VydGlvbnMuc2xpY2UoMSk7XG4gIC8vIG1hdGNoIHRoZSBNRVRIT0RTXG5cbiAgdmFyIGFzc2VydGlvbkJvZGllcyA9IFtdO1xuICB2YXIgbWV0aG9kcyA9IGFzc2VydGlvbnMubWFwKGZ1bmN0aW9uKGEsIGkpe1xuICAgIHZhciBtID0gYS5tYXRjaCgvXlxccypcXC5cXHMqKFxcdyspX18jKFxcZCspLyk7XG4gICAgYXNzZXJ0aW9uQm9kaWVzLnB1c2gocGFyc2VJbnQobVsyXSkpO1xuICAgIHZhciBwcmUgPSBzcGxpdHRlZEFzc2VydGlvbnNbaV0ubWF0Y2goL2Jyb3dzZXJcXHMqXFwuXFxzKi8pID8gJ2Jyb3dzZXIuJyA6ICcnO1xuICAgIHJldHVybiBwcmUgKyBtWzFdO1xuICB9KTtcbiAgaWYobWV0aG9kcy5zb21lKGZ1bmN0aW9uKG0peyByZXR1cm4gIW0gfSkpIHJldHVybiBcImludmFsaWQgYXNzZXJ0aW9uXCI7XG4gIC8vIHJlbW92ZSBwYXJlbnMgZnJvbSB0aGUgYXNzZXJ0aW9ucyBib2RpZXNcbiAgdmFyIGJvZGllcyA9IGFzc2VydGlvbkJvZGllcy5tYXAoZnVuY3Rpb24oYil7XG4gICAgcmV0dXJuIHMuZGljdGlvbmFyeVtiXS5zbGljZSgxLC0xKS50cmltKCk7XG4gIH0pO1xuICBhc3NlcnRpb25zID0gbWV0aG9kcy5tYXAoZnVuY3Rpb24obSwgaSkge1xuICAgIHJldHVybiB7XG4gICAgICBtZXRob2Q6IG0sXG4gICAgICBhcmdzOiBzcGxpdHRlcihib2RpZXNbaV0pIC8vcmVwbGFjZSBvYmplY3RzLCBzcGxpdCBvbiAnLCcgLHRoZW4gcmVzdG9yZSBvYmplY3RzXG4gICAgfVxuICB9KVxuICByZXR1cm4gYXNzZXJ0aW9ucztcbn1cblxubW9kdWxlLmV4cG9ydHMgPSBhc3NlcnRpb25BbmFseXNlcjtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "assertion-analyser.js"
+      ],
+      "names": [
+        "objParser",
+        "str",
+        "init",
+        "openSym",
+        "closeSym",
+        "type",
+        "i",
+        "length",
+        "indexOf",
+        "open",
+        "close",
+        "count",
+        "k",
+        "obj",
+        "slice",
+        "start",
+        "end",
+        "replacer",
+        "cnt",
+        "data",
+        "substring",
+        "dictionary",
+        "splitter",
+        "strObj",
+        "args",
+        "split",
+        "map",
+        "a",
+        "m",
+        "match",
+        "replace",
+        "trim",
+        "assertionAnalyser",
+        "body",
+        "s",
+        "splittedAssertions",
+        "assertions",
+        "assertionBodies",
+        "methods",
+        "push",
+        "parseInt",
+        "pre",
+        "some",
+        "bodies",
+        "b",
+        "method",
+        "module",
+        "exports"
+      ],
+      "mappings": "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",
+      "file": "assertion-analyser.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "/*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*       DO NOT EDIT THIS FILE\n*       For FCC testing purposes!\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*/\n\nfunction objParser(str, init) {\n  // finds objects, arrays, strings, and function arguments\n  // between parens, because they may contain ','\n  var openSym = ['[', '{', '\"', \"'\", '('];\n  var closeSym = [']', '}', '\"', \"'\", ')'];\n  var type;\n  for(var i = (init || 0); i < str.length; i++ ) {\n    type = openSym.indexOf(str[i]);\n    if( type !== -1)  break;\n  }\n  if (type === -1) return null;\n  var open = openSym[type];\n  var close = closeSym[type];\n  var count = 1;\n  for(var k = i+1; k < str.length; k++) {\n    if(open === '\"' || open === \"'\") {\n      if(str[k] === close) count--;\n      if(str[k] === '\\\\') k++;\n    } else {\n      if(str[k] === open) count++;\n      if(str[k] === close) count--;\n    }\n    if(count === 0) break;\n  }\n  if(count !== 0) return null;\n  var obj = str.slice(i, k+1);\n  return {\n    start : i,\n    end: k,\n    obj: obj\n  };\n}\n\nfunction replacer(str) {\n  // replace objects with a symbol ( __#n)\n  var obj;\n  var cnt = 0;\n  var data = [];\n  while(obj = objParser(str)) {\n    data[cnt] = obj.obj;\n    str = str.substring(0, obj.start) + '__#' + cnt++ + str.substring(obj.end+1)\n  }\n  return {\n    str : str,\n    dictionary : data\n  }\n}\n\nfunction splitter(str) {\n  // split on commas, then restore the objects\n  var strObj = replacer(str);\n  var args = strObj.str.split(',');\n  args = args.map(function(a){\n    var m = a.match(/__#(\\d+)/);\n    while (m) {\n      a = a.replace(/__#(\\d+)/, strObj.dictionary[m[1]]);\n      m = a.match(/__#(\\d+)/);\n    }\n    return a.trim();\n  })\n  return args;\n}\n\nfunction assertionAnalyser(body) {\n  \n  // already filtered in the test runner\n  // // remove comments\n  // body = body.replace(/\\/\\/.*\\n|\\/\\*.*\\*\\//g, '');\n  // // get test function body\n  // body = body.match(/\\{\\s*([\\s\\S]*)\\}\\s*$/)[1];\n  \n  if(!body) return \"invalid assertion\";\n  // replace assertions bodies, so that they cannot\n  // contain the word 'assertion'\n\n  var body = body.match(/(?:browser\\s*\\.\\s*)?assert\\s*\\.\\s*\\w*\\([\\s\\S]*\\)/)[0];\n  var s = replacer(body);\n  // split on 'assertion'\n  var splittedAssertions = s.str.split('assert');\n  var assertions = splittedAssertions.slice(1);\n  // match the METHODS\n\n  var assertionBodies = [];\n  var methods = assertions.map(function(a, i){\n    var m = a.match(/^\\s*\\.\\s*(\\w+)__#(\\d+)/);\n    assertionBodies.push(parseInt(m[2]));\n    var pre = splittedAssertions[i].match(/browser\\s*\\.\\s*/) ? 'browser.' : '';\n    return pre + m[1];\n  });\n  if(methods.some(function(m){ return !m })) return \"invalid assertion\";\n  // remove parens from the assertions bodies\n  var bodies = assertionBodies.map(function(b){\n    return s.dictionary[b].slice(1,-1).trim();\n  });\n  assertions = methods.map(function(m, i) {\n    return {\n      method: m,\n      args: splitter(bodies[i]) //replace objects, split on ',' ,then restore objects\n    }\n  })\n  return assertions;\n}\n\nmodule.exports = assertionAnalyser;\n"
+      ]
+    },
+    "mtime": 1544837503000
+  },
+  "{\"filename\":\"/app/models/Project.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/models/Project.js",
+      "filenameRelative": "/app/models/Project.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "Project.js",
+      "sourceFileName": "Project.js",
+      "sourceRoot": "/app/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "Project"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Project = new mongoose.Schema({\n  project_id: ObjectId,\n  title: String,\n  detail: String,\n  start_date: Date\n});\n\nmodule.exports = mongoose.model('Project', Project);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2plY3QuanMiXSwibmFtZXMiOlsibW9uZ29vc2UiLCJyZXF1aXJlIiwiT2JqZWN0SWQiLCJTY2hlbWEiLCJUeXBlcyIsIlByb2plY3QiLCJwcm9qZWN0X2lkIiwidGl0bGUiLCJTdHJpbmciLCJkZXRhaWwiLCJzdGFydF9kYXRlIiwiRGF0ZSIsIm1vZHVsZSIsImV4cG9ydHMiLCJtb2RlbCJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFNQSxXQUFXQyxRQUFRLFVBQVIsQ0FBakI7QUFDQSxJQUFNQyxXQUFXRixTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBdkM7O0FBRUEsSUFBTUcsVUFBVSxJQUFJTCxTQUFTRyxNQUFiLENBQW9CO0FBQ2xDRyxjQUFZSixRQURzQjtBQUVsQ0ssU0FBT0MsTUFGMkI7QUFHbENDLFVBQVFELE1BSDBCO0FBSWxDRSxjQUFZQztBQUpzQixDQUFwQixDQUFoQjs7QUFPQUMsT0FBT0MsT0FBUCxHQUFpQmIsU0FBU2MsS0FBVCxDQUFlLFNBQWYsRUFBMEJULE9BQTFCLENBQWpCIiwiZmlsZSI6IlByb2plY3QuanMiLCJzb3VyY2VSb290IjoiL2FwcC9tb2RlbHMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBtb25nb29zZSA9IHJlcXVpcmUoJ21vbmdvb3NlJyk7XG5jb25zdCBPYmplY3RJZCA9IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZDtcblxuY29uc3QgUHJvamVjdCA9IG5ldyBtb25nb29zZS5TY2hlbWEoe1xuICBwcm9qZWN0X2lkOiBPYmplY3RJZCxcbiAgdGl0bGU6IFN0cmluZyxcbiAgZGV0YWlsOiBTdHJpbmcsXG4gIHN0YXJ0X2RhdGU6IERhdGVcbn0pO1xuXG5tb2R1bGUuZXhwb3J0cyA9IG1vbmdvb3NlLm1vZGVsKCdQcm9qZWN0JywgUHJvamVjdCk7Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "Project.js"
+      ],
+      "names": [
+        "mongoose",
+        "require",
+        "ObjectId",
+        "Schema",
+        "Types",
+        "Project",
+        "project_id",
+        "title",
+        "String",
+        "detail",
+        "start_date",
+        "Date",
+        "module",
+        "exports",
+        "model"
+      ],
+      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,UAAU,IAAIL,SAASG,MAAb,CAAoB;AAClCG,cAAYJ,QADsB;AAElCK,SAAOC,MAF2B;AAGlCC,UAAQD,MAH0B;AAIlCE,cAAYC;AAJsB,CAApB,CAAhB;;AAOAC,OAAOC,OAAP,GAAiBb,SAASc,KAAT,CAAe,SAAf,EAA0BT,OAA1B,CAAjB",
+      "file": "Project.js",
+      "sourceRoot": "/app/models",
+      "sourcesContent": [
+        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Project = new mongoose.Schema({\n  project_id: ObjectId,\n  title: String,\n  detail: String,\n  start_date: Date\n});\n\nmodule.exports = mongoose.model('Project', Project);"
+      ]
+    },
+    "mtime": 1544836433000
+  },
+  "{\"filename\":\"/app/models/Issue.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/models/Issue.js",
+      "filenameRelative": "/app/models/Issue.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "Issue.js",
+      "sourceFileName": "Issue.js",
+      "sourceRoot": "/app/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "Issue"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text: String,\n  created_by: String,\n  assigned_to: String,\n  status_text: String,\n  created_on: { type: Date, default: Date.now },\n  updated_on: { type: Date, default: Date.now },\n  open: { type: Boolean, default: true },\n  for_project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' }\n});\n\nmodule.exports = mongoose.model('Issue', Issue);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklzc3VlLmpzIl0sIm5hbWVzIjpbIm1vbmdvb3NlIiwicmVxdWlyZSIsIk9iamVjdElkIiwiU2NoZW1hIiwiVHlwZXMiLCJJc3N1ZSIsImlzc3VlX3RpdGxlIiwiU3RyaW5nIiwiaXNzdWVfdGV4dCIsImNyZWF0ZWRfYnkiLCJhc3NpZ25lZF90byIsInN0YXR1c190ZXh0IiwiY3JlYXRlZF9vbiIsInR5cGUiLCJEYXRlIiwiZGVmYXVsdCIsIm5vdyIsInVwZGF0ZWRfb24iLCJvcGVuIiwiQm9vbGVhbiIsImZvcl9wcm9qZWN0IiwicmVmIiwibW9kdWxlIiwiZXhwb3J0cyIsIm1vZGVsIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQU1BLFdBQVdDLFFBQVEsVUFBUixDQUFqQjtBQUNBLElBQU1DLFdBQVdGLFNBQVNHLE1BQVQsQ0FBZ0JDLEtBQWhCLENBQXNCRixRQUF2Qzs7QUFFQSxJQUFNRyxRQUFRLElBQUlMLFNBQVNHLE1BQWIsQ0FBb0I7QUFDaENHLGVBQWFDLE1BRG1CO0FBRWhDQyxjQUFhRCxNQUZtQjtBQUdoQ0UsY0FBYUYsTUFIbUI7QUFJaENHLGVBQWFILE1BSm1CO0FBS2hDSSxlQUFhSixNQUxtQjtBQU1oQ0ssY0FBYSxFQUFDQyxNQUFNQyxJQUFQLEVBQWFDLFNBQVNELEtBQUtFLEdBQTNCLEVBTm1CO0FBT2hDQyxjQUFhLEVBQUNKLE1BQU1DLElBQVAsRUFBYUMsU0FBU0QsS0FBS0UsR0FBM0IsRUFQbUI7QUFRaENFLFFBQWEsRUFBQ0wsTUFBTU0sT0FBUCxFQUFnQkosU0FBUyxJQUF6QixFQVJtQjtBQVNoQ0ssZUFBYSxFQUFDUCxNQUFNYixTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBN0IsRUFBdUNtQixLQUFLLFNBQTVDO0FBVG1CLENBQXBCLENBQWQ7O0FBWUFDLE9BQU9DLE9BQVAsR0FBaUJ2QixTQUFTd0IsS0FBVCxDQUFlLE9BQWYsRUFBd0JuQixLQUF4QixDQUFqQiIsImZpbGUiOiJJc3N1ZS5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL21vZGVscyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IG1vbmdvb3NlID0gcmVxdWlyZSgnbW9uZ29vc2UnKTtcbmNvbnN0IE9iamVjdElkID0gbW9uZ29vc2UuU2NoZW1hLlR5cGVzLk9iamVjdElkO1xuXG5jb25zdCBJc3N1ZSA9IG5ldyBtb25nb29zZS5TY2hlbWEoe1xuICBpc3N1ZV90aXRsZTogU3RyaW5nLFxuICBpc3N1ZV90ZXh0OiAgU3RyaW5nLFxuICBjcmVhdGVkX2J5OiAgU3RyaW5nLFxuICBhc3NpZ25lZF90bzogU3RyaW5nLFxuICBzdGF0dXNfdGV4dDogU3RyaW5nLFxuICBjcmVhdGVkX29uOiAge3R5cGU6IERhdGUsIGRlZmF1bHQ6IERhdGUubm93fSxcbiAgdXBkYXRlZF9vbjogIHt0eXBlOiBEYXRlLCBkZWZhdWx0OiBEYXRlLm5vd30sXG4gIG9wZW46ICAgICAgICB7dHlwZTogQm9vbGVhbiwgZGVmYXVsdDogdHJ1ZX0sXG4gIGZvcl9wcm9qZWN0OiB7dHlwZTogbW9uZ29vc2UuU2NoZW1hLlR5cGVzLk9iamVjdElkLCByZWY6ICdQcm9qZWN0J30sXG59KTtcblxubW9kdWxlLmV4cG9ydHMgPSBtb25nb29zZS5tb2RlbCgnSXNzdWUnLCBJc3N1ZSk7Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "Issue.js"
+      ],
+      "names": [
+        "mongoose",
+        "require",
+        "ObjectId",
+        "Schema",
+        "Types",
+        "Issue",
+        "issue_title",
+        "String",
+        "issue_text",
+        "created_by",
+        "assigned_to",
+        "status_text",
+        "created_on",
+        "type",
+        "Date",
+        "default",
+        "now",
+        "updated_on",
+        "open",
+        "Boolean",
+        "for_project",
+        "ref",
+        "module",
+        "exports",
+        "model"
+      ],
+      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,QAAQ,IAAIL,SAASG,MAAb,CAAoB;AAChCG,eAAaC,MADmB;AAEhCC,cAAaD,MAFmB;AAGhCE,cAAaF,MAHmB;AAIhCG,eAAaH,MAJmB;AAKhCI,eAAaJ,MALmB;AAMhCK,cAAa,EAACC,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EANmB;AAOhCC,cAAa,EAACJ,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EAPmB;AAQhCE,QAAa,EAACL,MAAMM,OAAP,EAAgBJ,SAAS,IAAzB,EARmB;AAShCK,eAAa,EAACP,MAAMb,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAA7B,EAAuCmB,KAAK,SAA5C;AATmB,CAApB,CAAd;;AAYAC,OAAOC,OAAP,GAAiBvB,SAASwB,KAAT,CAAe,OAAf,EAAwBnB,KAAxB,CAAjB",
+      "file": "Issue.js",
+      "sourceRoot": "/app/models",
+      "sourcesContent": [
+        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text:  String,\n  created_by:  String,\n  assigned_to: String,\n  status_text: String,\n  created_on:  {type: Date, default: Date.now},\n  updated_on:  {type: Date, default: Date.now},\n  open:        {type: Boolean, default: true},\n  for_project: {type: mongoose.Schema.Types.ObjectId, ref: 'Project'},\n});\n\nmodule.exports = mongoose.model('Issue', Issue);"
+      ]
+    },
+    "mtime": 1544836423000
+  },
+  "{\"filename\":\"/app/zzz/models/Issue.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/zzz/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/zzz/models/Issue.js",
+      "filenameRelative": "/app/zzz/models/Issue.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "Issue.js",
+      "sourceFileName": "Issue.js",
+      "sourceRoot": "/app/zzz/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/zzz/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "Issue"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text: String,\n  created_by: String,\n  assigned_to: String,\n  status_text: String,\n  created_on: { type: Date, default: Date.now },\n  updated_on: { type: Date, default: Date.now },\n  open: { type: Boolean, default: true },\n  for_project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' }\n});\n\nmodule.exports = mongoose.model('Issue', Issue);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklzc3VlLmpzIl0sIm5hbWVzIjpbIm1vbmdvb3NlIiwicmVxdWlyZSIsIk9iamVjdElkIiwiU2NoZW1hIiwiVHlwZXMiLCJJc3N1ZSIsImlzc3VlX3RpdGxlIiwiU3RyaW5nIiwiaXNzdWVfdGV4dCIsImNyZWF0ZWRfYnkiLCJhc3NpZ25lZF90byIsInN0YXR1c190ZXh0IiwiY3JlYXRlZF9vbiIsInR5cGUiLCJEYXRlIiwiZGVmYXVsdCIsIm5vdyIsInVwZGF0ZWRfb24iLCJvcGVuIiwiQm9vbGVhbiIsImZvcl9wcm9qZWN0IiwicmVmIiwibW9kdWxlIiwiZXhwb3J0cyIsIm1vZGVsIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQU1BLFdBQVdDLFFBQVEsVUFBUixDQUFqQjtBQUNBLElBQU1DLFdBQVdGLFNBQVNHLE1BQVQsQ0FBZ0JDLEtBQWhCLENBQXNCRixRQUF2Qzs7QUFFQSxJQUFNRyxRQUFRLElBQUlMLFNBQVNHLE1BQWIsQ0FBb0I7QUFDaENHLGVBQWFDLE1BRG1CO0FBRWhDQyxjQUFhRCxNQUZtQjtBQUdoQ0UsY0FBYUYsTUFIbUI7QUFJaENHLGVBQWFILE1BSm1CO0FBS2hDSSxlQUFhSixNQUxtQjtBQU1oQ0ssY0FBYSxFQUFDQyxNQUFNQyxJQUFQLEVBQWFDLFNBQVNELEtBQUtFLEdBQTNCLEVBTm1CO0FBT2hDQyxjQUFhLEVBQUNKLE1BQU1DLElBQVAsRUFBYUMsU0FBU0QsS0FBS0UsR0FBM0IsRUFQbUI7QUFRaENFLFFBQWEsRUFBQ0wsTUFBTU0sT0FBUCxFQUFnQkosU0FBUyxJQUF6QixFQVJtQjtBQVNoQ0ssZUFBYSxFQUFDUCxNQUFNYixTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBN0IsRUFBdUNtQixLQUFLLFNBQTVDO0FBVG1CLENBQXBCLENBQWQ7O0FBWUFDLE9BQU9DLE9BQVAsR0FBaUJ2QixTQUFTd0IsS0FBVCxDQUFlLE9BQWYsRUFBd0JuQixLQUF4QixDQUFqQiIsImZpbGUiOiJJc3N1ZS5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3p6ei9tb2RlbHMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBtb25nb29zZSA9IHJlcXVpcmUoJ21vbmdvb3NlJyk7XG5jb25zdCBPYmplY3RJZCA9IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZDtcblxuY29uc3QgSXNzdWUgPSBuZXcgbW9uZ29vc2UuU2NoZW1hKHtcbiAgaXNzdWVfdGl0bGU6IFN0cmluZyxcbiAgaXNzdWVfdGV4dDogIFN0cmluZyxcbiAgY3JlYXRlZF9ieTogIFN0cmluZyxcbiAgYXNzaWduZWRfdG86IFN0cmluZyxcbiAgc3RhdHVzX3RleHQ6IFN0cmluZyxcbiAgY3JlYXRlZF9vbjogIHt0eXBlOiBEYXRlLCBkZWZhdWx0OiBEYXRlLm5vd30sXG4gIHVwZGF0ZWRfb246ICB7dHlwZTogRGF0ZSwgZGVmYXVsdDogRGF0ZS5ub3d9LFxuICBvcGVuOiAgICAgICAge3R5cGU6IEJvb2xlYW4sIGRlZmF1bHQ6IHRydWV9LFxuICBmb3JfcHJvamVjdDoge3R5cGU6IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZCwgcmVmOiAnUHJvamVjdCd9LFxufSk7XG5cbm1vZHVsZS5leHBvcnRzID0gbW9uZ29vc2UubW9kZWwoJ0lzc3VlJywgSXNzdWUpOyJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "Issue.js"
+      ],
+      "names": [
+        "mongoose",
+        "require",
+        "ObjectId",
+        "Schema",
+        "Types",
+        "Issue",
+        "issue_title",
+        "String",
+        "issue_text",
+        "created_by",
+        "assigned_to",
+        "status_text",
+        "created_on",
+        "type",
+        "Date",
+        "default",
+        "now",
+        "updated_on",
+        "open",
+        "Boolean",
+        "for_project",
+        "ref",
+        "module",
+        "exports",
+        "model"
+      ],
+      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,QAAQ,IAAIL,SAASG,MAAb,CAAoB;AAChCG,eAAaC,MADmB;AAEhCC,cAAaD,MAFmB;AAGhCE,cAAaF,MAHmB;AAIhCG,eAAaH,MAJmB;AAKhCI,eAAaJ,MALmB;AAMhCK,cAAa,EAACC,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EANmB;AAOhCC,cAAa,EAACJ,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EAPmB;AAQhCE,QAAa,EAACL,MAAMM,OAAP,EAAgBJ,SAAS,IAAzB,EARmB;AAShCK,eAAa,EAACP,MAAMb,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAA7B,EAAuCmB,KAAK,SAA5C;AATmB,CAApB,CAAd;;AAYAC,OAAOC,OAAP,GAAiBvB,SAASwB,KAAT,CAAe,OAAf,EAAwBnB,KAAxB,CAAjB",
+      "file": "Issue.js",
+      "sourceRoot": "/app/zzz/models",
+      "sourcesContent": [
+        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text:  String,\n  created_by:  String,\n  assigned_to: String,\n  status_text: String,\n  created_on:  {type: Date, default: Date.now},\n  updated_on:  {type: Date, default: Date.now},\n  open:        {type: Boolean, default: true},\n  for_project: {type: mongoose.Schema.Types.ObjectId, ref: 'Project'},\n});\n\nmodule.exports = mongoose.model('Issue', Issue);"
+      ]
+    },
+    "mtime": 1544836423000
+  }
+}
