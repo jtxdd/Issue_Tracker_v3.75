@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 37);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,9 +74,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(62);
+  module.exports = __webpack_require__(66);
 } else {
-  module.exports = __webpack_require__(61);
+  module.exports = __webpack_require__(65);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -297,11 +297,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(40)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(44)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(39)();
+  module.exports = __webpack_require__(43)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -381,11 +381,11 @@ module.exports = warning;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(38);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(39);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__createHashHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(40);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(8);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
@@ -635,8 +635,8 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(6);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -777,6 +777,69 @@ module.exports = warning;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(47);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(48);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(20);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(49);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(50);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(51);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(52);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(21);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(14);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(53);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(54);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(55);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(56);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(57);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 
@@ -858,7 +921,7 @@ var createTransitionManager = function createTransitionManager() {
 /* harmony default export */ __webpack_exports__["a"] = (createTransitionManager);
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -874,7 +937,7 @@ var createTransitionManager = function createTransitionManager() {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(12);
+  var ReactPropTypesSecret = __webpack_require__(13);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -957,7 +1020,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -976,18 +1039,18 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(15);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__["a" /* default */]);
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1106,11 +1169,11 @@ Router.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Router);
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -1186,70 +1249,537 @@ var matchPath = function matchPath(pathname) {
 /* harmony default export */ __webpack_exports__["a"] = (matchPath);
 
 /***/ }),
-/* 16 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(43);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(44);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(19);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(45);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(46);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(47);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(48);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(20);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(13);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(49);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(50);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(51);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(52);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(53);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ProjectIssue = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _IssueButtons = __webpack_require__(34);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProjectIssue = function (_Component) {
+  _inherits(ProjectIssue, _Component);
+
+  function ProjectIssue(props) {
+    _classCallCheck(this, ProjectIssue);
+
+    var _this = _possibleConstructorReturn(this, (ProjectIssue.__proto__ || Object.getPrototypeOf(ProjectIssue)).call(this, props));
+
+    _this.state = {
+      readOnly: true,
+      _id: '',
+      open: '',
+      issue_title: '',
+      issue_text: '',
+      created_by: '',
+      assigned_to: '',
+      status_text: '',
+      created_on: '',
+      updated_on: '',
+      saveState: {},
+      updating: false,
+      message: '',
+      route: '',
+      confirm: function confirm(action, ID) {
+        return window.confirm(action + ' Issue Id: ' + ID);
+      },
+      request: function request(method, data) {
+        return {
+          method: method,
+          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+        };
+      },
+      formatDate: function formatDate(date) {
+        var options = {
+          year: '2-digit', month: '2-digit', day: '2-digit',
+          hour: '2-digit', minute: '2-digit'
+        };
+        return new Date(date).toLocaleString([], options);
+      }
+    };
+    _this.handleChange = _this.handleChange.bind(_this);
+    _this.dismissMessage = _this.dismissMessage.bind(_this);
+    _this.handleOpen = _this.handleOpen.bind(_this);
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.toggleUpdating = _this.toggleUpdating.bind(_this);
+    _this.handleClose = _this.handleClose.bind(_this);
+    _this.handleDelete = _this.handleDelete.bind(_this);
+    _this.handleCancel = _this.handleCancel.bind(_this);
+    _this.handleData = _this.handleData.bind(_this);
+    _this.handleAutoDismiss = _this.handleAutoDismiss.bind(_this);
+    return _this;
+  }
+
+  _createClass(ProjectIssue, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.handleData('mount', this.props.issue);
+    }
+  }, {
+    key: 'handleChange',
+    value: function handleChange(e) {
+      var name = e.target.name;
+      var value = e.target.value;
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: 'toggleUpdating',
+    value: function toggleUpdating(e) {
+      e.preventDefault();
+
+      this.setState(function (prev) {
+        return {
+          updating: !prev.updating,
+          readOnly: false,
+          message: ''
+        };
+      });
+    }
+  }, {
+    key: 'dismissMessage',
+    value: function dismissMessage() {
+      this.setState(function (prev) {
+        return { message: !prev.message };
+      });
+    }
+  }, {
+    key: 'handleAutoDismiss',
+    value: function handleAutoDismiss() {
+      setTimeout(this.dismissMessage, 3000);
+    }
+  }, {
+    key: 'handleOpen',
+    value: function handleOpen() {
+      this.setState(function (prev) {
+        return { open: !prev.open };
+      });
+    }
+  }, {
+    key: 'handleData',
+    value: function handleData(action, data) {
+      var _this2 = this;
+
+      var _state = this.state,
+          ss = _state.saveState,
+          formatDate = _state.formatDate;
 
 
+      var issueActions = {
+        mount: function mount(data) {
+          var route = _this2.props.location.pathname;
+          _this2.setState({
+            _id: data._id,
+            open: data.open,
+            issue_title: data.issue_title,
+            issue_text: data.issue_text,
+            created_by: data.created_by,
+            assigned_to: data.assigned_to,
+            status_text: data.status_text,
+            created_on: formatDate(data.created_on),
+            updated_on: formatDate(data.updated_on),
+            saveState: data,
+            route: route
+          });
+        },
+
+        update: function update(data) {
+          if (data.docs) {
+            var d = data.docs.value;
+            _this2.setState({
+              _id: d._id,
+              open: d.open,
+              issue_title: d.issue_title,
+              issue_text: d.issue_text,
+              created_by: d.created_by,
+              assigned_to: d.assigned_to,
+              status_text: d.status_text,
+              created_on: formatDate(d.created_on),
+              updated_on: formatDate(d.updated_on),
+              message: data.message,
+              readOnly: true,
+              updating: false
+            });
+          } else {
+            _this2.setState({
+              _id: ss._id,
+              open: ss.open,
+              issue_title: ss.issue_title,
+              issue_text: ss.issue_text,
+              created_by: ss.created_by,
+              assigned_to: ss.assigned_to,
+              status_text: ss.status_text,
+              created_on: formatDate(ss.created_on),
+              updated_on: formatDate(ss.updated_on),
+              message: data.message,
+              readOnly: true,
+              updating: false
+            });
+          }
+          _this2.props.notification(data.message);
+          _this2.handleAutoDismiss();
+        },
+
+        close: function close(data) {
+          if (data.docs) {
+            var d = data.docs.value;
+            _this2.setState({
+              open: d.open,
+              updated_on: formatDate(d.updated_on),
+              message: data.message,
+              updating: false,
+              readOnly: true
+            });
+          } else {
+            _this2.setState({
+              open: ss.open,
+              updated_on: formatDate(ss.updated_on),
+              message: data.message,
+              readOnly: true,
+              updating: false
+            });
+          }
+          _this2.props.notification(data.message);
+          _this2.handleAutoDismiss();
+        }
+      };
+
+      issueActions[action](data);
+    }
+  }, {
+    key: 'handleDelete',
+    value: function handleDelete(e) {
+      e.preventDefault();
+      var _state2 = this.state,
+          request = _state2.request,
+          confirm = _state2.confirm,
+          route = _state2.route,
+          _id = _state2._id;
 
 
+      if (confirm('Deleting', _id)) {
+        var options = request('DELETE', { _id: _id });
+        this.props.update(route, options);
+      }
+    }
+  }, {
+    key: 'handleClose',
+    value: function handleClose(e) {
+      var _this3 = this;
+
+      e.preventDefault();
+      var _state3 = this.state,
+          request = _state3.request,
+          confirm = _state3.confirm,
+          route = _state3.route,
+          _id = _state3._id;
 
 
+      if (confirm('Closing', _id)) {
+        var options = request('PUT', { _id: _id, close: true });
+
+        fetch(route, options).then(function (res) {
+          return res.json();
+        }).then(function (result) {
+          return _this3.handleData('close', result);
+        });
+      }
+    }
+  }, {
+    key: 'handleCancel',
+    value: function handleCancel(e) {
+      e.preventDefault();
+      var _state4 = this.state,
+          ss = _state4.saveState,
+          formatDate = _state4.formatDate;
 
 
+      this.setState({
+        _id: ss._id,
+        open: ss.open,
+        issue_title: ss.issue_title,
+        issue_text: ss.issue_text,
+        created_by: ss.created_by,
+        assigned_to: ss.assigned_to,
+        status_text: ss.status_text,
+        created_on: formatDate(ss.created_on),
+        updated_on: formatDate(ss.updated_on),
+        readOnly: true,
+        updating: false
+      });
+    }
+  }, {
+    key: 'handleSubmit',
+    value: function handleSubmit(e) {
+      var _this4 = this;
+
+      e.preventDefault();
+      var _state5 = this.state,
+          request = _state5.request,
+          confirm = _state5.confirm,
+          route = _state5.route,
+          _id = _state5._id,
+          saveState = _state5.saveState;
 
 
+      var update = this.state;
+      update.created_on = new Date(saveState.created_on).toISOString();
+      update.updated_on = new Date().toISOString();
+      delete update.readOnly;
+      delete update.saveState;
+      delete update.updating;
 
+      if (confirm('Updating', _id)) {
+        var options = request('PUT', update);
 
+        fetch(route, options).then(function (res) {
+          return res.json();
+        }).then(function (result) {
+          return _this4.handleData('update', result);
+        });
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'form',
+        { className: 'w-75 mb-5', onSubmit: this.handleSubmit },
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col px-0 d-flex clearfix' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm float-left' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend h-100' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text h-100 lbl-w-3' },
+                  'ID'
+                )
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control h-100', name: '_id', value: this.state._id, onChange: this.handleChange, readOnly: this.state.readOnly }),
+              this.state.updating ? _react2.default.createElement(
+                'div',
+                { className: 'input-group-append' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'input-group-text px-0' },
+                  _react2.default.createElement(
+                    'button',
+                    { className: 'btn btn-sm btn-danger', type: 'button', disabled: this.state.open ? true : false, onClick: this.handleOpen },
+                    'Open'
+                  ),
+                  _react2.default.createElement(
+                    'button',
+                    { className: 'btn btn-sm btn-success', type: 'button', disabled: this.state.open ? false : true, onClick: this.handleOpen },
+                    'Close'
+                  )
+                )
+              ) : _react2.default.createElement(
+                'span',
+                { className: this.state.open ? 'badge-danger p-1 float-right' : 'badge-secondary p-1 float-right' },
+                this.state.open ? 'Open' : 'Closed'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-3' },
+                  'Title'
+                )
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'issue_title', value: this.state.issue_title, onChange: this.handleChange, readOnly: this.state.readOnly })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm ht-3' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text h-100 lbl-w-3' },
+                  'Text'
+                )
+              ),
+              _react2.default.createElement('textarea', { className: 'form-control h-100', name: 'issue_text', value: this.state.issue_text, onChange: this.handleChange, readOnly: this.state.readOnly })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row border-bottom' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group input-group-sm' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'input-group-prepend' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'input-group-text lbl-w-6' },
+                    'Created by'
+                  )
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'created_by', value: this.state.created_by, onChange: this.handleChange, readOnly: this.state.readOnly })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row border-bottom' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group input-group-sm' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'input-group-prepend' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'input-group-text lbl-w-6' },
+                    'Assigned to'
+                  )
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'assigned_to', value: this.state.assigned_to, onChange: this.handleChange, readOnly: this.state.readOnly })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 d-flex px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend justify-content-center' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text h-100 lbl-w-4 justify-content-center' },
+                  'Status'
+                )
+              ),
+              _react2.default.createElement('textarea', { className: 'form-control h-100', name: 'status_text', value: this.state.status_text, onChange: this.handleChange, readOnly: this.state.readOnly })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-4' },
+                  'Created'
+                )
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'created_on', value: this.state.created_on, onChange: this.handleChange, readOnly: this.state.readOnly })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-4' },
+                  'Updated'
+                )
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'updated_on', value: this.state.updated_on, onChange: this.handleChange, readOnly: this.state.readOnly })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(_IssueButtons.IssueButtons, {
+            cancel: this.handleCancel,
+            updater: this.toggleUpdating,
+            'delete': this.handleDelete,
+            close: this.handleClose,
+            save: this.handleSubmit,
+            updating: this.state.updating,
+            canClose: this.state.open
+          })
+        )
+      );
+    }
+  }]);
 
+  return ProjectIssue;
+}(_react.Component);
 
-
-
-
-
-
-
-
-
-
-
-
-
+exports.ProjectIssue = ProjectIssue;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1315,7 +1845,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1374,7 +1904,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1382,7 +1912,7 @@ module.exports = invariant;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(4);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -1491,18 +2021,18 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(22);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1514,7 +2044,7 @@ Link.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(16);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1656,11 +2186,11 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -1701,10 +2231,10 @@ var generatePath = function generatePath() {
 /* harmony default export */ __webpack_exports__["a"] = (generatePath);
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(38)
+var isarray = __webpack_require__(42)
 
 /**
  * Expose `pathToRegexp`.
@@ -2133,22 +2663,22 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(67);
+  module.exports = __webpack_require__(71);
 } else {
-  module.exports = __webpack_require__(66);
+  module.exports = __webpack_require__(70);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 var g;
@@ -2175,79 +2705,6 @@ module.exports = g;
 
 
 /***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Filter = undefined;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Filter = function Filter(props) {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "button",
-      { onClick: props.clearFilters },
-      "Clear Filters"
-    ),
-    _react2.default.createElement(
-      "select",
-      { name: "open", value: props.open, onChange: props.change },
-      _react2.default.createElement("option", { value: "" }),
-      _react2.default.createElement(
-        "option",
-        { value: "true" },
-        "Open"
-      ),
-      _react2.default.createElement(
-        "option",
-        { value: "false" },
-        "Closed"
-      )
-    ),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "id", value: props.id, onChange: props.change, placeholder: "Filter Id" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "title", value: props.title, onChange: props.change, placeholder: "Filter Title" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "text", value: props.text, onChange: props.change, placeholder: "Filter Text" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "status", value: props.status, onChange: props.change, placeholder: "Filter Status" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "creator", value: props.creator, onChange: props.change, placeholder: "Filter Creator" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "assignee", value: props.assignee, onChange: props.change, placeholder: "Filter Assignee" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "date", name: "createDate", value: props.createDate, onChange: props.change, placeholder: "Filter Create Date" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "date", name: "updateDate", value: props.updateDate, onChange: props.change, placeholder: "Filter Update Date" }),
-    _react2.default.createElement(
-      "button",
-      { onClick: props.submitFilter },
-      "Submit"
-    ),
-    _react2.default.createElement(
-      "button",
-      { onClick: props.cancelFilter },
-      "Cancel"
-    )
-  );
-};
-
-exports.Filter = Filter;
-
-/***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2257,469 +2714,48 @@ exports.Filter = Filter;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Home = undefined;
+exports.Issues = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _ProjectIssue = __webpack_require__(17);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Home = function Home() {
+var Issues = function Issues(props) {
   return _react2.default.createElement(
-    'h3',
+    'div',
     null,
-    'Home'
-  );
-};
-
-exports.Home = Home;
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.NewIssue = undefined;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var NewIssue = function NewIssue(props) {
-  return _react2.default.createElement(
-    "form",
-    { onSubmit: props.submitNewIssue },
-    _react2.default.createElement("input", { type: "text", name: "new_title", value: props.newTitle, onChange: props.change, placeholder: "New Issue Title", required: true }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("textarea", { name: "new_text", value: props.newText, onChange: props.change, required: true }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "new_creator", value: props.newCreator, onChange: props.change, placeholder: "New Creator", required: true }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("input", { type: "text", name: "new_assignee", value: props.newAssignee, onChange: props.change, placeholder: "New Assignee" }),
-    _react2.default.createElement("br", null),
-    _react2.default.createElement("textarea", { name: "new_status", value: props.newStatus, onChange: props.change }),
-    _react2.default.createElement("br", null),
     _react2.default.createElement(
-      "div",
-      null,
-      _react2.default.createElement(
-        "button",
-        null,
-        "Submit"
-      ),
-      _react2.default.createElement(
-        "button",
-        { type: "button", onClick: props.cancelNewIssue },
-        "Cancel"
-      )
+      'h3',
+      { id: 'selected-title' },
+      props.selected,
+      ' \u2014 Issues'
+    ),
+    _react2.default.createElement(
+      'div',
+      { id: 'issue-list', className: 'd-flex flex-column align-items-center w-100' },
+      props.issues && props.issues.map(function (el) {
+        return _react2.default.createElement(_ProjectIssue.ProjectIssue, _extends({
+          key: el.key
+        }, props, {
+          issue: el,
+          update: props.updateIssues,
+          notification: props.notify
+        }));
+      })
     )
   );
 };
 
-exports.NewIssue = NewIssue;
+exports.Issues = Issues;
 
 /***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ProjectIssue = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _IssueButtons = __webpack_require__(32);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ProjectIssue = function (_Component) {
-  _inherits(ProjectIssue, _Component);
-
-  function ProjectIssue(props) {
-    _classCallCheck(this, ProjectIssue);
-
-    var _this = _possibleConstructorReturn(this, (ProjectIssue.__proto__ || Object.getPrototypeOf(ProjectIssue)).call(this, props));
-
-    _this.state = {
-      readOnly: true,
-      _id: '',
-      open: '',
-      issue_title: '',
-      issue_text: '',
-      created_by: '',
-      assigned_to: '',
-      status_text: '',
-      created_on: '',
-      updated_on: '',
-      saveState: {},
-      updating: false
-    };
-    _this.handleSubmit = _this.handleSubmit.bind(_this);
-    _this.handleChange = _this.handleChange.bind(_this);
-    _this.handleUpdate = _this.handleUpdate.bind(_this);
-    _this.handleClose = _this.handleClose.bind(_this);
-    _this.handleDelete = _this.handleDelete.bind(_this);
-    _this.handleCancel = _this.handleCancel.bind(_this);
-    _this.handleOpen = _this.handleOpen.bind(_this);
-    return _this;
-  }
-
-  _createClass(ProjectIssue, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.setState({
-        _id: this.props.issue._id,
-        open: this.props.issue.open,
-        issue_title: this.props.issue.issue_title,
-        issue_text: this.props.issue.issue_text,
-        created_by: this.props.issue.created_by,
-        assigned_to: this.props.issue.assigned_to,
-        status_text: this.props.issue.status_text,
-        created_on: new Date(this.props.issue.created_on).toLocaleString(),
-        updated_on: new Date(this.props.issue.updated_on).toLocaleString(),
-        updating: false,
-        saveState: this.props.issue
-      });
-    }
-  }, {
-    key: 'handleDelete',
-    value: function handleDelete() {
-      //this DELETE id === deleteOne
-    }
-  }, {
-    key: 'handleClose',
-    value: function handleClose(e) {
-      e.preventDefault();
-      var update = { _id: this.state._id, close: true };
-      var options = {
-        method: 'PUT',
-        body: JSON.stringify(update),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
-      };
-      this.setState(function (prev) {
-        return { updating: !prev.updating, readOnly: !prev.readOnly };
-      });
-      this.props.update(options);
-    }
-  }, {
-    key: 'handleCancel',
-    value: function handleCancel(e) {
-      e.preventDefault();
-      var ss = this.state.saveState;
-      this.setState({
-        _id: ss._id,
-        open: ss.open,
-        issue_title: ss.issue_title,
-        issue_text: ss.issue_text,
-        created_by: ss.created_by,
-        assigned_to: ss.assigned_to,
-        status_text: ss.status_text,
-        created_on: ss.created_on,
-        updated_on: ss.updated_on,
-        readOnly: true,
-        updating: false
-      });
-    }
-  }, {
-    key: 'handleUpdate',
-    value: function handleUpdate(e) {
-      e.preventDefault();
-      this.setState(function (prev) {
-        return { updating: !prev.updating, readOnly: false };
-      });
-    }
-  }, {
-    key: 'handleOpen',
-    value: function handleOpen(e) {
-      //console.log(e.target.textContent);
-      this.setState(function (prev) {
-        return { open: !prev.open };
-      });
-    }
-  }, {
-    key: 'handleSubmit',
-    value: function handleSubmit(e) {
-      e.preventDefault();
-      var update = this.state;
-      update.updated_on = new Date().toISOString();
-      delete update.readOnly;
-      delete update.saveState;
-      delete update.updating;
-
-      var options = {
-        method: 'PUT',
-        body: JSON.stringify(update),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
-      };
-
-      this.props.update(options);
-      this.setState(function (prev) {
-        return { updating: false, readOnly: true };
-      });
-    }
-  }, {
-    key: 'handleChange',
-    value: function handleChange(e) {
-      var name = e.target.name;
-      var value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
-      this.setState(_defineProperty({}, name, value));
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'form',
-        { className: 'w-75 mb-5 border', onSubmit: this.handleSubmit },
-        _react2.default.createElement(
-          'div',
-          { className: 'row border-bottom' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col px-0 d-flex clearfix' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-group input-group-sm float-left' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group-prepend h-100' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'input-group-text h-100 lbl-w-3' },
-                  'ID'
-                )
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control h-100', name: '_id', value: this.state._id, onChange: this.handleChange, readOnly: this.state.readOnly }),
-              this.state.updating ? _react2.default.createElement(
-                'div',
-                { className: 'input-group-append' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'input-group-text px-0' },
-                  _react2.default.createElement(
-                    'button',
-                    { className: 'btn btn-sm btn-danger', type: 'button', disabled: this.state.open ? true : false, onClick: this.handleOpen },
-                    'Open'
-                  ),
-                  _react2.default.createElement(
-                    'button',
-                    { className: 'btn btn-sm btn-success', type: 'button', disabled: this.state.open ? false : true, onClick: this.handleOpen },
-                    'Close'
-                  )
-                )
-              ) : _react2.default.createElement(
-                'span',
-                { className: this.state.open ? 'badge-danger p-1 float-right' : 'badge-secondary p-1 float-right' },
-                this.state.open ? 'Open' : 'Closed'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row border-bottom' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col px-0' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-group input-group-sm' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group-prepend' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'input-group-text lbl-w-3' },
-                  'Title'
-                )
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'issue_title', value: this.state.issue_title, onChange: this.handleChange, readOnly: this.state.readOnly })
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row border-bottom' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col px-0' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-group input-group-sm ht-3' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group-prepend' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'input-group-text h-100 lbl-w-3' },
-                  'Text'
-                )
-              ),
-              _react2.default.createElement('textarea', { className: 'form-control h-100', name: 'issue_text', value: this.state.issue_text, onChange: this.handleChange, readOnly: this.state.readOnly })
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row border-bottom' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-6' },
-            _react2.default.createElement(
-              'div',
-              { className: 'row border-bottom' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group input-group-sm' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'input-group-prepend' },
-                  _react2.default.createElement(
-                    'span',
-                    { className: 'input-group-text lbl-w-6' },
-                    'Created by'
-                  )
-                ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'created_by', value: this.state.created_by, onChange: this.handleChange, readOnly: this.state.readOnly })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row border-bottom' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group input-group-sm' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'input-group-prepend' },
-                  _react2.default.createElement(
-                    'span',
-                    { className: 'input-group-text lbl-w-6' },
-                    'Assigned to'
-                  )
-                ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'assigned_to', value: this.state.assigned_to, onChange: this.handleChange, readOnly: this.state.readOnly })
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-6 d-flex px-0' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-group input-group-sm' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group-prepend justify-content-center' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'input-group-text h-100 lbl-w-4 justify-content-center' },
-                  'Status'
-                )
-              ),
-              _react2.default.createElement('textarea', { className: 'form-control h-100', name: 'status_text', value: this.state.status_text, onChange: this.handleChange, readOnly: this.state.readOnly })
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row border-bottom' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-6 px-0' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-group input-group-sm' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group-prepend' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'input-group-text lbl-w-4' },
-                  'Created'
-                )
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'created_on', value: this.state.created_on, onChange: this.handleChange, readOnly: this.state.readOnly })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-6 px-0' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-group input-group-sm' },
-              _react2.default.createElement(
-                'div',
-                { className: 'input-group-prepend' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'input-group-text lbl-w-4' },
-                  'Updated'
-                )
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'updated_on', value: this.state.updated_on, onChange: this.handleChange, readOnly: this.state.readOnly })
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row border-bottom' },
-          _react2.default.createElement(_IssueButtons.IssueButtons, {
-            cancel: this.handleCancel,
-            updater: this.handleUpdate,
-            'delete': this.handleDelete,
-            close: this.handleClose,
-            save: this.handleSubmit,
-            updating: this.state.updating
-          })
-        )
-      );
-    }
-  }]);
-
-  return ProjectIssue;
-}(_react.Component);
-
-exports.ProjectIssue = ProjectIssue;
-
-/*
-  <span className="float-right">
-            <div className="input-group input-group-sm">
-                  <div className="input-group-append h-100 justify-content-center">
-                    <div className="input-group-text h-100 lbl-w-4 justify-content-center">
-                      <input className="h-100" type="checkbox" name="open" checked={this.state.open} onChange={this.handleChange} />
-                      <label>{this.state.open ? 'Open' : 'Closed'}</label>
-                    </div>
-                  </div>
-                </div>
-              </span>
-*/
-
-/***/ }),
-/* 30 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2734,68 +2770,166 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(16);
+var _reactRouterDom = __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/*class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { projects: [], len: 0 };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  
-  componentDidMount() {
-    fetch('/projects')
-      .then(res => res.json())
-      .then(result => this.setState({ projects: result.docs, len: result.docs.length}));
-  }
-  
-  handleClick(e) {
-    this.props.fetch(e.target.id);
-  }
-  
-  render() {
-    const base = '/api/issues/';
-    const title = (title) => { return title.replace(/\s/g, '_') };
-    return(
-      <div>
-        {this.state.projects.length && this.state.projects.map((el, i) => 
-          <div key={el.project_id}>
-            <Link id={base + title(el.title)} to={base + title(el.title)} onClick={this.handleClick}>{el.title}</Link>
-          </div>
-        )}
-      </div>
-    );
-  }
-}*/
-
-var Projects = function Projects(props) {
-  var clicked = function clicked(e) {
-    props.clickedProject(e.target.id);
-  };
+var Nav_Head = function Nav_Head(props) {
   return _react2.default.createElement(
     'div',
+    { className: 'row border-bottom border-white mr-0' },
+    _react2.default.createElement(
+      'div',
+      { className: 'col-8' },
+      _react2.default.createElement(
+        'h5',
+        { className: 'm-2 text-info' },
+        'PROJECTS'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'col- align-self-center pr-0 ml-auto mr-2' },
+      _react2.default.createElement('button', { id: 'sort_projects', className: 'btn btn-sm btn-outline-info fas fa-sort', type: 'button', title: 'Sort title', onClick: props.sort })
+    )
+  );
+};
+
+var Projects = function Projects(props) {
+  return _react2.default.createElement(
+    'aside',
     null,
-    props.projects.length ? props.projects.map(function (el) {
-      return _react2.default.createElement(
-        'div',
-        { key: el.project_id },
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { id: el.route, to: el.route, onClick: clicked },
-          el.title
-        )
-      );
-    }) : _react2.default.createElement(
-      'span',
-      null,
-      'Loading...'
+    _react2.default.createElement(
+      'nav',
+      { className: 'nav flex-column' },
+      _react2.default.createElement(Nav_Head, { sort: props.sort }),
+      props.projects.length ? props.projects.map(function (el) {
+        return _react2.default.createElement(
+          'div',
+          { key: el.project_id },
+          _react2.default.createElement(
+            _reactRouterDom.NavLink,
+            { id: el.route, to: el.route, className: 'project nav-link', activeClassName: 'selected', onClick: props.getIssues },
+            el.title
+          )
+        );
+      }) : _react2.default.createElement(
+        'span',
+        null,
+        'Loading...'
+      )
     )
   );
 };
 
 exports.Projects = Projects;
+
+/*
+  const clicked = (e) => props.clicked_project(e.target.id);
+*/
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ToolBar = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _ToggleButtons = __webpack_require__(36);
+
+var _Filter = __webpack_require__(33);
+
+var _NewIssue = __webpack_require__(35);
+
+var _Alert = __webpack_require__(32);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ToolBar = function ToolBar(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: props.location ? 'toolbar-close' : 'toolbar-open' },
+    _react2.default.createElement(_ToggleButtons.ToggleButtons, {
+      click: props.toggle,
+      hide: props.location,
+      message: props.message
+    }),
+    _react2.default.createElement(
+      'div',
+      { id: 'toolbar-form' },
+      _react2.default.createElement(_Filter.Filter, {
+        filtering: props.filtering,
+        toggle: props.toggle,
+        filter: props.fetch
+      }),
+      _react2.default.createElement(_NewIssue.NewIssue, {
+        creating: props.creating,
+        toggle: props.toggle,
+        submit: props.submitNew
+      })
+    )
+  );
+};
+
+exports.ToolBar = ToolBar;
+
+/*
+  <Alert 
+          message={props.message}
+          toggle={props.toggle}
+        />
+*/
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.TopBar = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(10);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TopBar = function TopBar() {
+  return _react2.default.createElement(
+    'header',
+    { id: 'topBar' },
+    _react2.default.createElement(
+      'nav',
+      { className: 'navbar navbar-dark bg-dark' },
+      _react2.default.createElement(
+        _reactRouterDom.NavLink,
+        { to: '/' },
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Issue Tracker'
+        )
+      )
+    )
+  );
+};
+
+exports.TopBar = TopBar;
 
 /***/ }),
 /* 31 */
@@ -2836,15 +2970,491 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(42);
+  module.exports = __webpack_require__(46);
 } else {
-  module.exports = __webpack_require__(41);
+  module.exports = __webpack_require__(45);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Alert = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Alert = function Alert(props) {
+  return props.message ? _react2.default.createElement(
+    "div",
+    { className: "clearfix" },
+    _react2.default.createElement(
+      "h6",
+      { className: "float-left" },
+      props.message
+    ),
+    _react2.default.createElement("button", { id: "message_dismiss", type: "button", className: "float-right btn btn-sm btn-danger fas fa-times", onClick: props.toggle })
+  ) : _react2.default.createElement("span", null);
+};
+
+exports.Alert = Alert;
+
+/*
+  <div className="row justify-content-center mb-3">
+    <div className="col text-center clearfix">
+      <h6 className="float-left">{props.message}</h6>
+      <button id="message_dismiss" type="button" className="float-right btn btn-sm btn-danger fas fa-times" onClick={props.toggle} />
+    </div>
+  </div>
+*/
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Filter = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Filter = function (_Component) {
+  _inherits(Filter, _Component);
+
+  function Filter(props) {
+    _classCallCheck(this, Filter);
+
+    var _this = _possibleConstructorReturn(this, (Filter.__proto__ || Object.getPrototypeOf(Filter)).call(this, props));
+
+    _this.state = {
+      open: '',
+      id: '',
+      title: '',
+      status: '',
+      text: '',
+      createDate: '',
+      updateDate: '',
+      creator: '',
+      assignee: ''
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.handleClear = _this.handleClear.bind(_this);
+    _this.handleChange = _this.handleChange.bind(_this);
+    return _this;
+  }
+
+  _createClass(Filter, [{
+    key: 'handleSubmit',
+    value: function handleSubmit(e) {
+      var _this2 = this;
+
+      e.preventDefault();
+
+      var model = ['open=', '_id=', 'issue_title=', 'status_text=', 'issue_text=', 'created_on=', 'updated_on=', 'created_by=', 'assigned_to='];
+
+      var url = window.location.pathname + '?';
+
+      var keys = Object.keys(this.state);
+      var params = keys.map(function (el, i) {
+        return _this2.state[el] ? model[i] + _this2.state[el] + '&' : '';
+      });
+      var query = params.reduce(function (acc, curr) {
+        return acc += curr;
+      }).slice(0, -1);
+
+      var route = url + query;
+
+      this.props.filter(route);
+      this.props.toggle({ target: { id: 'filter_form' } });
+    }
+  }, {
+    key: 'handleClear',
+    value: function handleClear(e) {
+      this.setState({
+        open: '',
+        id: '',
+        title: '',
+        status: '',
+        text: '',
+        createDate: '',
+        updateDate: '',
+        creator: '',
+        assignee: ''
+      });
+      this.props.filter(window.location.pathname);
+      this.props.toggle({ target: { id: 'filter_form' } });
+    }
+  }, {
+    key: 'handleChange',
+    value: function handleChange(e) {
+      var name = e.target.name;
+      var value = e.target.value;
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'form',
+        { id: 'submit_filter', className: this.props.filtering ? 'show-filter mt-2 w-75' : 'hide-filter', onSubmit: this.handleSubmit },
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'button',
+              { id: 'clear_filter', className: 'btn btn-sm btn-warning', type: 'button', onClick: this.handleClear },
+              'Clear'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0 align-self-end' },
+            _react2.default.createElement(
+              'select',
+              { name: 'open', value: this.state.open, onChange: this.handleChange },
+              _react2.default.createElement(
+                'option',
+                { value: '' },
+                'All'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'true' },
+                'Open'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'false' },
+                'Closed'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend justify-content-center' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-3 justify-content-center' },
+                  'ID'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'id', value: this.state.id, onChange: this.handleChange, placeholder: 'Filter Id' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend justify-content-center' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-4 justify-content-center' },
+                  'Title'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'title', value: this.state.title, onChange: this.handleChange, placeholder: 'Filter Title' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-3' },
+                  'Text'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'text', value: this.state.text, onChange: this.handleChange, placeholder: 'Filter Text' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend justify-content-center' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-4 justify-content-center' },
+                  'Status'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'status', value: this.state.status, onChange: this.handleChange, placeholder: 'Filter Status' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-6' },
+                  'Created by'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'creator', value: this.state.creator, onChange: this.handleChange, placeholder: 'Filter Creator' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text' },
+                  'Assigned to'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'assignee', value: this.state.assignee, onChange: this.handleChange, placeholder: 'Filter Assignee' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-6' },
+                  'Created on'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'date', name: 'createDate', value: this.state.createDate, onChange: this.handleChange, placeholder: 'Filter Create Date' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text' },
+                  'Updated on'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'date', name: 'updateDate', value: this.state.updateDate, onChange: this.handleChange, placeholder: 'Filter Update Date' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row mt-3 justify-content-end' },
+          _react2.default.createElement(
+            'button',
+            { id: 'filter_cancel', className: 'btn btn-sm btn-danger mr-2', type: 'button', onClick: this.handleClear },
+            'Cancel'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn btn-sm btn-success' },
+            'Submit'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Filter;
+}(_react.Component);
+
+exports.Filter = Filter;
+
+/*
+const Filter = (props) => {
+  const submit = (e) => {
+    e.preventDefault();
+    props.submit({target:{id:'submit_filter'}});
+  };
+  return(
+    <form id="submit_filter" className={props.filtering ? 'show-filter mt-2 w-75' : 'hide-filter'} onSubmit={submit}>
+      
+      <div className="row border-bottom">
+        <div className="col-sm-6 px-0">
+          <button id="clear_filter" className="btn btn-sm btn-warning" type="button" onClick={props.clear}>Clear</button>
+        </div>
+        <div className="col-sm-6 px-0 align-self-end">
+          <select name="open" value={props.open} onChange={props.change}>
+            <option value="">All</option>
+            <option value="true">Open</option>
+            <option value="false">Closed</option>
+          </select>
+        </div>
+      </div>
+      
+      <div className="row border-bottom">
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend justify-content-center">
+              <span className="input-group-text lbl-w-3 justify-content-center">ID</span>
+            </div>
+            <input className="form-control" type="text" name="id" value={props.id} onChange={props.change} placeholder="Filter Id" />
+          </div>
+        </div>
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend justify-content-center">
+              <span className="input-group-text lbl-w-4 justify-content-center">Title</span>
+            </div>
+            <input className="form-control" type="text" name="title" value={props.title} onChange={props.change} placeholder="Filter Title" />
+          </div>
+        </div>
+      </div>
+      
+      <div className="row border-bottom">
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend">
+              <span className="input-group-text lbl-w-3">Text</span>
+            </div>
+            <input className="form-control" type="text" name="text" value={props.text} onChange={props.change} placeholder="Filter Text" />
+          </div>
+        </div>
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend justify-content-center">
+              <span className="input-group-text lbl-w-4 justify-content-center">Status</span>
+            </div>
+            <input className="form-control" type="text" name="status" value={props.status} onChange={props.change} placeholder="Filter Status" />
+          </div>
+        </div>
+      </div>
+      
+      <div className="row border-bottom">
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend">
+              <span className="input-group-text lbl-w-6">Created by</span>
+            </div>
+            <input className="form-control" type="text" name="creator" value={props.creator} onChange={props.change} placeholder="Filter Creator" />
+          </div>
+        </div>
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend">
+              <span className="input-group-text">Assigned to</span>
+            </div>
+            <input className="form-control" type="text" name="assignee" value={props.assignee} onChange={props.change} placeholder="Filter Assignee" />
+          </div>
+        </div>
+      </div>
+      
+      <div className="row border-bottom">
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend">
+              <span className="input-group-text lbl-w-6">Created on</span>
+            </div>
+            <input className="form-control" type="date" name="createDate" value={props.createDate} onChange={props.change} placeholder="Filter Create Date" />
+          </div>
+        </div>
+        <div className="col-sm-6 px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend">
+              <span className="input-group-text">Updated on</span>
+            </div>
+            <input className="form-control" type="date" name="updateDate" value={props.updateDate} onChange={props.change} placeholder="Filter Update Date" />
+          </div>
+        </div>
+      </div>
+    
+      <div className="row mt-3 justify-content-end">
+        <button id="cancel_filter" className="btn btn-sm btn-danger mr-2" type="button" onClick={props.clear}>Cancel</button>
+        <button className="btn btn-sm btn-success">Submit</button>
+      </div>
+      
+    </form>
+  );
+};
+*/
+
+/***/ }),
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2886,11 +3496,11 @@ var IssueButtons = function IssueButtons(props) {
         { type: "button", className: "btn btn-sm btn-block mt-0 btn-info", onClick: props.updater },
         "Update"
       ),
-      _react2.default.createElement(
+      props.canClose ? _react2.default.createElement(
         "button",
         { type: "button", className: "btn btn-sm btn-block mt-0 btn-success", onClick: props.close },
         "Close"
-      ),
+      ) : _react2.default.createElement("span", null),
       _react2.default.createElement(
         "button",
         { type: "button", className: "btn btn-sm btn-block mt-0 btn-danger", onClick: props.delete },
@@ -2902,14 +3512,397 @@ var IssueButtons = function IssueButtons(props) {
 
 exports.IssueButtons = IssueButtons;
 
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.NewIssue = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NewIssue = function (_Component) {
+  _inherits(NewIssue, _Component);
+
+  function NewIssue(props) {
+    _classCallCheck(this, NewIssue);
+
+    var _this = _possibleConstructorReturn(this, (NewIssue.__proto__ || Object.getPrototypeOf(NewIssue)).call(this, props));
+
+    _this.state = {
+      new_title: '',
+      new_text: '',
+      new_creator: '',
+      new_assignee: '',
+      new_status: ''
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.handleChange = _this.handleChange.bind(_this);
+    _this.handleClear = _this.handleClear.bind(_this);
+    return _this;
+  }
+
+  _createClass(NewIssue, [{
+    key: 'handleSubmit',
+    value: function handleSubmit(e) {
+      e.preventDefault();
+
+      var _state = this.state,
+          issue_title = _state.new_title,
+          issue_text = _state.new_text,
+          status_text = _state.new_status,
+          created_by = _state.new_creator,
+          assigned_to = _state.new_assignee;
+
+
+      var issue = {
+        open: true,
+        issue_title: issue_title,
+        issue_text: issue_text,
+        created_by: created_by,
+        assigned_to: assigned_to,
+        status_text: status_text,
+        created_on: new Date().toISOString(),
+        updated_on: new Date().toISOString()
+      };
+
+      var options = {
+        method: 'POST',
+        body: JSON.stringify(issue),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+      };
+
+      this.props.submit(window.location.pathname, options);
+      this.handleClear({ target: { id: 'newIssue_cancel' } });
+    }
+  }, {
+    key: 'handleChange',
+    value: function handleChange(e) {
+      var name = e.target.name;
+      var value = e.target.value;
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: 'handleClear',
+    value: function handleClear(e) {
+      this.setState({
+        new_title: '',
+        new_text: '',
+        new_creator: '',
+        new_assignee: '',
+        new_status: ''
+      });
+      this.props.toggle(e);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'form',
+        { id: 'submit_newIssue', className: this.props.creating ? 'show-newIssue mt-2 w-75' : 'hide-newIssue', onSubmit: this.handleSubmit },
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text lbl-w-3' },
+                  'Title'
+                )
+              ),
+              _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'new_title', value: this.state.new_title, onChange: this.handleChange, placeholder: 'New Issue Title', required: true })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm ht-3' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text h-100 lbl-w-3' },
+                  'Text'
+                )
+              ),
+              _react2.default.createElement('textarea', { className: 'form-control h-100', name: 'new_text', value: this.state.new_text, onChange: this.handleChange, required: true })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row border-bottom' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row border-bottom' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group input-group-sm' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'input-group-prepend' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'input-group-text lbl-w-6' },
+                    'Created by'
+                  )
+                ),
+                _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'new_creator', value: this.state.new_creator, onChange: this.handleChange, placeholder: 'New Creator', required: true })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row border-bottom' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group input-group-sm' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'input-group-prepend' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'input-group-text lbl-w-6' },
+                    'Assigned to'
+                  )
+                ),
+                _react2.default.createElement('input', { className: 'form-control', type: 'text', name: 'new_assignee', value: this.state.new_assignee, onChange: this.handleChange, placeholder: 'New Assignee' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-6 d-flex px-0' },
+            _react2.default.createElement(
+              'div',
+              { className: 'input-group input-group-sm' },
+              _react2.default.createElement(
+                'div',
+                { className: 'input-group-prepend justify-content-center' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'input-group-text h-100 lbl-w-4 justify-content-center' },
+                  'Status'
+                )
+              ),
+              _react2.default.createElement('textarea', { className: 'form-control h-100', name: 'new_status', value: this.state.new_status, onChange: this.handleChange })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row mt-3 justify-content-end' },
+          _react2.default.createElement(
+            'button',
+            { id: 'newIssue_cancel', className: 'btn btn-sm btn-danger mr-2', type: 'button', onClick: this.handleClear },
+            'Cancel'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn btn-sm btn-success' },
+            'Submit'
+          )
+        )
+      );
+    }
+  }]);
+
+  return NewIssue;
+}(_react.Component);
+
+/*const NewIssue = (props) => {
+  const submit = (e) => {
+    e.preventDefault();
+    props.submit({target:{id:'submit_newIssue'}});
+  };
+  return(
+    <form id="submit_newIssue" className={props.creating ? 'show-newIssue mt-2 w-75' : 'hide-newIssue'} onSubmit={submit}>
+      
+      <div className="row border-bottom">
+        <div className="col px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend">
+              <span className="input-group-text lbl-w-3">Title</span>
+            </div>
+            <input className="form-control" type="text" name="new_title" value={props.new_title} onChange={props.change} placeholder="New Issue Title" required />
+          </div>
+        </div>
+      </div>
+      
+      <div className="row border-bottom">
+        <div className="col px-0">
+          <div className="input-group input-group-sm ht-3">
+            <div className="input-group-prepend">
+              <span className="input-group-text h-100 lbl-w-3">Text</span>
+            </div>
+            <textarea className="form-control h-100" name="new_text" value={props.new_text} onChange={props.change} required />
+          </div>
+        </div>
+      </div>
+      
+      <div className="row border-bottom">
+        <div className="col-sm-6">
+          <div className="row border-bottom">
+            <div className="input-group input-group-sm">
+              <div className="input-group-prepend">
+                <span className="input-group-text lbl-w-6">Created by</span>
+              </div>
+              <input className="form-control" type="text" name="new_creator" value={props.new_creator} onChange={props.change} placeholder="New Creator" required />
+            </div>
+          </div>
+          <div className="row border-bottom">
+            <div className="input-group input-group-sm">
+              <div className="input-group-prepend">
+                <span className="input-group-text lbl-w-6">Assigned to</span>
+              </div>
+              <input className="form-control" type="text" name="new_assignee" value={props.new_assignee} onChange={props.change} placeholder="New Assignee" />
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 d-flex px-0">
+          <div className="input-group input-group-sm">
+            <div className="input-group-prepend justify-content-center">
+              <span className="input-group-text h-100 lbl-w-4 justify-content-center">Status</span>
+            </div>
+            <textarea className="form-control h-100" name="new_status" value={props.new_status} onChange={props.change} />
+          </div>
+        </div>
+      </div>
+      
+      <div className="row mt-3 justify-content-end">
+        <button id="cancel_newIssue" className="btn btn-sm btn-danger mr-2" type="button" onClick={props.clear}>Cancel</button>
+        <button className="btn btn-sm btn-success">Submit</button>
+      </div>
+    </form>
+  );
+};*/
+
+exports.NewIssue = NewIssue;
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ToggleButtons = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ToggleButtons = function ToggleButtons(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: props.hide ? 'hide-toggles' : 'show-toggles d-flex' },
+    _react2.default.createElement(
+      'h6',
+      { id: 'notification' },
+      props.message
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'ml-auto' },
+      props.message ? _react2.default.createElement(
+        'button',
+        { id: 'message_dismiss', type: 'button', className: 'btn btn-sm btn-outline-danger', onClick: props.click },
+        _react2.default.createElement('span', { className: 'fas fa-times' })
+      ) : _react2.default.createElement('span', null),
+      _react2.default.createElement(
+        'button',
+        { id: 'filter_toggle', className: 'btn btn-sm btn-outline-secondary', type: 'button', onClick: props.click },
+        _react2.default.createElement(
+          'span',
+          null,
+          'Filter'
+        ),
+        _react2.default.createElement('span', { className: 'ml-1 fas fa-filter' })
+      ),
+      _react2.default.createElement(
+        'button',
+        { id: 'newIssue_toggle', className: 'btn btn-sm btn-outline-primary', type: 'button', onClick: props.click },
+        _react2.default.createElement(
+          'span',
+          null,
+          'New'
+        ),
+        _react2.default.createElement('span', { className: 'ml-1 fas fa-plus' })
+      )
+    )
+  );
+};
+
+exports.ToggleButtons = ToggleButtons;
+
+//<div className={props.hide ? 'hide-toggles' : 'show-toggles d-flex justify-content-end'}>
+
 /*
-  <div className={this.state.updating ? 'hide-primary' : 'col px-0 show-primary'}>
-  <div className={this.state.updating ? 'col px-0 show-secondary' : 'hide-secondary'}>
-  
+  <div className={props.hide ? 'hide-toggles' : 'show-toggles clearfix'}>
+      <div className="float-left mr-auto">
+        <h6>{props.message}</h6>
+      </div>
+      <div className="float-right ml-auto">
+        {props.message ? (
+          <button id="message_dismiss" type="button" className="btn btn-sm btn-danger fas fa-times" onClick={props.click} />
+        ) : (
+          <span></span>
+        )}
+        <button id="filter_toggle" className="btn btn-sm btn-outline-secondary" type="button" onClick={props.click}>
+          <span>Filter</span>
+          <span className="ml-1 fas fa-filter" />
+        </button>
+        <button id="newIssue_toggle" className="btn btn-sm btn-outline-primary" type="button" onClick={props.click}>
+          <span>New</span>
+          <span className="ml-1 fas fa-plus" />
+        </button>
+      </div>
+    </div>
 */
 
 /***/ }),
-/* 33 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2927,21 +3920,23 @@ var _reactDom = __webpack_require__(31);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(16);
+var _reactRouterDom = __webpack_require__(10);
 
-var _Projects = __webpack_require__(30);
+var _Projects = __webpack_require__(28);
 
-var _Home = __webpack_require__(27);
+var _ProjectIssue = __webpack_require__(17);
 
-var _Filter = __webpack_require__(26);
+var _Issues = __webpack_require__(27);
 
-var _NewIssue = __webpack_require__(28);
+var _TopBar = __webpack_require__(30);
 
-var _ProjectIssue = __webpack_require__(29);
+var _ToolBar = __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -2950,6 +3945,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function Home() {
+  return _react2.default.createElement(
+    'div',
+    { className: '' },
+    _react2.default.createElement(
+      'h3',
+      null,
+      'Select A Project'
+    )
+  );
+};
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -2962,41 +3969,36 @@ var App = function (_Component) {
     _this.state = {
       projects: [],
       issues: [],
-      id: '',
-      open: '',
-      title: '',
-      text: '',
-      creator: '',
-      assignee: '',
-      status: '',
-      createDate: '',
-      updateDate: '',
-      filterToggle: false,
-      newIssueToggle: false,
-      new_title: '',
-      new_text: '',
-      new_creator: '',
-      new_assignee: '',
-      new_status: ''
+      creating: false,
+      filtering: false,
+      updateMessage: '',
+      selected: '',
+      message: '',
+      sort: {
+        projects: { sorted: false, style: '' },
+        issues: { sorted: false, style: '' }
+      }
     };
-    _this.handleFetch = _this.handleFetch.bind(_this);
+    _this.genKeyId = _this.genKeyId.bind(_this);
+    _this.submitNew = _this.submitNew.bind(_this);
+    _this.getProjects = _this.getProjects.bind(_this);
+    _this.handleToggle = _this.handleToggle.bind(_this);
     _this.handleChange = _this.handleChange.bind(_this);
-    _this.submitFilter = _this.submitFilter.bind(_this);
-    _this.toggleFilter = _this.toggleFilter.bind(_this);
-    _this.clearFilters = _this.clearFilters.bind(_this);
-    _this.resetFilters = _this.resetFilters.bind(_this);
-    _this.toggleNewIssue = _this.toggleNewIssue.bind(_this);
-    _this.submitNewIssue = _this.submitNewIssue.bind(_this);
-    _this.cancelNewIssue = _this.cancelNewIssue.bind(_this);
-    _this.resetNewIssue = _this.resetNewIssue.bind(_this);
-    _this.handleError = _this.handleError.bind(_this);
-    _this.handleUpdateIssue = _this.handleUpdateIssue.bind(_this);
+    _this.handleFetch = _this.handleFetch.bind(_this);
+    _this.handleDelete = _this.handleDelete.bind(_this);
+    _this.handleSort = _this.handleSort.bind(_this);
+    _this.handleNotify = _this.handleNotify.bind(_this);
     return _this;
   }
 
   _createClass(App, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
+      this.getProjects();
+    }
+  }, {
+    key: 'getProjects',
+    value: function getProjects() {
       var _this2 = this;
 
       fetch('/projects').then(function (res) {
@@ -3009,137 +4011,40 @@ var App = function (_Component) {
       });
     }
   }, {
-    key: 'handleFetch',
-    value: function handleFetch(url) {
+    key: 'genKeyId',
+    value: function genKeyId() {
+      var rngChar = function rngChar() {
+        var rand = Math.floor(Math.random() * 26) + 97;
+        return String.fromCharCode(rand);
+      };
+      var arr = Array(3).fill().map(function (el) {
+        return rngChar();
+      });
+      return arr.join('');
+    }
+  }, {
+    key: 'handleToggle',
+    value: function handleToggle(e) {
       var _this3 = this;
 
-      fetch(url).then(function (res) {
-        return res.json();
-      }).then(function (result) {
-        _this3.setState({ issues: result.docs });
-      });
-      this.props.history.push(url);
-    }
-  }, {
-    key: 'handleUpdateIssue',
-    value: function handleUpdateIssue(options) {
-      var _this4 = this;
-
-      var url = this.props.location.pathname;
-      fetch(url, options).then(function (res) {
-        return res.json();
-      }).then(function (result) {
-        return _this4.setState({ issues: result.docs });
-      });
-      this.props.history.push(url);
-    }
-  }, {
-    key: 'handleError',
-    value: function handleError(err) {
-      err.then(function (error) {
-        return console.log(error);
-      });
-    }
-  }, {
-    key: 'toggleFilter',
-    value: function toggleFilter() {
-      this.setState(function (prev) {
-        return { filterToggle: !prev.filterToggle, newIssueToggle: false };
-      });
-    }
-  }, {
-    key: 'toggleNewIssue',
-    value: function toggleNewIssue() {
-      this.setState(function (prev) {
-        return { newIssueToggle: !prev.newIssueToggle, filterToggle: false };
-      });
-    }
-  }, {
-    key: 'clearFilters',
-    value: function clearFilters() {
-      this.handleFetch(this.props.location.pathname);
-      this.resetFilters();
-    }
-  }, {
-    key: 'resetFilters',
-    value: function resetFilters() {
-      this.setState({
-        id: '',
-        open: '',
-        title: '',
-        text: '',
-        creator: '',
-        assignee: '',
-        status: '',
-        createDate: '',
-        updateDate: ''
-      });
-    }
-  }, {
-    key: 'submitFilter',
-    value: function submitFilter() {
-      var _this5 = this;
-
-      var model = ['_id=', 'open=', 'issue_title=', 'issue_text=', 'created_by=', 'assigned_to=', 'status_text=', 'created_on=', 'updated_on='];
-      var filters = ['id', 'open', 'title', 'text', 'creator', 'assignee', 'status', 'createDate', 'updateDate'];
-      var urlStr = this.props.location.pathname + '?';
-      var filter = filters.map(function (el, i) {
-        return _this5.state[el] ? model[i] + _this5.state[el] + '&' : '';
-      }).reduce(function (acc, curr) {
-        return acc += curr;
-      }).slice(0, -1);
-      var route = urlStr + filter;
-      this.handleFetch(route);
-    }
-  }, {
-    key: 'submitNewIssue',
-    value: function submitNewIssue(e) {
-      var _this6 = this;
-
-      e.preventDefault();
-      var issue = {
-        issue_title: this.state.new_title,
-        issue_text: this.state.new_text,
-        created_by: this.state.new_creator,
-        assigned_to: this.state.new_assignee,
-        status_text: this.state.new_status,
-        created_on: new Date().toISOString(),
-        updated_on: new Date().toISOString(),
-        open: true
-      };
-      var options = {
-        method: 'POST',
-        body: JSON.stringify(issue),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
-      };
-
-      fetch(this.props.location.pathname, options).then(function (res) {
-        if (res.ok) {
-          _this6.resetNewIssue();
-          _this6.props.history.push(_this6.props.location.pathname);
-        } else {
-          _this6.handleError(res.json());
+      var toggle = {
+        filter: function filter() {
+          return _this3.setState(function (prev) {
+            return { filtering: !prev.filtering, creating: false };
+          });
+        },
+        newIssue: function newIssue() {
+          return _this3.setState(function (prev) {
+            return { creating: !prev.creating, filtering: false };
+          });
+        },
+        message: function message() {
+          return _this3.setState(function (prev) {
+            return { message: !prev.message };
+          });
         }
-      });
-    }
-  }, {
-    key: 'cancelNewIssue',
-    value: function cancelNewIssue() {
-      this.resetNewIssue();
-    }
-  }, {
-    key: 'resetNewIssue',
-    value: function resetNewIssue() {
-      this.setState(function (prev) {
-        return {
-          newIssueToggle: !prev.newIssueToggle,
-          new_title: '',
-          new_text: '',
-          new_creator: '',
-          new_assignee: '',
-          new_status: ''
-        };
-      });
+      };
+      toggle[e.target.id.split('_')[0]]();
     }
   }, {
     key: 'handleChange',
@@ -3149,105 +4054,151 @@ var App = function (_Component) {
       this.setState(_defineProperty({}, name, value));
     }
   }, {
+    key: 'handleFetch',
+    value: function handleFetch(url, options) {
+      var _this4 = this;
+
+      var selected = url.slice(url.lastIndexOf('/') + 1).replace(/_/g, ' ');
+      var Fetch = options ? fetch(url, options) : fetch(url);
+
+      Fetch.then(function (res) {
+        return res.json();
+      }).then(function (result) {
+        result.docs.forEach(function (el) {
+          el.key = el._id + '_' + _this4.genKeyId();
+        });
+        _this4.setState({ issues: result.docs, selected: selected });
+        _this4.props.history.push(url);
+      });
+    }
+  }, {
+    key: 'handleDelete',
+    value: function handleDelete(url, options) {
+      var _this5 = this;
+
+      var issues = this.state.issues;
+      var id = JSON.parse(options.body)._id;
+
+      issues = issues.filter(function (el) {
+        return el._id !== id;
+      });
+
+      fetch(url, options).then(function (res) {
+        return res.json();
+      }).then(function (result) {
+        if (result.docs) {
+          _this5.setState({ issues: issues, message: result.message });
+        } else {
+          _this5.setState({ message: result.message });
+        }
+      });
+    }
+  }, {
+    key: 'submitNew',
+    value: function submitNew(url, options) {
+      var _this6 = this;
+
+      var issues = this.state.issues;
+
+      fetch(url, options).then(function (res) {
+        return res.json();
+      }).then(function (result) {
+        if (result.docs) {
+          result.value.key = result.value._id + '_' + _this6.genKeyId();
+          issues = [].concat(_toConsumableArray(issues), [result.value]);
+          _this6.setState({ issues: issues, updateMessage: result.message });
+        } else {
+          _this6.setState({ message: 'Insert failed - ' + result.message });
+        }
+      });
+    }
+  }, {
+    key: 'handleSort',
+    value: function handleSort(e) {
+      var _state = this.state,
+          sort = _state.sort,
+          _projects = _state.projects;
+
+
+      var a_z = function a_z() {
+        return _projects.sort(function (a, b) {
+          return a.title.localeCompare(b.title);
+        });
+      };
+      var z_a = function z_a() {
+        return _projects.sort(function (a, b) {
+          return b.title.localeCompare(a.title);
+        });
+      };
+
+      var sorter = {
+        projects: function projects() {
+          if (sort.projects.sorted) {
+            _projects = sort.projects.style === 'a-z' ? z_a() : a_z();
+            sort.projects.style = sort.projects.style === 'a-z' ? 'z-a' : 'a-z';
+          } else {
+            _projects = a_z();
+            sort.projects.sorted = true;
+            sort.projects.style = 'a-z';
+          }
+          return { projects: _projects, sort: sort };
+        },
+
+        issues: function issues() {}
+      };
+
+      var sorted = sorter[e.target.id.split('_')[1]]();
+      this.setState({ projects: sorted.projects, sort: sorted.sort });
+    }
+  }, {
+    key: 'handleNotify',
+    value: function handleNotify(message) {
+      this.setState({ message: message });
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this7 = this;
 
       return _react2.default.createElement(
         'div',
-        { className: 'container-fluid' },
+        null,
+        _react2.default.createElement(_TopBar.TopBar, null),
+        _react2.default.createElement(_Projects.Projects, {
+          projects: this.state.projects.length && this.state.projects,
+          getIssues: function getIssues(e) {
+            return _this7.handleFetch(e.target.id);
+          },
+          sort: this.handleSort
+        }),
         _react2.default.createElement(
           'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col' },
-            _react2.default.createElement(_Projects.Projects, {
-              projects: this.state.projects.length && this.state.projects,
-              clickedProject: this.handleFetch
-            })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col' },
-            this.props.location.pathname === '/' ? _react2.default.createElement(
-              'h6',
-              null,
-              'Select a project'
-            ) : _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                'button',
-                { type: 'button', onClick: this.toggleFilter },
-                'Filter'
-              ),
-              _react2.default.createElement(
-                'button',
-                { type: 'button', onClick: this.toggleNewIssue },
-                'New Issue'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: this.state.filterToggle ? 'show-filter' : 'hide-filter' },
-              _react2.default.createElement(_Filter.Filter, {
-                clearFilters: this.clearFilters,
-                submitFilter: this.submitFilter,
-                cancelFilter: this.toggleFilter,
-                change: this.handleChange,
-                open: this.state.open,
-                id: this.state.id,
-                text: this.state.text,
-                status: this.state.status,
-                updateDate: this.state.updateDate,
-                createDate: this.state.createDate,
-                creator: this.state.creator,
-                assignee: this.state.assignee,
-                title: this.state.title
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: this.state.newIssueToggle ? 'show-newIssue' : 'hide-newIssue' },
-              _react2.default.createElement(_NewIssue.NewIssue, {
-                newTitle: this.state.new_title,
-                newText: this.state.new_text,
-                newCreator: this.state.new_creator,
-                newAssignee: this.state.new_assignee,
-                newStatus: this.state.new_status,
-                change: this.handleChange,
-                submitNewIssue: this.submitNewIssue,
-                cancelNewIssue: this.cancelNewIssue
-              })
-            )
-          )
+          { id: 'toolbar' },
+          _react2.default.createElement(_ToolBar.ToolBar, {
+            toggle: this.handleToggle,
+            location: this.props.location.pathname === '/',
+            filtering: this.state.filtering,
+            creating: this.state.creating,
+            fetch: this.handleFetch,
+            submitNew: this.submitNew,
+            message: this.state.message
+          })
         ),
         _react2.default.createElement(
           'div',
-          { className: 'row' },
+          { id: 'content' },
           _react2.default.createElement(
-            'div',
-            { className: 'col' },
-            _react2.default.createElement(
-              'div',
-              { className: 'd-flex flex-column align-items-center w-100' },
-              _react2.default.createElement(
-                _reactRouterDom.Switch,
-                null,
-                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home.Home }),
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/api/issues/:project', render: function render(props) {
-                    return _this7.state.issues.length && _this7.state.issues.map(function (el) {
-                      return _react2.default.createElement(_ProjectIssue.ProjectIssue, _extends({}, props, {
-                        key: el._id,
-                        issue: el,
-                        update: _this7.handleUpdateIssue
-                      }));
-                    });
-                  }
-                })
-              )
-            )
+            _reactRouterDom.Switch,
+            null,
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: Home }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/api/issues/:project', render: function render(props) {
+                return _react2.default.createElement(_Issues.Issues, _extends({}, props, {
+                  selected: _this7.state.selected,
+                  issues: _this7.state.issues.length && _this7.state.issues,
+                  updateIssues: _this7.handleDelete,
+                  notify: _this7.handleNotify
+                }));
+              } })
           )
         )
       );
@@ -3268,31 +4219,180 @@ _reactDom2.default.render(_react2.default.createElement(
 ), document.getElementById('application'));
 
 /*
-  <Route path="/api/issues/:project" component={(props) => <Issues {...props} issues={this.state.issues.length && this.state.issues} />} />
-  <Route path="/api/issues/:project" component={(props) => <Issues {...props} />} />
+  <Alert 
+    message={this.state.message}
+    toggle={this.handleToggle}
+  />
+  <ToggleButtons 
+    click={this.handleToggle} 
+    hide={this.props.location.pathname === '/'} 
+  />
+  <div id="toolbar-form">
+    <Filter 
+      filtering={this.state.filtering}
+      toggle={this.handleToggle}
+      filter={this.handleFetch}
+    />
+    <NewIssue 
+      creating={this.state.creating}
+      toggle={this.handleToggle}
+      submit={this.submitNew}
+    />
+  </div>
 */
 
 /*
-  handleFilter(e) {
-    let query = e.target.value ? '?open=' : '';
-    let val = query ? e.target.value === 'open' ? 'true' : 'false' : '';
-    this.props.history.push(this.props.location.pathname + query + val);
+const { new_title, new_text, new_creator, new_assignee, new_status } = this.state;
+const newIssueState = [new_title, new_text, new_creator, new_assignee, new_status];
+  <NewIssue
+    creating={this.state.creating}
+    clear={this.resetForm}
+    change={this.handleChange}
+    submit={this.submitForm}
+    {...newIssueState}
+  />
+  
+  const { open, id, text, status, updateDate, createDate, creator, assignee, title } = this.state;
+  const filterState = [open, id, text, status, updateDate, createDate, creator, assignee, title];
+  <Filter
+    filtering={this.state.filtering}
+    clear={this.resetForm}
+    change={this.handleChange}
+    submit={this.submitForm}
+    {...filterState}
+  />
+  
+*/
+
+/*submitForm(e) {
+    const submit = {
+      filter:() => {
+        const model = ['_id=', 'open=', 'issue_title=', 'issue_text=', 'created_by=', 'assigned_to=', 'status_text=', 'created_on=', 'updated_on='];
+        const filters = ['id', 'open', 'title', 'text', 'creator', 'assignee', 'status', 'createDate', 'updateDate'];
+        const url = this.props.location.pathname + '?';
+        const search = filters.map((el, i) => {
+          return this.state[el] ? model[i] + this.state[el] + '&' : ''
+        }).reduce((acc, curr) => acc += curr).slice(0, -1);
+        const route = url + search;
+        this.handleFetch(route);
+      },
+      
+      newIssue:() => {
+        const { new_title, new_text, new_creator, new_assignee, new_status } = this.state;
+        const issue = {
+          issue_title: new_title,
+          issue_text:  new_text,
+          created_by:  new_creator,
+          assigned_to: new_assignee,
+          status_text: new_status,
+          created_on:  new Date().toISOString(),
+          updated_on:  new Date().toISOString(),
+          open:        true,
+        };
+        const options = {
+          method: 'POST', 
+          body: JSON.stringify(issue), 
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+        };
+        fetch(this.props.location.pathname, options)
+          .then(res => res.json())
+          .then(result => {
+            if (result.docs) {
+              let issues = this.state.issues;
+              result.value.key = result.value._id + '_' + this.genKeyId();
+              issues = [...issues, result.value];
+              this.setState({ issues: issues, updateMessage: result.message });
+              //this.resetForm({target:{id: 'submit_newIssue'}});
+            } else {
+              this.setState({updateMessage: 'Insert Failed - ' + result.message});
+            }
+          });
+        
+      }
+    };
+    
+    const form = e.target.id.split('_')[1];
+    submit[form]();
+  }*/
+
+/*
+  this.resetForm = this.resetForm.bind(this);
+
+  resetForm(e) {
+    const reset = {
+      filter: () => {
+        this.setState({
+          filtering: false,
+          id: '',
+          open: '',
+          title: '',
+          text: '',
+          creator: '',
+          assignee: '',
+          status: '',
+          createDate: '',
+          updateDate: ''
+        });
+        this.handleFetch(this.props.location.pathname);
+      },
+      
+      newIssue:() => {
+        this.setState({
+          creating: false,
+          new_title: '',
+          new_text: '',
+          new_creator: '',
+          new_assignee: '',
+          new_status: ''
+        });
+      }
+    };
+    
+    const form = e.target.id.split('_')[1];
+    reset[form]();
   }
 */
 
+/*
+  this.dismissUpdateMessage = this.dismissUpdateMessage.bind(this);
+
+  dismissUpdateMessage() {
+    this.setState(prev => ({updateMessage: !prev.updateMessage}));
+  }
+*/
+
+/*
+this.getIssues = this.getIssues.bind(this);
+
+getIssues(url) {
+    fetch(url).then(res => res.json())
+      .then(result => {
+        result.docs.forEach(el => el.key = el._id + '_' + this.genKeyId());
+        this.setState({ issues: result.docs });
+        this.props.history.push(url);
+      });
+  }
+
+
+  <Projects 
+    projects={this.state.projects.length && this.state.projects
+    clicked_project={this.getIssues}
+  />
+*/
+
 /***/ }),
-/* 34 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(18);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -3585,18 +4685,18 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createBrowserHistory);
 
 /***/ }),
-/* 35 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -3906,7 +5006,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createHashHistory);
 
 /***/ }),
-/* 36 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3914,7 +5014,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(11);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -4074,7 +5174,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createMemoryHistory);
 
 /***/ }),
-/* 37 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4149,7 +5249,7 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
-/* 38 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -4158,7 +5258,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 39 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4171,7 +5271,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(12);
+var ReactPropTypesSecret = __webpack_require__(13);
 
 function emptyFunction() {}
 
@@ -4224,7 +5324,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 40 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4239,8 +5339,8 @@ module.exports = function() {
 
 var assign = __webpack_require__(7);
 
-var ReactPropTypesSecret = __webpack_require__(12);
-var checkPropTypes = __webpack_require__(11);
+var ReactPropTypesSecret = __webpack_require__(13);
+var checkPropTypes = __webpack_require__(12);
 
 var printWarning = function() {};
 
@@ -4787,7 +5887,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 41 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4810,9 +5910,9 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(7);
-var checkPropTypes = __webpack_require__(11);
-var scheduler = __webpack_require__(24);
-var tracing = __webpack_require__(68);
+var checkPropTypes = __webpack_require__(12);
+var scheduler = __webpack_require__(25);
+var tracing = __webpack_require__(72);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -24522,7 +25622,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 42 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24538,7 +25638,7 @@ module.exports = reactDom;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),n=__webpack_require__(7),ba=__webpack_require__(24);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),n=__webpack_require__(7),ba=__webpack_require__(25);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function t(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:t("227");function da(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,h,k){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,h,k){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else t("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:t("96",a);if(!pa[c]){b.extractEvents?void 0:t("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;qa.hasOwnProperty(h)?t("99",h):void 0;qa[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ra(k[e],g,h);e=!0}else f.registrationName?(ra(f.registrationName,g,h),e=!0):e=!1;e?void 0:t("98",d,a)}}}}
@@ -24778,7 +25878,7 @@ var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 
 
 /***/ }),
-/* 43 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24789,7 +25889,7 @@ var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(14);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24844,7 +25944,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 44 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24855,7 +25955,7 @@ BrowserRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(14);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24909,18 +26009,18 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 45 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(59);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 46 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24928,8 +26028,8 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(20);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -25006,84 +26106,84 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 47 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(60);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 48 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(61);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 49 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(62);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 50 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(63);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 51 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(23);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__["a" /* default */]);
 
 /***/ }),
-/* 52 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(16);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 53 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(64);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 54 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25140,7 +26240,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 55 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25151,7 +26251,7 @@ module.exports = invariant;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(15);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -25206,7 +26306,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 56 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25297,7 +26397,7 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 57 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25310,7 +26410,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(23);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25426,7 +26526,7 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 58 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25439,7 +26539,7 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(15);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -25592,7 +26692,7 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 59 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25604,7 +26704,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(16);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -25684,7 +26784,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 60 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25692,9 +26792,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(22);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -25733,7 +26833,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 61 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25755,7 +26855,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(7);
-var checkPropTypes = __webpack_require__(11);
+var checkPropTypes = __webpack_require__(12);
 
 // TODO: this is special because it gets imported during build.
 
@@ -27581,7 +28681,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 62 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27612,7 +28712,7 @@ __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:K,assign:k
 
 
 /***/ }),
-/* 63 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27688,7 +28788,7 @@ function resolvePathname(to) {
 /* harmony default export */ __webpack_exports__["a"] = (resolvePathname);
 
 /***/ }),
-/* 64 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28116,7 +29216,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 65 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28133,7 +29233,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 66 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28772,10 +29872,10 @@ exports.unstable_shouldYield = unstable_shouldYield;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(25)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(26)))
 
 /***/ }),
-/* 67 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28801,25 +29901,25 @@ exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_
 b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=h;return function(){var c=h,e=k;h=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{h=c,k=e,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return h};
 exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l||w())};
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
-/* 68 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(65);
+  module.exports = __webpack_require__(69);
 } else {
-  module.exports = __webpack_require__(64);
+  module.exports = __webpack_require__(68);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 69 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

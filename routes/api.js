@@ -57,68 +57,118 @@ module.exports = (app, db) => {
   });
   
   app.post('/api/issues/:project', (req, res) => {
-    Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
-      if (err) return res.json({docs: err});
-      
-      req.body.for_project = doc.project_id;
-      let new_issue = new issue(req.body);
-      
-      Issues.insertOne(new_issue, (err, docs) => {
-        if (err) return res.json({docs: err});
-        return res.json({docs: docs});
+    const validPost = () => {
+      let valid = true;
+      [req.body.issue_title, req.body.issue_text, req.body.created_by].forEach(el => {
+        if (!el) {
+          valid = false;
+        }
       });
-    });
+      return valid;
+    };
+    
+    if (validPost()) {
+      Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
+        if (err) return res.json({docs: '', message: err});
+      
+        req.body.for_project = doc.project_id;
+        let new_issue = new issue(req.body);
+      
+        Issues.insertOne(new_issue, (err, docs) => {
+          if (err) return res.json({docs: '', message: err});
+        
+          return res.json({docs: docs, value: new_issue, message: 'Successfully inserted'});
+        });
+      });
+    } else {
+      //return res.json({docs: '', message: 'Invalid post, missing required fields'});
+      return res.status(400).send('Missing required fields');
+    }
   });
   
   app.put('/api/issues/:project', (req, res) => {
     if (Object.keys(req.body).length) {
-      let query = {_id: ObjectId(req.body._id)};
-      let update = {};
+      let validId = req.body._id ? (req.body._id.length === 24 ? true : false) : (false);
+      
+      if (validId) {
+        let query = {_id: ObjectId(req.body._id)};
+        let update = {};
     
-      if (req.body.close) {
-        update = { $set: {open: false, updated_on: new Date().toISOString()} };
-      } else {
-        update = { $set: req.body };
-        delete update['$set']['_id'];
-      }
-      /*Issues.findOne(query, (err, docs) => {
-        IF FOUND THEN ISSUES UPDATEONE
-          IF UPDATEONE FAIL 
-            RETURN COULD NOT UPDATE
-      });*/
-      Issues.updateOne(query, update, (err, docs) => {
-        if (err) return res.json({result: err});
-        if (docs.modifiedCount) {
-          Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
-            if (err) return res.json({docs: err});
-            Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));
-          });
+        if (req.body.close) {
+          update = { $set: {open: false, updated_on: new Date().toISOString()} };
         } else {
-          return res.json({docs: '', message: 'could not update'});
+          update = { $set: req.body };
+          delete update['$set']['_id'];
         }
-      });
+      
+        Issues.findOneAndUpdate(query, update, {returnOriginal: false}, (err, docs) => {
+          if (err) {
+            return res.json({docs: '', message: err});
+          } else {
+            return res.json({docs: docs, message: 'Successfully updated'});
+          }
+        });
+      } else {
+        return res.json({docs: '', message: 'could not update _id: ' + req.body._id});
+      } 
     } else {
-      return res.json({docs: '', message: 'no updated field sent'});
+      //return res.json({docs: '', message: 'no updated field sent'});
+      return res.status(400).send('No body');
     }
   });
   
   app.delete('/api/issues/:project', (req, res) => {
-    /*
-      with an _id to completely delete an issue
-        If no _id is sent 
-          return '_id error'
-        If success
-          return 'deleted _id: ' + _id
-        If fail
-          return 'could not delete _id: ' + _id
-    */
+    if (Object.keys(req.body).length) {
+      let validId = req.body._id ? (req.body._id.length === 24 ? true : false) : (false);
+      
+      if (validId) {
+        let query = {_id: ObjectId(req.body._id)};
+        
+        /*Issues.deleteOne(query, (err, docs) => {
+          if (err) {
+            return res.json({docs: err});
+          } else {
+            return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});
+          }
+        });*/
+        Issues.findOneAndDelete(query, (err, docs) => {
+          if (err) return res.json({docs: '', message: err});
+          return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});
+        });
+      } else {
+        return res.json({docs: '', message: 'could not delete _id: ' + req.body._id});
+      }
+    } else {
+      return res.json({docs: '', message: '_id error; no _id'});
+    }
   });
       
   app.use((req, res) => res.status(404).type('text').send('Not Found'));
 };
 
-
- /*Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
+/*
+  Issues.findOne(query, (err, docs) => {
+    IF FOUND THEN ISSUES UPDATEONE
+      IF UPDATEONE FAIL 
+        RETURN COULD NOT UPDATE
+  });
+  
+  Issues.updateOne(query, update, (err, docs) => {
+    if (err) return res.json({result: err});
+    if (docs.modifiedCount) {
+      Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
         if (err) return res.json({docs: err});
-        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));
-      });*/
+        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));
+      });
+    } else {
+      return res.json({docs: '', message: 'could not update'});
+    }
+  });
+*/
+
+ /*
+  Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
+    if (err) return res.json({docs: err});
+    Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));
+  });
+*/
