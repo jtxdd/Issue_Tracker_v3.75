@@ -1,599 +1,4 @@
 {
-  "{\"filename\":\"/app/server/index.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/server\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
-    "metadata": {
-      "usedHelpers": [
-        "interopRequireDefault"
-      ],
-      "marked": [],
-      "modules": {
-        "imports": [
-          {
-            "source": "express",
-            "imported": [
-              "default"
-            ],
-            "specifiers": [
-              {
-                "kind": "named",
-                "imported": "default",
-                "local": "express"
-              }
-            ]
-          }
-        ],
-        "exports": {
-          "exported": [],
-          "specifiers": []
-        }
-      }
-    },
-    "options": {
-      "filename": "/app/server/index.js",
-      "filenameRelative": "/app/server/index.js",
-      "env": {},
-      "retainLines": false,
-      "highlightCode": true,
-      "suppressDeprecationMessages": false,
-      "presets": [],
-      "plugins": [
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          {
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ]
-      ],
-      "ignore": [],
-      "code": true,
-      "metadata": true,
-      "ast": false,
-      "comments": true,
-      "compact": "auto",
-      "minified": false,
-      "sourceMaps": "both",
-      "sourceMapTarget": "index.js",
-      "sourceFileName": "index.js",
-      "sourceRoot": "/app/server",
-      "babelrc": false,
-      "sourceType": "module",
-      "moduleRoot": "/app/server",
-      "moduleIds": false,
-      "passPerPreset": false,
-      "parserOpts": false,
-      "generatorOpts": false,
-      "basename": "index"
-    },
-    "ignored": false,
-    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nrequire('babel-register');\nrequire('babel-polyfill');\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static('public'));\n\napp.get(\"/\", function (request, response) {\n  response.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbInJlcXVpcmUiLCJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJnZXQiLCJyZXF1ZXN0IiwicmVzcG9uc2UiLCJzZW5kRmlsZSIsIl9fZGlybmFtZSIsImxpc3RlbmVyIiwibGlzdGVuIiwicHJvY2VzcyIsImVudiIsIlBPUlQiLCJjb25zb2xlIiwibG9nIiwiYWRkcmVzcyIsInBvcnQiXSwibWFwcGluZ3MiOiI7O0FBR0E7Ozs7OztBQUhBQSxRQUFRLGdCQUFSO0FBQ0FBLFFBQVEsZ0JBQVI7O0FBSUEsSUFBTUMsTUFBTSx3QkFBWjs7QUFFQUEsSUFBSUMsR0FBSixDQUFRLGtCQUFRQyxNQUFSLENBQWUsUUFBZixDQUFSOztBQUVBRixJQUFJRyxHQUFKLENBQVEsR0FBUixFQUFhLFVBQUNDLE9BQUQsRUFBVUMsUUFBVixFQUF1QjtBQUNsQ0EsV0FBU0MsUUFBVCxDQUFxQkMsU0FBckI7QUFDRCxDQUZEOztBQUlBLElBQU1DLFdBQVdSLElBQUlTLE1BQUosQ0FBV0MsUUFBUUMsR0FBUixDQUFZQyxJQUF2QixFQUE2QixZQUFNO0FBQ2xEQyxVQUFRQyxHQUFSLENBQVksbUNBQW1DTixTQUFTTyxPQUFULEdBQW1CQyxJQUFsRTtBQUNELENBRmdCLENBQWpCIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlUm9vdCI6Ii9hcHAvc2VydmVyIiwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnYmFiZWwtcmVnaXN0ZXInKTtcbnJlcXVpcmUoJ2JhYmVsLXBvbHlmaWxsJyk7XG5cbmltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnO1xuXG5jb25zdCBhcHAgPSBleHByZXNzKCk7XG5cbmFwcC51c2UoZXhwcmVzcy5zdGF0aWMoJ3B1YmxpYycpKTtcblxuYXBwLmdldChcIi9cIiwgKHJlcXVlc3QsIHJlc3BvbnNlKSA9PiB7XG4gIHJlc3BvbnNlLnNlbmRGaWxlKGAke19fZGlybmFtZX0vdmlld3MvaW5kZXguaHRtbGApO1xufSk7XG5cbmNvbnN0IGxpc3RlbmVyID0gYXBwLmxpc3Rlbihwcm9jZXNzLmVudi5QT1JULCAoKSA9PiB7XG4gIGNvbnNvbGUubG9nKCdZb3VyIGFwcCBpcyBsaXN0ZW5pbmcgb24gcG9ydCAnICsgbGlzdGVuZXIuYWRkcmVzcygpLnBvcnQpO1xufSk7XG5cbiJdfQ==",
-    "ast": null,
-    "map": {
-      "version": 3,
-      "sources": [
-        "index.js"
-      ],
-      "names": [
-        "require",
-        "app",
-        "use",
-        "static",
-        "get",
-        "request",
-        "response",
-        "sendFile",
-        "__dirname",
-        "listener",
-        "listen",
-        "process",
-        "env",
-        "PORT",
-        "console",
-        "log",
-        "address",
-        "port"
-      ],
-      "mappings": ";;AAGA;;;;;;AAHAA,QAAQ,gBAAR;AACAA,QAAQ,gBAAR;;AAIA,IAAMC,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,QAAf,CAAR;;AAEAF,IAAIG,GAAJ,CAAQ,GAAR,EAAa,UAACC,OAAD,EAAUC,QAAV,EAAuB;AAClCA,WAASC,QAAT,CAAqBC,SAArB;AACD,CAFD;;AAIA,IAAMC,WAAWR,IAAIS,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAM;AAClDC,UAAQC,GAAR,CAAY,mCAAmCN,SAASO,OAAT,GAAmBC,IAAlE;AACD,CAFgB,CAAjB",
-      "file": "index.js",
-      "sourceRoot": "/app/server",
-      "sourcesContent": [
-        "require('babel-register');\nrequire('babel-polyfill');\n\nimport express from 'express';\n\nconst app = express();\n\napp.use(express.static('public'));\n\napp.get(\"/\", (request, response) => {\n  response.sendFile(`${__dirname}/views/index.html`);\n});\n\nconst listener = app.listen(process.env.PORT, () => {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n\n"
-      ]
-    },
-    "mtime": 1497985239458
-  },
-  "{\"filename\":\"/app/server.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
-    "metadata": {
-      "usedHelpers": [
-        "interopRequireDefault"
-      ],
-      "marked": [],
-      "modules": {
-        "imports": [
-          {
-            "source": "express",
-            "imported": [
-              "default"
-            ],
-            "specifiers": [
-              {
-                "kind": "named",
-                "imported": "default",
-                "local": "express"
-              }
-            ]
-          }
-        ],
-        "exports": {
-          "exported": [],
-          "specifiers": []
-        }
-      }
-    },
-    "options": {
-      "filename": "/app/server.js",
-      "filenameRelative": "/app/server.js",
-      "env": {},
-      "retainLines": false,
-      "highlightCode": true,
-      "suppressDeprecationMessages": false,
-      "presets": [],
-      "plugins": [
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          {
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ]
-      ],
-      "ignore": [],
-      "code": true,
-      "metadata": true,
-      "ast": false,
-      "comments": true,
-      "compact": "auto",
-      "minified": false,
-      "sourceMaps": "both",
-      "sourceMapTarget": "server.js",
-      "sourceFileName": "server.js",
-      "sourceRoot": "/app",
-      "babelrc": false,
-      "sourceType": "module",
-      "moduleRoot": "/app",
-      "moduleIds": false,
-      "passPerPreset": false,
-      "parserOpts": false,
-      "generatorOpts": false,
-      "basename": "server"
-    },
-    "ignored": false,
-    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static('public'));\n\napp.get(\"/\", function (request, response) {\n  response.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJnZXQiLCJyZXF1ZXN0IiwicmVzcG9uc2UiLCJzZW5kRmlsZSIsIl9fZGlybmFtZSIsImxpc3RlbmVyIiwibGlzdGVuIiwicHJvY2VzcyIsImVudiIsIlBPUlQiLCJjb25zb2xlIiwibG9nIiwiYWRkcmVzcyIsInBvcnQiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7OztBQUVBLElBQU1BLE1BQU0sd0JBQVo7O0FBRUFBLElBQUlDLEdBQUosQ0FBUSxrQkFBUUMsTUFBUixDQUFlLFFBQWYsQ0FBUjs7QUFFQUYsSUFBSUcsR0FBSixDQUFRLEdBQVIsRUFBYSxVQUFDQyxPQUFELEVBQVVDLFFBQVYsRUFBdUI7QUFDbENBLFdBQVNDLFFBQVQsQ0FBcUJDLFNBQXJCO0FBQ0QsQ0FGRDs7QUFJQSxJQUFNQyxXQUFXUixJQUFJUyxNQUFKLENBQVdDLFFBQVFDLEdBQVIsQ0FBWUMsSUFBdkIsRUFBNkIsWUFBTTtBQUNsREMsVUFBUUMsR0FBUixDQUFZLG1DQUFtQ04sU0FBU08sT0FBVCxHQUFtQkMsSUFBbEU7QUFDRCxDQUZnQixDQUFqQiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnO1xuXG5jb25zdCBhcHAgPSBleHByZXNzKCk7XG5cbmFwcC51c2UoZXhwcmVzcy5zdGF0aWMoJ3B1YmxpYycpKTtcblxuYXBwLmdldChcIi9cIiwgKHJlcXVlc3QsIHJlc3BvbnNlKSA9PiB7XG4gIHJlc3BvbnNlLnNlbmRGaWxlKGAke19fZGlybmFtZX0vdmlld3MvaW5kZXguaHRtbGApO1xufSk7XG5cbmNvbnN0IGxpc3RlbmVyID0gYXBwLmxpc3Rlbihwcm9jZXNzLmVudi5QT1JULCAoKSA9PiB7XG4gIGNvbnNvbGUubG9nKCdZb3VyIGFwcCBpcyBsaXN0ZW5pbmcgb24gcG9ydCAnICsgbGlzdGVuZXIuYWRkcmVzcygpLnBvcnQpO1xufSk7XG5cbiJdfQ==",
-    "ast": null,
-    "map": {
-      "version": 3,
-      "sources": [
-        "server.js"
-      ],
-      "names": [
-        "app",
-        "use",
-        "static",
-        "get",
-        "request",
-        "response",
-        "sendFile",
-        "__dirname",
-        "listener",
-        "listen",
-        "process",
-        "env",
-        "PORT",
-        "console",
-        "log",
-        "address",
-        "port"
-      ],
-      "mappings": ";;AAAA;;;;;;AAEA,IAAMA,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,QAAf,CAAR;;AAEAF,IAAIG,GAAJ,CAAQ,GAAR,EAAa,UAACC,OAAD,EAAUC,QAAV,EAAuB;AAClCA,WAASC,QAAT,CAAqBC,SAArB;AACD,CAFD;;AAIA,IAAMC,WAAWR,IAAIS,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAM;AAClDC,UAAQC,GAAR,CAAY,mCAAmCN,SAASO,OAAT,GAAmBC,IAAlE;AACD,CAFgB,CAAjB",
-      "file": "server.js",
-      "sourceRoot": "/app",
-      "sourcesContent": [
-        "import express from 'express';\n\nconst app = express();\n\napp.use(express.static('public'));\n\napp.get(\"/\", (request, response) => {\n  response.sendFile(`${__dirname}/views/index.html`);\n});\n\nconst listener = app.listen(process.env.PORT, () => {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n\n"
-      ]
-    },
-    "mtime": 1497985631657
-  },
   "{\"filename\":\"/app/server.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
     "metadata": {
       "usedHelpers": [],
@@ -1197,7 +602,7 @@
       "basename": "api"
     },
     "ignored": false,
-    "code": "'use strict';\n\nvar _mongodb = require('mongodb');\n\nvar _mongodb2 = _interopRequireDefault(_mongodb);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar issue = require('../zzz/models/Issue.js');\n\nmodule.exports = function (app, db) {\n  var Projects = db.collection('projects');\n  var Issues = db.collection('issues');\n\n  app.get('/', function (req, res) {\n    return res.sendFile(process.cwd() + '/views/index.html');\n  });\n\n  app.get('/projects', function (req, res) {\n    Projects.find({}).toArray(function (err, docs) {\n      if (err) return res.json({ docs: err });\n      return res.json({ docs: docs });\n    });\n  });\n\n  app.get('/api/issues/:project', function (req, res) {\n    var getAllIssues = function getAllIssues() {\n      var promise = new Promise(function (resolve, reject) {\n        Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n          if (err) return reject(err);\n          return Issues.find({ for_project: doc.project_id }).toArray(function (err, docs) {\n            return err ? reject(err) : resolve(docs);\n          });\n        });\n      });\n      return promise;\n    };\n\n    var filter = {\n      length: Object.keys(req.query).length,\n      names: Object.keys(req.query),\n      values: Object.values(req.query),\n      query: req.query,\n      get open() {\n        return this.names.includes('open');\n      }\n    };\n\n    if (filter.length) {\n      if (filter.open) {\n        filter.query['open'] = filter.query['open'] === 'true' ? true : false;\n      }\n      Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n        if (err) return res.json({ docs: err });\n        filter.query['for_project'] = doc.project_id;\n        Issues.find(filter.query).toArray(function (err, docs) {\n          if (err) {\n            return res.json({ docs: err });\n          } else {\n            return res.json({ docs: docs, url: req.url });\n          }\n        });\n      });\n    } else {\n      getAllIssues().then(function (docs) {\n        return docs.length ? res.json({ docs: docs }) : res.json({ docs: 'none' });\n      });\n    }\n  });\n\n  app.post('/api/issues/:project', function (req, res) {\n    Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n      if (err) return res.json({ docs: err });\n\n      req.body.for_project = doc.project_id;\n      var new_issue = new issue(req.body);\n\n      Issues.insertOne(new_issue, function (err, docs) {\n        if (err) return res.json({ docs: err });\n        return res.json({ docs: docs });\n      });\n    });\n  });\n\n  app.put('/api/issues/:project', function (req, res) {\n    if (Object.keys(req.body).length) {\n      var query = { _id: (0, _mongodb.ObjectId)(req.body._id) };\n      var update = {};\n\n      if (req.body.close) {\n        update = { $set: { open: false, updated_on: new Date().toISOString() } };\n      } else {\n        update = { $set: req.body };\n        delete update['$set']['_id'];\n      }\n      /*Issues.findOne(query, (err, docs) => {\n        IF FOUND THEN ISSUES UPDATEONE\n          IF UPDATEONE FAIL \n            RETURN COULD NOT UPDATE\n      });*/\n      Issues.updateOne(query, update, function (err, docs) {\n        if (err) return res.json({ result: err });\n        if (docs.modifiedCount) {\n          Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n            if (err) return res.json({ docs: err });\n            Issues.find({ for_project: doc.project_id }).toArray(function (err, docs) {\n              return err ? res.json({ docs: err }) : res.json({ docs: docs, message: 'Successfully Updated' });\n            });\n          });\n        } else {\n          return res.json({ docs: '', message: 'could not update' });\n        }\n      });\n    } else {\n      return res.json({ docs: '', message: 'no updated field sent' });\n    }\n  });\n\n  app.delete('/api/issues/:project', function (req, res) {\n    /*\n      with an _id to completely delete an issue\n        If no _id is sent \n          return '_id error'\n        If success\n          return 'deleted _id: ' + _id\n        If fail\n          return 'could not delete _id: ' + _id\n    */\n  });\n\n  app.use(function (req, res) {\n    return res.status(404).type('text').send('Not Found');\n  });\n};\n\n/*Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n       if (err) return res.json({docs: err});\n       Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));\n     });*/\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwaS5qcyJdLCJuYW1lcyI6WyJpc3N1ZSIsInJlcXVpcmUiLCJtb2R1bGUiLCJleHBvcnRzIiwiYXBwIiwiZGIiLCJQcm9qZWN0cyIsImNvbGxlY3Rpb24iLCJJc3N1ZXMiLCJnZXQiLCJyZXEiLCJyZXMiLCJzZW5kRmlsZSIsInByb2Nlc3MiLCJjd2QiLCJmaW5kIiwidG9BcnJheSIsImVyciIsImRvY3MiLCJqc29uIiwiZ2V0QWxsSXNzdWVzIiwicHJvbWlzZSIsIlByb21pc2UiLCJyZXNvbHZlIiwicmVqZWN0IiwiZmluZE9uZSIsInRpdGxlIiwicGFyYW1zIiwicHJvamVjdCIsInJlcGxhY2UiLCJkb2MiLCJmb3JfcHJvamVjdCIsInByb2plY3RfaWQiLCJmaWx0ZXIiLCJsZW5ndGgiLCJPYmplY3QiLCJrZXlzIiwicXVlcnkiLCJuYW1lcyIsInZhbHVlcyIsIm9wZW4iLCJpbmNsdWRlcyIsInVybCIsInRoZW4iLCJwb3N0IiwiYm9keSIsIm5ld19pc3N1ZSIsImluc2VydE9uZSIsInB1dCIsIl9pZCIsInVwZGF0ZSIsImNsb3NlIiwiJHNldCIsInVwZGF0ZWRfb24iLCJEYXRlIiwidG9JU09TdHJpbmciLCJ1cGRhdGVPbmUiLCJyZXN1bHQiLCJtb2RpZmllZENvdW50IiwibWVzc2FnZSIsImRlbGV0ZSIsInVzZSIsInN0YXR1cyIsInR5cGUiLCJzZW5kIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7QUFFQSxJQUFNQSxRQUFVQyxRQUFRLHdCQUFSLENBQWhCOztBQUVBQyxPQUFPQyxPQUFQLEdBQWlCLFVBQUNDLEdBQUQsRUFBTUMsRUFBTixFQUFhO0FBQzVCLE1BQU1DLFdBQVdELEdBQUdFLFVBQUgsQ0FBYyxVQUFkLENBQWpCO0FBQ0EsTUFBTUMsU0FBVUgsR0FBR0UsVUFBSCxDQUFjLFFBQWQsQ0FBaEI7O0FBRUFILE1BQUlLLEdBQUosQ0FBUSxHQUFSLEVBQWEsVUFBQ0MsR0FBRCxFQUFNQyxHQUFOO0FBQUEsV0FBY0EsSUFBSUMsUUFBSixD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LEVBQU1DLElBQU47QUFBQSxxQkFBZUQsTUFBTU4sSUFBSVEsSUFBSixDQUFTLEVBQUNELE1BQU1ELEdBQVAsRUFBVCxDQUFOLEdBQThCTixJQUFJUSxJQUFKLENBQVMsRUFBQ0QsTUFBTUEsSUFBUCxFQUFheUMsU0FBUyxzQkFBdEIsRUFBVCxDQUE3QztBQUFBLGFBQW5EO0FBQ0QsV0FIRDtBQUlELFNBTEQsTUFLTztBQUNMLGlCQUFPaEQsSUFBSVEsSUFBSixDQUFTLEVBQUNELE1BQU0sRUFBUCxFQUFXeUMsU0FBUyxrQkFBcEIsRUFBVCxDQUFQO0FBQ0Q7QUFDRixPQVZEO0FBV0QsS0ExQkQsTUEwQk87QUFDTCxhQUFPaEQsSUFBSVEsSUFBSixDQUFTLEVBQUNELE1BQU0sRUFBUCxFQUFXeUMsU0FBUyx1QkFBcEIsRUFBVCxDQUFQO0FBQ0Q7QUFDRixHQTlCRDs7QUFnQ0F2RCxNQUFJd0QsTUFBSixDQUFXLHNCQUFYLEVBQW1DLFVBQUNsRCxHQUFELEVBQU1DLEdBQU4sRUFBYztBQUMvQzs7Ozs7Ozs7O0FBU0QsR0FWRDs7QUFZQVAsTUFBSXlELEdBQUosQ0FBUSxVQUFDbkQsR0FBRCxFQUFNQyxHQUFOO0FBQUEsV0FBY0EsSUFBSW1ELE1BQUosQ0FBVyxHQUFYLEVBQWdCQyxJQUFoQixDQUFxQixNQUFyQixFQUE2QkMsSUFBN0IsQ0FBa0MsV0FBbEMsQ0FBZDtBQUFBLEdBQVI7QUFDRCxDQWpIRDs7QUFvSEMiLCJmaWxlIjoiYXBpLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvcm91dGVzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE1vbmdvQ2xpZW50IGZyb20gJ21vbmdvZGInO1xuaW1wb3J0IHsgT2JqZWN0SWQgfSBmcm9tICdtb25nb2RiJztcbmNvbnN0IGlzc3VlICAgPSByZXF1aXJlKCcuLi96enovbW9kZWxzL0lzc3VlLmpzJyk7XG5cbm1vZHVsZS5leHBvcnRzID0gKGFwcCwgZGIpID0+IHtcbiAgY29uc3QgUHJvamVjdHMgPSBkYi5jb2xsZWN0aW9uKCdwcm9qZWN0cycpO1xuICBjb25zdCBJc3N1ZXMgID0gZGIuY29sbGVjdGlvbignaXNzdWVzJyk7XG4gIFxuICBhcHAuZ2V0KCcvJywgKHJlcSwgcmVzKSA9PiByZXMuc2VuZEZpbGUocHJvY2Vzcy5jd2QoKSArICcvdmlld3MvaW5kZXguaHRtbCcpKTtcbiAgXG4gIGFwcC5nZXQoJy9wcm9qZWN0cycsIChyZXEsIHJlcykgPT4ge1xuICAgIFByb2plY3RzLmZpbmQoe30pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4ge1xuICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBlcnJ9KTtcbiAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogZG9jc30pXG4gICAgfSk7ICAgIFxuICB9KTtcbiAgXG4gIGFwcC5nZXQoJy9hcGkvaXNzdWVzLzpwcm9qZWN0JywgKHJlcSwgcmVzKSA9PiB7XG4gICAgY29uc3QgZ2V0QWxsSXNzdWVzID0gKCkgPT4ge1xuICAgICAgY29uc3QgcHJvbWlzZSA9IG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICAgICAgUHJvamVjdHMuZmluZE9uZSh7dGl0bGU6IHJlcS5wYXJhbXMucHJvamVjdC5yZXBsYWNlKC9cXF8vZywgJyAnKX0sIChlcnIsIGRvYykgPT4ge1xuICAgICAgICAgIGlmIChlcnIpIHJldHVybiByZWplY3QoZXJyKTtcbiAgICAgICAgICByZXR1cm4gSXNzdWVzLmZpbmQoe2Zvcl9wcm9qZWN0OiBkb2MucHJvamVjdF9pZH0pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4gZXJyID8gcmVqZWN0KGVycikgOiByZXNvbHZlKGRvY3MpKTtcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICAgIHJldHVybiBwcm9taXNlO1xuICAgIH07XG4gICAgXG4gICAgbGV0IGZpbHRlciA9IHtcbiAgICAgIGxlbmd0aDogT2JqZWN0LmtleXMocmVxLnF1ZXJ5KS5sZW5ndGgsXG4gICAgICBuYW1lczogT2JqZWN0LmtleXMocmVxLnF1ZXJ5KSxcbiAgICAgIHZhbHVlczogT2JqZWN0LnZhbHVlcyhyZXEucXVlcnkpLFxuICAgICAgcXVlcnk6IHJlcS5xdWVyeSxcbiAgICAgIGdldCBvcGVuKCkge1xuICAgICAgICByZXR1cm4gdGhpcy5uYW1lcy5pbmNsdWRlcygnb3BlbicpO1xuICAgICAgfVxuICAgIH07XG4gICAgXG4gICAgaWYgKGZpbHRlci5sZW5ndGgpIHtcbiAgICAgIGlmIChmaWx0ZXIub3Blbikge1xuICAgICAgICBmaWx0ZXIucXVlcnlbJ29wZW4nXSA9IGZpbHRlci5xdWVyeVsnb3BlbiddID09PSAndHJ1ZScgPyB0cnVlIDogZmFsc2U7XG4gICAgICB9XG4gICAgICBQcm9qZWN0cy5maW5kT25lKHt0aXRsZTogcmVxLnBhcmFtcy5wcm9qZWN0LnJlcGxhY2UoL1xcXy9nLCAnICcpfSwgKGVyciwgZG9jKSA9PiB7XG4gICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICAgIGZpbHRlci5xdWVyeVsnZm9yX3Byb2plY3QnXSA9IGRvYy5wcm9qZWN0X2lkO1xuICAgICAgICBJc3N1ZXMuZmluZChmaWx0ZXIucXVlcnkpLnRvQXJyYXkoKGVyciwgZG9jcykgPT4ge1xuICAgICAgICAgIGlmIChlcnIpIHtcbiAgICAgICAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSlcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCB1cmw6IHJlcS51cmx9KVxuICAgICAgICAgIH1cbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9IGVsc2Uge1xuICAgICAgZ2V0QWxsSXNzdWVzKCkudGhlbihkb2NzID0+IGRvY3MubGVuZ3RoID8gcmVzLmpzb24oe2RvY3M6IGRvY3N9KSA6IHJlcy5qc29uKHtkb2NzOiAnbm9uZSd9KSk7XG4gICAgfVxuICB9KTtcbiAgXG4gIGFwcC5wb3N0KCcvYXBpL2lzc3Vlcy86cHJvamVjdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIFByb2plY3RzLmZpbmRPbmUoe3RpdGxlOiByZXEucGFyYW1zLnByb2plY3QucmVwbGFjZSgvXFxfL2csICcgJyl9LCAoZXJyLCBkb2MpID0+IHtcbiAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICBcbiAgICAgIHJlcS5ib2R5LmZvcl9wcm9qZWN0ID0gZG9jLnByb2plY3RfaWQ7XG4gICAgICBsZXQgbmV3X2lzc3VlID0gbmV3IGlzc3VlKHJlcS5ib2R5KTtcbiAgICAgIFxuICAgICAgSXNzdWVzLmluc2VydE9uZShuZXdfaXNzdWUsIChlcnIsIGRvY3MpID0+IHtcbiAgICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBlcnJ9KTtcbiAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzfSk7XG4gICAgICB9KTtcbiAgICB9KTtcbiAgfSk7XG4gIFxuICBhcHAucHV0KCcvYXBpL2lzc3Vlcy86cHJvamVjdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIGlmIChPYmplY3Qua2V5cyhyZXEuYm9keSkubGVuZ3RoKSB7XG4gICAgICBsZXQgcXVlcnkgPSB7X2lkOiBPYmplY3RJZChyZXEuYm9keS5faWQpfTtcbiAgICAgIGxldCB1cGRhdGUgPSB7fTtcbiAgICBcbiAgICAgIGlmIChyZXEuYm9keS5jbG9zZSkge1xuICAgICAgICB1cGRhdGUgPSB7ICRzZXQ6IHtvcGVuOiBmYWxzZSwgdXBkYXRlZF9vbjogbmV3IERhdGUoKS50b0lTT1N0cmluZygpfSB9O1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgdXBkYXRlID0geyAkc2V0OiByZXEuYm9keSB9O1xuICAgICAgICBkZWxldGUgdXBkYXRlWyckc2V0J11bJ19pZCddO1xuICAgICAgfVxuICAgICAgLypJc3N1ZXMuZmluZE9uZShxdWVyeSwgKGVyciwgZG9jcykgPT4ge1xuICAgICAgICBJRiBGT1VORCBUSEVOIElTU1VFUyBVUERBVEVPTkVcbiAgICAgICAgICBJRiBVUERBVEVPTkUgRkFJTCBcbiAgICAgICAgICAgIFJFVFVSTiBDT1VMRCBOT1QgVVBEQVRFXG4gICAgICB9KTsqL1xuICAgICAgSXNzdWVzLnVwZGF0ZU9uZShxdWVyeSwgdXBkYXRlLCAoZXJyLCBkb2NzKSA9PiB7XG4gICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7cmVzdWx0OiBlcnJ9KTtcbiAgICAgICAgaWYgKGRvY3MubW9kaWZpZWRDb3VudCkge1xuICAgICAgICAgIFByb2plY3RzLmZpbmRPbmUoe3RpdGxlOiByZXEucGFyYW1zLnByb2plY3QucmVwbGFjZSgvXFxfL2csICcgJyl9LCAoZXJyLCBkb2MpID0+IHtcbiAgICAgICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICAgICAgICBJc3N1ZXMuZmluZCh7Zm9yX3Byb2plY3Q6IGRvYy5wcm9qZWN0X2lkfSkudG9BcnJheSgoZXJyLCBkb2NzKSA9PiBlcnIgPyByZXMuanNvbih7ZG9jczogZXJyfSkgOiByZXMuanNvbih7ZG9jczogZG9jcywgbWVzc2FnZTogJ1N1Y2Nlc3NmdWxseSBVcGRhdGVkJ30pKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICByZXR1cm4gcmVzLmpzb24oe2RvY3M6ICcnLCBtZXNzYWdlOiAnY291bGQgbm90IHVwZGF0ZSd9KTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogJycsIG1lc3NhZ2U6ICdubyB1cGRhdGVkIGZpZWxkIHNlbnQnfSk7XG4gICAgfVxuICB9KTtcbiAgXG4gIGFwcC5kZWxldGUoJy9hcGkvaXNzdWVzLzpwcm9qZWN0JywgKHJlcSwgcmVzKSA9PiB7XG4gICAgLypcbiAgICAgIHdpdGggYW4gX2lkIHRvIGNvbXBsZXRlbHkgZGVsZXRlIGFuIGlzc3VlXG4gICAgICAgIElmIG5vIF9pZCBpcyBzZW50IFxuICAgICAgICAgIHJldHVybiAnX2lkIGVycm9yJ1xuICAgICAgICBJZiBzdWNjZXNzXG4gICAgICAgICAgcmV0dXJuICdkZWxldGVkIF9pZDogJyArIF9pZFxuICAgICAgICBJZiBmYWlsXG4gICAgICAgICAgcmV0dXJuICdjb3VsZCBub3QgZGVsZXRlIF9pZDogJyArIF9pZFxuICAgICovXG4gIH0pO1xuICAgICAgXG4gIGFwcC51c2UoKHJlcSwgcmVzKSA9PiByZXMuc3RhdHVzKDQwNCkudHlwZSgndGV4dCcpLnNlbmQoJ05vdCBGb3VuZCcpKTtcbn07XG5cblxuIC8qUHJvamVjdHMuZmluZE9uZSh7dGl0bGU6IHJlcS5wYXJhbXMucHJvamVjdC5yZXBsYWNlKC9cXF8vZywgJyAnKX0sIChlcnIsIGRvYykgPT4ge1xuICAgICAgICBpZiAoZXJyKSByZXR1cm4gcmVzLmpzb24oe2RvY3M6IGVycn0pO1xuICAgICAgICBJc3N1ZXMuZmluZCh7Zm9yX3Byb2plY3Q6IGRvYy5wcm9qZWN0X2lkfSkudG9BcnJheSgoZXJyLCBkb2NzKSA9PiBlcnIgPyByZXMuanNvbih7ZG9jczogZXJyfSkgOiByZXMuanNvbih7ZG9jczogZG9jc30pKTtcbiAgICAgIH0pOyovIl19",
+    "code": "'use strict';\n\nvar _mongodb = require('mongodb');\n\nvar _mongodb2 = _interopRequireDefault(_mongodb);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar issue = require('../zzz/models/Issue.js');\n\nmodule.exports = function (app, db) {\n  var Projects = db.collection('projects');\n  var Issues = db.collection('issues');\n\n  app.get('/', function (req, res) {\n    return res.sendFile(process.cwd() + '/views/index.html');\n  });\n\n  app.get('/projects', function (req, res) {\n    Projects.find({}).toArray(function (err, docs) {\n      if (err) return res.json({ docs: err });\n      return res.json({ docs: docs });\n    });\n  });\n\n  app.get('/api/issues/:project', function (req, res) {\n    var getAllIssues = function getAllIssues() {\n      var promise = new Promise(function (resolve, reject) {\n        Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n          if (err) return reject(err);\n          return Issues.find({ for_project: doc.project_id }).toArray(function (err, docs) {\n            return err ? reject(err) : resolve(docs);\n          });\n        });\n      });\n      return promise;\n    };\n\n    var filter = {\n      length: Object.keys(req.query).length,\n      names: Object.keys(req.query),\n      values: Object.values(req.query),\n      query: req.query,\n      get open() {\n        return this.names.includes('open');\n      }\n    };\n\n    if (filter.length) {\n      if (filter.open) {\n        filter.query['open'] = filter.query['open'] === 'true' ? true : false;\n      }\n      Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n        if (err) return res.json({ docs: err });\n        filter.query['for_project'] = doc.project_id;\n        Issues.find(filter.query).toArray(function (err, docs) {\n          if (err) {\n            return res.json({ docs: err });\n          } else {\n            return res.json({ docs: docs, url: req.url });\n          }\n        });\n      });\n    } else {\n      getAllIssues().then(function (docs) {\n        return docs.length ? res.json({ docs: docs }) : res.json({ docs: 'none' });\n      });\n    }\n  });\n\n  app.post('/api/issues/:project', function (req, res) {\n    var validPost = function validPost() {\n      var valid = true;\n      [req.body.issue_title, req.body.issue_text, req.body.created_by].forEach(function (el) {\n        if (!el) {\n          valid = false;\n        }\n      });\n      return valid;\n    };\n\n    if (validPost()) {\n      Projects.findOne({ title: req.params.project.replace(/\\_/g, ' ') }, function (err, doc) {\n        if (err) return res.json({ docs: '', message: err });\n\n        req.body.for_project = doc.project_id;\n        var new_issue = new issue(req.body);\n\n        Issues.insertOne(new_issue, function (err, docs) {\n          if (err) return res.json({ docs: '', message: err });\n\n          return res.json({ docs: docs, value: new_issue, message: 'Successfully inserted' });\n        });\n      });\n    } else {\n      //return res.json({docs: '', message: 'Invalid post, missing required fields'});\n      return res.status(400).send('Missing required fields');\n    }\n  });\n\n  app.put('/api/issues/:project', function (req, res) {\n    if (Object.keys(req.body).length) {\n      var validId = req.body._id ? req.body._id.length === 24 ? true : false : false;\n\n      if (validId) {\n        var query = { _id: (0, _mongodb.ObjectId)(req.body._id) };\n        var update = {};\n\n        if (req.body.close) {\n          update = { $set: { open: false, updated_on: new Date().toISOString() } };\n        } else {\n          update = { $set: req.body };\n          delete update['$set']['_id'];\n        }\n\n        Issues.findOneAndUpdate(query, update, { returnOriginal: false }, function (err, docs) {\n          if (err) {\n            return res.json({ docs: '', message: err });\n          } else {\n            return res.json({ docs: docs, message: 'Successfully updated' });\n          }\n        });\n      } else {\n        return res.json({ docs: '', message: 'could not update _id: ' + req.body._id });\n      }\n    } else {\n      //return res.json({docs: '', message: 'no updated field sent'});\n      return res.status(400).send('No body');\n    }\n  });\n\n  app.delete('/api/issues/:project', function (req, res) {\n    if (Object.keys(req.body).length) {\n      var validId = req.body._id ? req.body._id.length === 24 ? true : false : false;\n\n      if (validId) {\n        var query = { _id: (0, _mongodb.ObjectId)(req.body._id) };\n\n        /*Issues.deleteOne(query, (err, docs) => {\n          if (err) {\n            return res.json({docs: err});\n          } else {\n            return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});\n          }\n        });*/\n        Issues.findOneAndDelete(query, function (err, docs) {\n          if (err) return res.json({ docs: '', message: err });\n          return res.json({ docs: docs, message: 'Deleted _id: ' + req.body._id });\n        });\n      } else {\n        return res.json({ docs: '', message: 'could not delete _id: ' + req.body._id });\n      }\n    } else {\n      return res.json({ docs: '', message: '_id error; no _id' });\n    }\n  });\n\n  app.use(function (req, res) {\n    return res.status(404).type('text').send('Not Found');\n  });\n};\n\n/*\n  Issues.findOne(query, (err, docs) => {\n    IF FOUND THEN ISSUES UPDATEONE\n      IF UPDATEONE FAIL \n        RETURN COULD NOT UPDATE\n  });\n  \n  Issues.updateOne(query, update, (err, docs) => {\n    if (err) return res.json({result: err});\n    if (docs.modifiedCount) {\n      Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));\n      });\n    } else {\n      return res.json({docs: '', message: 'could not update'});\n    }\n  });\n*/\n\n/*\n Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n   if (err) return res.json({docs: err});\n   Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));\n });\n*/\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwaS5qcyJdLCJuYW1lcyI6WyJpc3N1ZSIsInJlcXVpcmUiLCJtb2R1bGUiLCJleHBvcnRzIiwiYXBwIiwiZGIiLCJQcm9qZWN0cyIsImNvbGxlY3Rpb24iLCJJc3N1ZXMiLCJnZXQiLCJyZXEiLCJyZXMiLCJzZW5kRmlsZSIsInByb2Nlc3MiLCJjd2QiLCJmaW5kIiwidG9BcnJheSIsImVyciIsImRvY3MiLCJqc29uIiwiZ2V0QWxsSXNzdWVzIiwicHJvbWlzZSIsIlByb21pc2UiLCJyZXNvbHZlIiwicmVqZWN0IiwiZmluZE9uZSIsInRpdGxlIiwicGFyYW1zIiwicHJvamVjdCIsInJlcGxhY2UiLCJkb2MiLCJmb3JfcHJvamVjdCIsInByb2plY3RfaWQiLCJmaWx0ZXIiLCJsZW5ndGgiLCJPYmplY3QiLCJrZXlzIiwicXVlcnkiLCJuYW1lcyIsInZhbHVlcyIsIm9wZW4iLCJpbmNsdWRlcyIsInVybCIsInRoZW4iLCJwb3N0IiwidmFsaWRQb3N0IiwidmFsaWQiLCJib2R5IiwiaXNzdWVfdGl0bGUiLCJpc3N1ZV90ZXh0IiwiY3JlYXRlZF9ieSIsImZvckVhY2giLCJlbCIsIm1lc3NhZ2UiLCJuZXdfaXNzdWUiLCJpbnNlcnRPbmUiLCJ2YWx1ZSIsInN0YXR1cyIsInNlbmQiLCJwdXQiLCJ2YWxpZElkIiwiX2lkIiwidXBkYXRlIiwiY2xvc2UiLCIkc2V0IiwidXBkYXRlZF9vbiIsIkRhdGUiLCJ0b0lTT1N0cmluZyIsImZpbmRPbmVBbmRVcGRhdGUiLCJyZXR1cm5PcmlnaW5hbCIsImRlbGV0ZSIsImZpbmRPbmVBbmREZWxldGUiLCJ1c2UiLCJ0eXBlIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7QUFFQSxJQUFNQSxRQUFVQyxRQUFRLHdCQUFSLENBQWhCOztBQUVBQyxPQUFPQyxPQUFQLEdBQWlCLFVBQUNDLEdBQUQsRUFBTUMsRUFBTixFQUFhO0FBQzVCLE1BQU1DLFdBQVdELEdBQUdFLFVBQUgsQ0FBYyxVQUFkLENBQWpCO0FBQ0EsTUFBTUMs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OztBQWdKQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFvQkMiLCJmaWxlIjoiYXBpLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvcm91dGVzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE1vbmdvQ2xpZW50IGZyb20gJ21vbmdvZGInO1xuaW1wb3J0IHsgT2JqZWN0SWQgfSBmcm9tICdtb25nb2RiJztcbmNvbnN0IGlzc3VlICAgPSByZXF1aXJlKCcuLi96enovbW9kZWxzL0lzc3VlLmpzJyk7XG5cbm1vZHVsZS5leHBvcnRzID0gKGFwcCwgZGIpID0+IHtcbiAgY29uc3QgUHJvamVjdHMgPSBkYi5jb2xsZWN0aW9uKCdwcm9qZWN0cycpO1xuICBjb25zdCBJc3N1ZXMgID0gZGIuY29sbGVjdGlvbignaXNzdWVzJyk7XG4gIFxuICBhcHAuZ2V0KCcvJywgKHJlcSwgcmVzKSA9PiByZXMuc2VuZEZpbGUocHJvY2Vzcy5jd2QoKSArICcvdmlld3MvaW5kZXguaHRtbCcpKTtcbiAgXG4gIGFwcC5nZXQoJy9wcm9qZWN0cycsIChyZXEsIHJlcykgPT4ge1xuICAgIFByb2plY3RzLmZpbmQoe30pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4ge1xuICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBlcnJ9KTtcbiAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogZG9jc30pXG4gICAgfSk7ICAgIFxuICB9KTtcbiAgXG4gIGFwcC5nZXQoJy9hcGkvaXNzdWVzLzpwcm9qZWN0JywgKHJlcSwgcmVzKSA9PiB7XG4gICAgY29uc3QgZ2V0QWxsSXNzdWVzID0gKCkgPT4ge1xuICAgICAgY29uc3QgcHJvbWlzZSA9IG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICAgICAgUHJvamVjdHMuZmluZE9uZSh7dGl0bGU6IHJlcS5wYXJhbXMucHJvamVjdC5yZXBsYWNlKC9cXF8vZywgJyAnKX0sIChlcnIsIGRvYykgPT4ge1xuICAgICAgICAgIGlmIChlcnIpIHJldHVybiByZWplY3QoZXJyKTtcbiAgICAgICAgICByZXR1cm4gSXNzdWVzLmZpbmQoe2Zvcl9wcm9qZWN0OiBkb2MucHJvamVjdF9pZH0pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4gZXJyID8gcmVqZWN0KGVycikgOiByZXNvbHZlKGRvY3MpKTtcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICAgIHJldHVybiBwcm9taXNlO1xuICAgIH07XG4gICAgXG4gICAgbGV0IGZpbHRlciA9IHtcbiAgICAgIGxlbmd0aDogT2JqZWN0LmtleXMocmVxLnF1ZXJ5KS5sZW5ndGgsXG4gICAgICBuYW1lczogT2JqZWN0LmtleXMocmVxLnF1ZXJ5KSxcbiAgICAgIHZhbHVlczogT2JqZWN0LnZhbHVlcyhyZXEucXVlcnkpLFxuICAgICAgcXVlcnk6IHJlcS5xdWVyeSxcbiAgICAgIGdldCBvcGVuKCkge1xuICAgICAgICByZXR1cm4gdGhpcy5uYW1lcy5pbmNsdWRlcygnb3BlbicpO1xuICAgICAgfVxuICAgIH07XG4gICAgXG4gICAgaWYgKGZpbHRlci5sZW5ndGgpIHtcbiAgICAgIGlmIChmaWx0ZXIub3Blbikge1xuICAgICAgICBmaWx0ZXIucXVlcnlbJ29wZW4nXSA9IGZpbHRlci5xdWVyeVsnb3BlbiddID09PSAndHJ1ZScgPyB0cnVlIDogZmFsc2U7XG4gICAgICB9XG4gICAgICBQcm9qZWN0cy5maW5kT25lKHt0aXRsZTogcmVxLnBhcmFtcy5wcm9qZWN0LnJlcGxhY2UoL1xcXy9nLCAnICcpfSwgKGVyciwgZG9jKSA9PiB7XG4gICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICAgIGZpbHRlci5xdWVyeVsnZm9yX3Byb2plY3QnXSA9IGRvYy5wcm9qZWN0X2lkO1xuICAgICAgICBJc3N1ZXMuZmluZChmaWx0ZXIucXVlcnkpLnRvQXJyYXkoKGVyciwgZG9jcykgPT4ge1xuICAgICAgICAgIGlmIChlcnIpIHtcbiAgICAgICAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSlcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCB1cmw6IHJlcS51cmx9KVxuICAgICAgICAgIH1cbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9IGVsc2Uge1xuICAgICAgZ2V0QWxsSXNzdWVzKCkudGhlbihkb2NzID0+IGRvY3MubGVuZ3RoID8gcmVzLmpzb24oe2RvY3M6IGRvY3N9KSA6IHJlcy5qc29uKHtkb2NzOiAnbm9uZSd9KSk7XG4gICAgfVxuICB9KTtcbiAgXG4gIGFwcC5wb3N0KCcvYXBpL2lzc3Vlcy86cHJvamVjdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIGNvbnN0IHZhbGlkUG9zdCA9ICgpID0+IHtcbiAgICAgIGxldCB2YWxpZCA9IHRydWU7XG4gICAgICBbcmVxLmJvZHkuaXNzdWVfdGl0bGUsIHJlcS5ib2R5Lmlzc3VlX3RleHQsIHJlcS5ib2R5LmNyZWF0ZWRfYnldLmZvckVhY2goZWwgPT4ge1xuICAgICAgICBpZiAoIWVsKSB7XG4gICAgICAgICAgdmFsaWQgPSBmYWxzZTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgICByZXR1cm4gdmFsaWQ7XG4gICAgfTtcbiAgICBcbiAgICBpZiAodmFsaWRQb3N0KCkpIHtcbiAgICAgIFByb2plY3RzLmZpbmRPbmUoe3RpdGxlOiByZXEucGFyYW1zLnByb2plY3QucmVwbGFjZSgvXFxfL2csICcgJyl9LCAoZXJyLCBkb2MpID0+IHtcbiAgICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiAnJywgbWVzc2FnZTogZXJyfSk7XG4gICAgICBcbiAgICAgICAgcmVxLmJvZHkuZm9yX3Byb2plY3QgPSBkb2MucHJvamVjdF9pZDtcbiAgICAgICAgbGV0IG5ld19pc3N1ZSA9IG5ldyBpc3N1ZShyZXEuYm9keSk7XG4gICAgICBcbiAgICAgICAgSXNzdWVzLmluc2VydE9uZShuZXdfaXNzdWUsIChlcnIsIGRvY3MpID0+IHtcbiAgICAgICAgICBpZiAoZXJyKSByZXR1cm4gcmVzLmpzb24oe2RvY3M6ICcnLCBtZXNzYWdlOiBlcnJ9KTtcbiAgICAgICAgXG4gICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCB2YWx1ZTogbmV3X2lzc3VlLCBtZXNzYWdlOiAnU3VjY2Vzc2Z1bGx5IGluc2VydGVkJ30pO1xuICAgICAgICB9KTtcbiAgICAgIH0pO1xuICAgIH0gZWxzZSB7XG4gICAgICAvL3JldHVybiByZXMuanNvbih7ZG9jczogJycsIG1lc3NhZ2U6ICdJbnZhbGlkIHBvc3QsIG1pc3NpbmcgcmVxdWlyZWQgZmllbGRzJ30pO1xuICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoNDAwKS5zZW5kKCdNaXNzaW5nIHJlcXVpcmVkIGZpZWxkcycpO1xuICAgIH1cbiAgfSk7XG4gIFxuICBhcHAucHV0KCcvYXBpL2lzc3Vlcy86cHJvamVjdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIGlmIChPYmplY3Qua2V5cyhyZXEuYm9keSkubGVuZ3RoKSB7XG4gICAgICBsZXQgdmFsaWRJZCA9IHJlcS5ib2R5Ll9pZCA/IChyZXEuYm9keS5faWQubGVuZ3RoID09PSAyNCA/IHRydWUgOiBmYWxzZSkgOiAoZmFsc2UpO1xuICAgICAgXG4gICAgICBpZiAodmFsaWRJZCkge1xuICAgICAgICBsZXQgcXVlcnkgPSB7X2lkOiBPYmplY3RJZChyZXEuYm9keS5faWQpfTtcbiAgICAgICAgbGV0IHVwZGF0ZSA9IHt9O1xuICAgIFxuICAgICAgICBpZiAocmVxLmJvZHkuY2xvc2UpIHtcbiAgICAgICAgICB1cGRhdGUgPSB7ICRzZXQ6IHtvcGVuOiBmYWxzZSwgdXBkYXRlZF9vbjogbmV3IERhdGUoKS50b0lTT1N0cmluZygpfSB9O1xuICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgIHVwZGF0ZSA9IHsgJHNldDogcmVxLmJvZHkgfTtcbiAgICAgICAgICBkZWxldGUgdXBkYXRlWyckc2V0J11bJ19pZCddO1xuICAgICAgICB9XG4gICAgICBcbiAgICAgICAgSXNzdWVzLmZpbmRPbmVBbmRVcGRhdGUocXVlcnksIHVwZGF0ZSwge3JldHVybk9yaWdpbmFsOiBmYWxzZX0sIChlcnIsIGRvY3MpID0+IHtcbiAgICAgICAgICBpZiAoZXJyKSB7XG4gICAgICAgICAgICByZXR1cm4gcmVzLmpzb24oe2RvY3M6ICcnLCBtZXNzYWdlOiBlcnJ9KTtcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCBtZXNzYWdlOiAnU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQnfSk7XG4gICAgICAgICAgfVxuICAgICAgICB9KTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogJycsIG1lc3NhZ2U6ICdjb3VsZCBub3QgdXBkYXRlIF9pZDogJyArIHJlcS5ib2R5Ll9pZH0pO1xuICAgICAgfSBcbiAgICB9IGVsc2Uge1xuICAgICAgLy9yZXR1cm4gcmVzLmpzb24oe2RvY3M6ICcnLCBtZXNzYWdlOiAnbm8gdXBkYXRlZCBmaWVsZCBzZW50J30pO1xuICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoNDAwKS5zZW5kKCdObyBib2R5Jyk7XG4gICAgfVxuICB9KTtcbiAgXG4gIGFwcC5kZWxldGUoJy9hcGkvaXNzdWVzLzpwcm9qZWN0JywgKHJlcSwgcmVzKSA9PiB7XG4gICAgaWYgKE9iamVjdC5rZXlzKHJlcS5ib2R5KS5sZW5ndGgpIHtcbiAgICAgIGxldCB2YWxpZElkID0gcmVxLmJvZHkuX2lkID8gKHJlcS5ib2R5Ll9pZC5sZW5ndGggPT09IDI0ID8gdHJ1ZSA6IGZhbHNlKSA6IChmYWxzZSk7XG4gICAgICBcbiAgICAgIGlmICh2YWxpZElkKSB7XG4gICAgICAgIGxldCBxdWVyeSA9IHtfaWQ6IE9iamVjdElkKHJlcS5ib2R5Ll9pZCl9O1xuICAgICAgICBcbiAgICAgICAgLypJc3N1ZXMuZGVsZXRlT25lKHF1ZXJ5LCAoZXJyLCBkb2NzKSA9PiB7XG4gICAgICAgICAgaWYgKGVycikge1xuICAgICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBlcnJ9KTtcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCBtZXNzYWdlOiAnRGVsZXRlZCBfaWQ6ICcgKyByZXEuYm9keS5faWR9KTtcbiAgICAgICAgICB9XG4gICAgICAgIH0pOyovXG4gICAgICAgIElzc3Vlcy5maW5kT25lQW5kRGVsZXRlKHF1ZXJ5LCAoZXJyLCBkb2NzKSA9PiB7XG4gICAgICAgICAgaWYgKGVycikgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiAnJywgbWVzc2FnZTogZXJyfSk7XG4gICAgICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiBkb2NzLCBtZXNzYWdlOiAnRGVsZXRlZCBfaWQ6ICcgKyByZXEuYm9keS5faWR9KTtcbiAgICAgICAgfSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICByZXR1cm4gcmVzLmpzb24oe2RvY3M6ICcnLCBtZXNzYWdlOiAnY291bGQgbm90IGRlbGV0ZSBfaWQ6ICcgKyByZXEuYm9keS5faWR9KTtcbiAgICAgIH1cbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHJlcy5qc29uKHtkb2NzOiAnJywgbWVzc2FnZTogJ19pZCBlcnJvcjsgbm8gX2lkJ30pO1xuICAgIH1cbiAgfSk7XG4gICAgICBcbiAgYXBwLnVzZSgocmVxLCByZXMpID0+IHJlcy5zdGF0dXMoNDA0KS50eXBlKCd0ZXh0Jykuc2VuZCgnTm90IEZvdW5kJykpO1xufTtcblxuLypcbiAgSXNzdWVzLmZpbmRPbmUocXVlcnksIChlcnIsIGRvY3MpID0+IHtcbiAgICBJRiBGT1VORCBUSEVOIElTU1VFUyBVUERBVEVPTkVcbiAgICAgIElGIFVQREFURU9ORSBGQUlMIFxuICAgICAgICBSRVRVUk4gQ09VTEQgTk9UIFVQREFURVxuICB9KTtcbiAgXG4gIElzc3Vlcy51cGRhdGVPbmUocXVlcnksIHVwZGF0ZSwgKGVyciwgZG9jcykgPT4ge1xuICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7cmVzdWx0OiBlcnJ9KTtcbiAgICBpZiAoZG9jcy5tb2RpZmllZENvdW50KSB7XG4gICAgICBQcm9qZWN0cy5maW5kT25lKHt0aXRsZTogcmVxLnBhcmFtcy5wcm9qZWN0LnJlcGxhY2UoL1xcXy9nLCAnICcpfSwgKGVyciwgZG9jKSA9PiB7XG4gICAgICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgICAgIElzc3Vlcy5maW5kKHtmb3JfcHJvamVjdDogZG9jLnByb2plY3RfaWR9KS50b0FycmF5KChlcnIsIGRvY3MpID0+IGVyciA/IHJlcy5qc29uKHtkb2NzOiBlcnJ9KSA6IHJlcy5qc29uKHtkb2NzOiBkb2NzLCBtZXNzYWdlOiAnU3VjY2Vzc2Z1bGx5IFVwZGF0ZWQnfSkpO1xuICAgICAgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiByZXMuanNvbih7ZG9jczogJycsIG1lc3NhZ2U6ICdjb3VsZCBub3QgdXBkYXRlJ30pO1xuICAgIH1cbiAgfSk7XG4qL1xuXG4gLypcbiAgUHJvamVjdHMuZmluZE9uZSh7dGl0bGU6IHJlcS5wYXJhbXMucHJvamVjdC5yZXBsYWNlKC9cXF8vZywgJyAnKX0sIChlcnIsIGRvYykgPT4ge1xuICAgIGlmIChlcnIpIHJldHVybiByZXMuanNvbih7ZG9jczogZXJyfSk7XG4gICAgSXNzdWVzLmZpbmQoe2Zvcl9wcm9qZWN0OiBkb2MucHJvamVjdF9pZH0pLnRvQXJyYXkoKGVyciwgZG9jcykgPT4gZXJyID8gcmVzLmpzb24oe2RvY3M6IGVycn0pIDogcmVzLmpzb24oe2RvY3M6IGRvY3N9KSk7XG4gIH0pO1xuKi8iXX0=",
     "ast": null,
     "map": {
       "version": 3,
@@ -1250,10 +655,22 @@
         "url",
         "then",
         "post",
+        "validPost",
+        "valid",
         "body",
+        "issue_title",
+        "issue_text",
+        "created_by",
+        "forEach",
+        "el",
+        "message",
         "new_issue",
         "insertOne",
+        "value",
+        "status",
+        "send",
         "put",
+        "validId",
         "_id",
         "update",
         "close",
@@ -1261,24 +678,323 @@
         "updated_on",
         "Date",
         "toISOString",
-        "updateOne",
-        "result",
-        "modifiedCount",
-        "message",
+        "findOneAndUpdate",
+        "returnOriginal",
         "delete",
+        "findOneAndDelete",
         "use",
-        "status",
-        "type",
-        "send"
+        "type"
       ],
-      "mappings": "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",
+      "mappings": "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",
       "file": "api.js",
       "sourceRoot": "/app/routes",
       "sourcesContent": [
-        "import MongoClient from 'mongodb';\nimport { ObjectId } from 'mongodb';\nconst issue   = require('../zzz/models/Issue.js');\n\nmodule.exports = (app, db) => {\n  const Projects = db.collection('projects');\n  const Issues  = db.collection('issues');\n  \n  app.get('/', (req, res) => res.sendFile(process.cwd() + '/views/index.html'));\n  \n  app.get('/projects', (req, res) => {\n    Projects.find({}).toArray((err, docs) => {\n      if (err) return res.json({docs: err});\n      return res.json({docs: docs})\n    });    \n  });\n  \n  app.get('/api/issues/:project', (req, res) => {\n    const getAllIssues = () => {\n      const promise = new Promise((resolve, reject) => {\n        Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n          if (err) return reject(err);\n          return Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? reject(err) : resolve(docs));\n        });\n      });\n      return promise;\n    };\n    \n    let filter = {\n      length: Object.keys(req.query).length,\n      names: Object.keys(req.query),\n      values: Object.values(req.query),\n      query: req.query,\n      get open() {\n        return this.names.includes('open');\n      }\n    };\n    \n    if (filter.length) {\n      if (filter.open) {\n        filter.query['open'] = filter.query['open'] === 'true' ? true : false;\n      }\n      Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        filter.query['for_project'] = doc.project_id;\n        Issues.find(filter.query).toArray((err, docs) => {\n          if (err) {\n            return res.json({docs: err})\n          } else {\n            return res.json({docs: docs, url: req.url})\n          }\n        });\n      });\n    } else {\n      getAllIssues().then(docs => docs.length ? res.json({docs: docs}) : res.json({docs: 'none'}));\n    }\n  });\n  \n  app.post('/api/issues/:project', (req, res) => {\n    Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n      if (err) return res.json({docs: err});\n      \n      req.body.for_project = doc.project_id;\n      let new_issue = new issue(req.body);\n      \n      Issues.insertOne(new_issue, (err, docs) => {\n        if (err) return res.json({docs: err});\n        return res.json({docs: docs});\n      });\n    });\n  });\n  \n  app.put('/api/issues/:project', (req, res) => {\n    if (Object.keys(req.body).length) {\n      let query = {_id: ObjectId(req.body._id)};\n      let update = {};\n    \n      if (req.body.close) {\n        update = { $set: {open: false, updated_on: new Date().toISOString()} };\n      } else {\n        update = { $set: req.body };\n        delete update['$set']['_id'];\n      }\n      /*Issues.findOne(query, (err, docs) => {\n        IF FOUND THEN ISSUES UPDATEONE\n          IF UPDATEONE FAIL \n            RETURN COULD NOT UPDATE\n      });*/\n      Issues.updateOne(query, update, (err, docs) => {\n        if (err) return res.json({result: err});\n        if (docs.modifiedCount) {\n          Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n            if (err) return res.json({docs: err});\n            Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));\n          });\n        } else {\n          return res.json({docs: '', message: 'could not update'});\n        }\n      });\n    } else {\n      return res.json({docs: '', message: 'no updated field sent'});\n    }\n  });\n  \n  app.delete('/api/issues/:project', (req, res) => {\n    /*\n      with an _id to completely delete an issue\n        If no _id is sent \n          return '_id error'\n        If success\n          return 'deleted _id: ' + _id\n        If fail\n          return 'could not delete _id: ' + _id\n    */\n  });\n      \n  app.use((req, res) => res.status(404).type('text').send('Not Found'));\n};\n\n\n /*Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));\n      });*/"
+        "import MongoClient from 'mongodb';\nimport { ObjectId } from 'mongodb';\nconst issue   = require('../zzz/models/Issue.js');\n\nmodule.exports = (app, db) => {\n  const Projects = db.collection('projects');\n  const Issues  = db.collection('issues');\n  \n  app.get('/', (req, res) => res.sendFile(process.cwd() + '/views/index.html'));\n  \n  app.get('/projects', (req, res) => {\n    Projects.find({}).toArray((err, docs) => {\n      if (err) return res.json({docs: err});\n      return res.json({docs: docs})\n    });    \n  });\n  \n  app.get('/api/issues/:project', (req, res) => {\n    const getAllIssues = () => {\n      const promise = new Promise((resolve, reject) => {\n        Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n          if (err) return reject(err);\n          return Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? reject(err) : resolve(docs));\n        });\n      });\n      return promise;\n    };\n    \n    let filter = {\n      length: Object.keys(req.query).length,\n      names: Object.keys(req.query),\n      values: Object.values(req.query),\n      query: req.query,\n      get open() {\n        return this.names.includes('open');\n      }\n    };\n    \n    if (filter.length) {\n      if (filter.open) {\n        filter.query['open'] = filter.query['open'] === 'true' ? true : false;\n      }\n      Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        filter.query['for_project'] = doc.project_id;\n        Issues.find(filter.query).toArray((err, docs) => {\n          if (err) {\n            return res.json({docs: err})\n          } else {\n            return res.json({docs: docs, url: req.url})\n          }\n        });\n      });\n    } else {\n      getAllIssues().then(docs => docs.length ? res.json({docs: docs}) : res.json({docs: 'none'}));\n    }\n  });\n  \n  app.post('/api/issues/:project', (req, res) => {\n    const validPost = () => {\n      let valid = true;\n      [req.body.issue_title, req.body.issue_text, req.body.created_by].forEach(el => {\n        if (!el) {\n          valid = false;\n        }\n      });\n      return valid;\n    };\n    \n    if (validPost()) {\n      Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: '', message: err});\n      \n        req.body.for_project = doc.project_id;\n        let new_issue = new issue(req.body);\n      \n        Issues.insertOne(new_issue, (err, docs) => {\n          if (err) return res.json({docs: '', message: err});\n        \n          return res.json({docs: docs, value: new_issue, message: 'Successfully inserted'});\n        });\n      });\n    } else {\n      //return res.json({docs: '', message: 'Invalid post, missing required fields'});\n      return res.status(400).send('Missing required fields');\n    }\n  });\n  \n  app.put('/api/issues/:project', (req, res) => {\n    if (Object.keys(req.body).length) {\n      let validId = req.body._id ? (req.body._id.length === 24 ? true : false) : (false);\n      \n      if (validId) {\n        let query = {_id: ObjectId(req.body._id)};\n        let update = {};\n    \n        if (req.body.close) {\n          update = { $set: {open: false, updated_on: new Date().toISOString()} };\n        } else {\n          update = { $set: req.body };\n          delete update['$set']['_id'];\n        }\n      \n        Issues.findOneAndUpdate(query, update, {returnOriginal: false}, (err, docs) => {\n          if (err) {\n            return res.json({docs: '', message: err});\n          } else {\n            return res.json({docs: docs, message: 'Successfully updated'});\n          }\n        });\n      } else {\n        return res.json({docs: '', message: 'could not update _id: ' + req.body._id});\n      } \n    } else {\n      //return res.json({docs: '', message: 'no updated field sent'});\n      return res.status(400).send('No body');\n    }\n  });\n  \n  app.delete('/api/issues/:project', (req, res) => {\n    if (Object.keys(req.body).length) {\n      let validId = req.body._id ? (req.body._id.length === 24 ? true : false) : (false);\n      \n      if (validId) {\n        let query = {_id: ObjectId(req.body._id)};\n        \n        /*Issues.deleteOne(query, (err, docs) => {\n          if (err) {\n            return res.json({docs: err});\n          } else {\n            return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});\n          }\n        });*/\n        Issues.findOneAndDelete(query, (err, docs) => {\n          if (err) return res.json({docs: '', message: err});\n          return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});\n        });\n      } else {\n        return res.json({docs: '', message: 'could not delete _id: ' + req.body._id});\n      }\n    } else {\n      return res.json({docs: '', message: '_id error; no _id'});\n    }\n  });\n      \n  app.use((req, res) => res.status(404).type('text').send('Not Found'));\n};\n\n/*\n  Issues.findOne(query, (err, docs) => {\n    IF FOUND THEN ISSUES UPDATEONE\n      IF UPDATEONE FAIL \n        RETURN COULD NOT UPDATE\n  });\n  \n  Issues.updateOne(query, update, (err, docs) => {\n    if (err) return res.json({result: err});\n    if (docs.modifiedCount) {\n      Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n        if (err) return res.json({docs: err});\n        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));\n      });\n    } else {\n      return res.json({docs: '', message: 'could not update'});\n    }\n  });\n*/\n\n /*\n  Projects.findOne({title: req.params.project.replace(/\\_/g, ' ')}, (err, doc) => {\n    if (err) return res.json({docs: err});\n    Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));\n  });\n*/"
       ]
     },
-    "mtime": 1545126803000
+    "mtime": 1545351073000
+  },
+  "{\"filename\":\"/app/zzz/models/Issue.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/zzz/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/zzz/models/Issue.js",
+      "filenameRelative": "/app/zzz/models/Issue.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "Issue.js",
+      "sourceFileName": "Issue.js",
+      "sourceRoot": "/app/zzz/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/zzz/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "Issue"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Issue = new mongoose.Schema({\n  issue_title: { type: String, required: true },\n  issue_text: { type: String, required: true },\n  created_by: { type: String, required: true },\n  assigned_to: { type: String },\n  status_text: { type: String },\n  created_on: { type: Date, default: Date.now },\n  updated_on: { type: Date, default: Date.now },\n  open: { type: Boolean, default: true },\n  for_project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' }\n});\n\nmodule.exports = mongoose.model('Issue', Issue);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklzc3VlLmpzIl0sIm5hbWVzIjpbIm1vbmdvb3NlIiwicmVxdWlyZSIsIk9iamVjdElkIiwiU2NoZW1hIiwiVHlwZXMiLCJJc3N1ZSIsImlzc3VlX3RpdGxlIiwidHlwZSIsIlN0cmluZyIsInJlcXVpcmVkIiwiaXNzdWVfdGV4dCIsImNyZWF0ZWRfYnkiLCJhc3NpZ25lZF90byIsInN0YXR1c190ZXh0IiwiY3JlYXRlZF9vbiIsIkRhdGUiLCJkZWZhdWx0Iiwibm93IiwidXBkYXRlZF9vbiIsIm9wZW4iLCJCb29sZWFuIiwiZm9yX3Byb2plY3QiLCJyZWYiLCJtb2R1bGUiLCJleHBvcnRzIiwibW9kZWwiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTUEsV0FBV0MsUUFBUSxVQUFSLENBQWpCO0FBQ0EsSUFBTUMsV0FBV0YsU0FBU0csTUFBVCxDQUFnQkMsS0FBaEIsQ0FBc0JGLFFBQXZDOztBQUVBLElBQU1HLFFBQVEsSUFBSUwsU0FBU0csTUFBYixDQUFvQjtBQUNoQ0csZUFBYSxFQUFFQyxNQUFNQyxNQUFSLEVBQWdCQyxVQUFVLElBQTFCLEVBRG1CO0FBRWhDQyxjQUFhLEVBQUVILE1BQU1DLE1BQVIsRUFBZ0JDLFVBQVUsSUFBMUIsRUFGbUI7QUFHaENFLGNBQWEsRUFBRUosTUFBTUMsTUFBUixFQUFnQkMsVUFBVSxJQUExQixFQUhtQjtBQUloQ0csZUFBYSxFQUFFTCxNQUFNQyxNQUFSLEVBSm1CO0FBS2hDSyxlQUFhLEVBQUVOLE1BQU1DLE1BQVIsRUFMbUI7QUFNaENNLGNBQWEsRUFBRVAsTUFBTVEsSUFBUixFQUFpQkMsU0FBU0QsS0FBS0UsR0FBL0IsRUFObUI7QUFPaENDLGNBQWEsRUFBRVgsTUFBTVEsSUFBUixFQUFpQkMsU0FBU0QsS0FBS0UsR0FBL0IsRUFQbUI7QUFRaENFLFFBQWEsRUFBRVosTUFBTWEsT0FBUixFQUFpQkosU0FBUyxJQUExQixFQVJtQjtBQVNoQ0ssZUFBYSxFQUFFZCxNQUFNUCxTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBOUIsRUFBd0NvQixLQUFLLFNBQTdDO0FBVG1CLENBQXBCLENBQWQ7O0FBWUFDLE9BQU9DLE9BQVAsR0FBaUJ4QixTQUFTeUIsS0FBVCxDQUFlLE9BQWYsRUFBd0JwQixLQUF4QixDQUFqQiIsImZpbGUiOiJJc3N1ZS5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3p6ei9tb2RlbHMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBtb25nb29zZSA9IHJlcXVpcmUoJ21vbmdvb3NlJyk7XG5jb25zdCBPYmplY3RJZCA9IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZDtcblxuY29uc3QgSXNzdWUgPSBuZXcgbW9uZ29vc2UuU2NoZW1hKHtcbiAgaXNzdWVfdGl0bGU6IHsgdHlwZTogU3RyaW5nLCByZXF1aXJlZDogdHJ1ZSB9LFxuICBpc3N1ZV90ZXh0OiAgeyB0eXBlOiBTdHJpbmcsIHJlcXVpcmVkOiB0cnVlIH0sXG4gIGNyZWF0ZWRfYnk6ICB7IHR5cGU6IFN0cmluZywgcmVxdWlyZWQ6IHRydWUgfSxcbiAgYXNzaWduZWRfdG86IHsgdHlwZTogU3RyaW5nIH0sXG4gIHN0YXR1c190ZXh0OiB7IHR5cGU6IFN0cmluZyB9LFxuICBjcmVhdGVkX29uOiAgeyB0eXBlOiBEYXRlLCAgICBkZWZhdWx0OiBEYXRlLm5vdyB9LFxuICB1cGRhdGVkX29uOiAgeyB0eXBlOiBEYXRlLCAgICBkZWZhdWx0OiBEYXRlLm5vdyB9LFxuICBvcGVuOiAgICAgICAgeyB0eXBlOiBCb29sZWFuLCBkZWZhdWx0OiB0cnVlICAgICB9LFxuICBmb3JfcHJvamVjdDogeyB0eXBlOiBtb25nb29zZS5TY2hlbWEuVHlwZXMuT2JqZWN0SWQsIHJlZjogJ1Byb2plY3QnIH1cbn0pO1xuXG5tb2R1bGUuZXhwb3J0cyA9IG1vbmdvb3NlLm1vZGVsKCdJc3N1ZScsIElzc3VlKTsiXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "Issue.js"
+      ],
+      "names": [
+        "mongoose",
+        "require",
+        "ObjectId",
+        "Schema",
+        "Types",
+        "Issue",
+        "issue_title",
+        "type",
+        "String",
+        "required",
+        "issue_text",
+        "created_by",
+        "assigned_to",
+        "status_text",
+        "created_on",
+        "Date",
+        "default",
+        "now",
+        "updated_on",
+        "open",
+        "Boolean",
+        "for_project",
+        "ref",
+        "module",
+        "exports",
+        "model"
+      ],
+      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,QAAQ,IAAIL,SAASG,MAAb,CAAoB;AAChCG,eAAa,EAAEC,MAAMC,MAAR,EAAgBC,UAAU,IAA1B,EADmB;AAEhCC,cAAa,EAAEH,MAAMC,MAAR,EAAgBC,UAAU,IAA1B,EAFmB;AAGhCE,cAAa,EAAEJ,MAAMC,MAAR,EAAgBC,UAAU,IAA1B,EAHmB;AAIhCG,eAAa,EAAEL,MAAMC,MAAR,EAJmB;AAKhCK,eAAa,EAAEN,MAAMC,MAAR,EALmB;AAMhCM,cAAa,EAAEP,MAAMQ,IAAR,EAAiBC,SAASD,KAAKE,GAA/B,EANmB;AAOhCC,cAAa,EAAEX,MAAMQ,IAAR,EAAiBC,SAASD,KAAKE,GAA/B,EAPmB;AAQhCE,QAAa,EAAEZ,MAAMa,OAAR,EAAiBJ,SAAS,IAA1B,EARmB;AAShCK,eAAa,EAAEd,MAAMP,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAA9B,EAAwCoB,KAAK,SAA7C;AATmB,CAApB,CAAd;;AAYAC,OAAOC,OAAP,GAAiBxB,SAASyB,KAAT,CAAe,OAAf,EAAwBpB,KAAxB,CAAjB",
+      "file": "Issue.js",
+      "sourceRoot": "/app/zzz/models",
+      "sourcesContent": [
+        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Issue = new mongoose.Schema({\n  issue_title: { type: String, required: true },\n  issue_text:  { type: String, required: true },\n  created_by:  { type: String, required: true },\n  assigned_to: { type: String },\n  status_text: { type: String },\n  created_on:  { type: Date,    default: Date.now },\n  updated_on:  { type: Date,    default: Date.now },\n  open:        { type: Boolean, default: true     },\n  for_project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' }\n});\n\nmodule.exports = mongoose.model('Issue', Issue);"
+      ]
+    },
+    "mtime": 1545298243000
   },
   "{\"filename\":\"/app/routes/fcctesting.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/routes\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
     "metadata": {
@@ -2243,898 +1959,5 @@
       ]
     },
     "mtime": 1544837503000
-  },
-  "{\"filename\":\"/app/models/Project.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
-    "metadata": {
-      "usedHelpers": [],
-      "marked": [],
-      "modules": {
-        "imports": [],
-        "exports": {
-          "exported": [],
-          "specifiers": []
-        }
-      }
-    },
-    "options": {
-      "filename": "/app/models/Project.js",
-      "filenameRelative": "/app/models/Project.js",
-      "env": {},
-      "retainLines": false,
-      "highlightCode": true,
-      "suppressDeprecationMessages": false,
-      "presets": [],
-      "plugins": [
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          {
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ]
-      ],
-      "ignore": [],
-      "code": true,
-      "metadata": true,
-      "ast": false,
-      "comments": true,
-      "compact": "auto",
-      "minified": false,
-      "sourceMaps": "both",
-      "sourceMapTarget": "Project.js",
-      "sourceFileName": "Project.js",
-      "sourceRoot": "/app/models",
-      "babelrc": false,
-      "sourceType": "module",
-      "moduleRoot": "/app/models",
-      "moduleIds": false,
-      "passPerPreset": false,
-      "parserOpts": false,
-      "generatorOpts": false,
-      "basename": "Project"
-    },
-    "ignored": false,
-    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Project = new mongoose.Schema({\n  project_id: ObjectId,\n  title: String,\n  detail: String,\n  start_date: Date\n});\n\nmodule.exports = mongoose.model('Project', Project);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2plY3QuanMiXSwibmFtZXMiOlsibW9uZ29vc2UiLCJyZXF1aXJlIiwiT2JqZWN0SWQiLCJTY2hlbWEiLCJUeXBlcyIsIlByb2plY3QiLCJwcm9qZWN0X2lkIiwidGl0bGUiLCJTdHJpbmciLCJkZXRhaWwiLCJzdGFydF9kYXRlIiwiRGF0ZSIsIm1vZHVsZSIsImV4cG9ydHMiLCJtb2RlbCJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFNQSxXQUFXQyxRQUFRLFVBQVIsQ0FBakI7QUFDQSxJQUFNQyxXQUFXRixTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBdkM7O0FBRUEsSUFBTUcsVUFBVSxJQUFJTCxTQUFTRyxNQUFiLENBQW9CO0FBQ2xDRyxjQUFZSixRQURzQjtBQUVsQ0ssU0FBT0MsTUFGMkI7QUFHbENDLFVBQVFELE1BSDBCO0FBSWxDRSxjQUFZQztBQUpzQixDQUFwQixDQUFoQjs7QUFPQUMsT0FBT0MsT0FBUCxHQUFpQmIsU0FBU2MsS0FBVCxDQUFlLFNBQWYsRUFBMEJULE9BQTFCLENBQWpCIiwiZmlsZSI6IlByb2plY3QuanMiLCJzb3VyY2VSb290IjoiL2FwcC9tb2RlbHMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBtb25nb29zZSA9IHJlcXVpcmUoJ21vbmdvb3NlJyk7XG5jb25zdCBPYmplY3RJZCA9IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZDtcblxuY29uc3QgUHJvamVjdCA9IG5ldyBtb25nb29zZS5TY2hlbWEoe1xuICBwcm9qZWN0X2lkOiBPYmplY3RJZCxcbiAgdGl0bGU6IFN0cmluZyxcbiAgZGV0YWlsOiBTdHJpbmcsXG4gIHN0YXJ0X2RhdGU6IERhdGVcbn0pO1xuXG5tb2R1bGUuZXhwb3J0cyA9IG1vbmdvb3NlLm1vZGVsKCdQcm9qZWN0JywgUHJvamVjdCk7Il19",
-    "ast": null,
-    "map": {
-      "version": 3,
-      "sources": [
-        "Project.js"
-      ],
-      "names": [
-        "mongoose",
-        "require",
-        "ObjectId",
-        "Schema",
-        "Types",
-        "Project",
-        "project_id",
-        "title",
-        "String",
-        "detail",
-        "start_date",
-        "Date",
-        "module",
-        "exports",
-        "model"
-      ],
-      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,UAAU,IAAIL,SAASG,MAAb,CAAoB;AAClCG,cAAYJ,QADsB;AAElCK,SAAOC,MAF2B;AAGlCC,UAAQD,MAH0B;AAIlCE,cAAYC;AAJsB,CAApB,CAAhB;;AAOAC,OAAOC,OAAP,GAAiBb,SAASc,KAAT,CAAe,SAAf,EAA0BT,OAA1B,CAAjB",
-      "file": "Project.js",
-      "sourceRoot": "/app/models",
-      "sourcesContent": [
-        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Project = new mongoose.Schema({\n  project_id: ObjectId,\n  title: String,\n  detail: String,\n  start_date: Date\n});\n\nmodule.exports = mongoose.model('Project', Project);"
-      ]
-    },
-    "mtime": 1544836433000
-  },
-  "{\"filename\":\"/app/models/Issue.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
-    "metadata": {
-      "usedHelpers": [],
-      "marked": [],
-      "modules": {
-        "imports": [],
-        "exports": {
-          "exported": [],
-          "specifiers": []
-        }
-      }
-    },
-    "options": {
-      "filename": "/app/models/Issue.js",
-      "filenameRelative": "/app/models/Issue.js",
-      "env": {},
-      "retainLines": false,
-      "highlightCode": true,
-      "suppressDeprecationMessages": false,
-      "presets": [],
-      "plugins": [
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          {
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ]
-      ],
-      "ignore": [],
-      "code": true,
-      "metadata": true,
-      "ast": false,
-      "comments": true,
-      "compact": "auto",
-      "minified": false,
-      "sourceMaps": "both",
-      "sourceMapTarget": "Issue.js",
-      "sourceFileName": "Issue.js",
-      "sourceRoot": "/app/models",
-      "babelrc": false,
-      "sourceType": "module",
-      "moduleRoot": "/app/models",
-      "moduleIds": false,
-      "passPerPreset": false,
-      "parserOpts": false,
-      "generatorOpts": false,
-      "basename": "Issue"
-    },
-    "ignored": false,
-    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text: String,\n  created_by: String,\n  assigned_to: String,\n  status_text: String,\n  created_on: { type: Date, default: Date.now },\n  updated_on: { type: Date, default: Date.now },\n  open: { type: Boolean, default: true },\n  for_project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' }\n});\n\nmodule.exports = mongoose.model('Issue', Issue);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklzc3VlLmpzIl0sIm5hbWVzIjpbIm1vbmdvb3NlIiwicmVxdWlyZSIsIk9iamVjdElkIiwiU2NoZW1hIiwiVHlwZXMiLCJJc3N1ZSIsImlzc3VlX3RpdGxlIiwiU3RyaW5nIiwiaXNzdWVfdGV4dCIsImNyZWF0ZWRfYnkiLCJhc3NpZ25lZF90byIsInN0YXR1c190ZXh0IiwiY3JlYXRlZF9vbiIsInR5cGUiLCJEYXRlIiwiZGVmYXVsdCIsIm5vdyIsInVwZGF0ZWRfb24iLCJvcGVuIiwiQm9vbGVhbiIsImZvcl9wcm9qZWN0IiwicmVmIiwibW9kdWxlIiwiZXhwb3J0cyIsIm1vZGVsIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQU1BLFdBQVdDLFFBQVEsVUFBUixDQUFqQjtBQUNBLElBQU1DLFdBQVdGLFNBQVNHLE1BQVQsQ0FBZ0JDLEtBQWhCLENBQXNCRixRQUF2Qzs7QUFFQSxJQUFNRyxRQUFRLElBQUlMLFNBQVNHLE1BQWIsQ0FBb0I7QUFDaENHLGVBQWFDLE1BRG1CO0FBRWhDQyxjQUFhRCxNQUZtQjtBQUdoQ0UsY0FBYUYsTUFIbUI7QUFJaENHLGVBQWFILE1BSm1CO0FBS2hDSSxlQUFhSixNQUxtQjtBQU1oQ0ssY0FBYSxFQUFDQyxNQUFNQyxJQUFQLEVBQWFDLFNBQVNELEtBQUtFLEdBQTNCLEVBTm1CO0FBT2hDQyxjQUFhLEVBQUNKLE1BQU1DLElBQVAsRUFBYUMsU0FBU0QsS0FBS0UsR0FBM0IsRUFQbUI7QUFRaENFLFFBQWEsRUFBQ0wsTUFBTU0sT0FBUCxFQUFnQkosU0FBUyxJQUF6QixFQVJtQjtBQVNoQ0ssZUFBYSxFQUFDUCxNQUFNYixTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBN0IsRUFBdUNtQixLQUFLLFNBQTVDO0FBVG1CLENBQXBCLENBQWQ7O0FBWUFDLE9BQU9DLE9BQVAsR0FBaUJ2QixTQUFTd0IsS0FBVCxDQUFlLE9BQWYsRUFBd0JuQixLQUF4QixDQUFqQiIsImZpbGUiOiJJc3N1ZS5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL21vZGVscyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IG1vbmdvb3NlID0gcmVxdWlyZSgnbW9uZ29vc2UnKTtcbmNvbnN0IE9iamVjdElkID0gbW9uZ29vc2UuU2NoZW1hLlR5cGVzLk9iamVjdElkO1xuXG5jb25zdCBJc3N1ZSA9IG5ldyBtb25nb29zZS5TY2hlbWEoe1xuICBpc3N1ZV90aXRsZTogU3RyaW5nLFxuICBpc3N1ZV90ZXh0OiAgU3RyaW5nLFxuICBjcmVhdGVkX2J5OiAgU3RyaW5nLFxuICBhc3NpZ25lZF90bzogU3RyaW5nLFxuICBzdGF0dXNfdGV4dDogU3RyaW5nLFxuICBjcmVhdGVkX29uOiAge3R5cGU6IERhdGUsIGRlZmF1bHQ6IERhdGUubm93fSxcbiAgdXBkYXRlZF9vbjogIHt0eXBlOiBEYXRlLCBkZWZhdWx0OiBEYXRlLm5vd30sXG4gIG9wZW46ICAgICAgICB7dHlwZTogQm9vbGVhbiwgZGVmYXVsdDogdHJ1ZX0sXG4gIGZvcl9wcm9qZWN0OiB7dHlwZTogbW9uZ29vc2UuU2NoZW1hLlR5cGVzLk9iamVjdElkLCByZWY6ICdQcm9qZWN0J30sXG59KTtcblxubW9kdWxlLmV4cG9ydHMgPSBtb25nb29zZS5tb2RlbCgnSXNzdWUnLCBJc3N1ZSk7Il19",
-    "ast": null,
-    "map": {
-      "version": 3,
-      "sources": [
-        "Issue.js"
-      ],
-      "names": [
-        "mongoose",
-        "require",
-        "ObjectId",
-        "Schema",
-        "Types",
-        "Issue",
-        "issue_title",
-        "String",
-        "issue_text",
-        "created_by",
-        "assigned_to",
-        "status_text",
-        "created_on",
-        "type",
-        "Date",
-        "default",
-        "now",
-        "updated_on",
-        "open",
-        "Boolean",
-        "for_project",
-        "ref",
-        "module",
-        "exports",
-        "model"
-      ],
-      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,QAAQ,IAAIL,SAASG,MAAb,CAAoB;AAChCG,eAAaC,MADmB;AAEhCC,cAAaD,MAFmB;AAGhCE,cAAaF,MAHmB;AAIhCG,eAAaH,MAJmB;AAKhCI,eAAaJ,MALmB;AAMhCK,cAAa,EAACC,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EANmB;AAOhCC,cAAa,EAACJ,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EAPmB;AAQhCE,QAAa,EAACL,MAAMM,OAAP,EAAgBJ,SAAS,IAAzB,EARmB;AAShCK,eAAa,EAACP,MAAMb,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAA7B,EAAuCmB,KAAK,SAA5C;AATmB,CAApB,CAAd;;AAYAC,OAAOC,OAAP,GAAiBvB,SAASwB,KAAT,CAAe,OAAf,EAAwBnB,KAAxB,CAAjB",
-      "file": "Issue.js",
-      "sourceRoot": "/app/models",
-      "sourcesContent": [
-        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text:  String,\n  created_by:  String,\n  assigned_to: String,\n  status_text: String,\n  created_on:  {type: Date, default: Date.now},\n  updated_on:  {type: Date, default: Date.now},\n  open:        {type: Boolean, default: true},\n  for_project: {type: mongoose.Schema.Types.ObjectId, ref: 'Project'},\n});\n\nmodule.exports = mongoose.model('Issue', Issue);"
-      ]
-    },
-    "mtime": 1544836423000
-  },
-  "{\"filename\":\"/app/zzz/models/Issue.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/zzz/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.24.1": {
-    "metadata": {
-      "usedHelpers": [],
-      "marked": [],
-      "modules": {
-        "imports": [],
-        "exports": {
-          "exported": [],
-          "specifiers": []
-        }
-      }
-    },
-    "options": {
-      "filename": "/app/zzz/models/Issue.js",
-      "filenameRelative": "/app/zzz/models/Issue.js",
-      "env": {},
-      "retainLines": false,
-      "highlightCode": true,
-      "suppressDeprecationMessages": false,
-      "presets": [],
-      "plugins": [
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          null
-        ],
-        [
-          [],
-          {
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ],
-        [
-          [],
-          {
-            "spec": false,
-            "loose": false
-          }
-        ]
-      ],
-      "ignore": [],
-      "code": true,
-      "metadata": true,
-      "ast": false,
-      "comments": true,
-      "compact": "auto",
-      "minified": false,
-      "sourceMaps": "both",
-      "sourceMapTarget": "Issue.js",
-      "sourceFileName": "Issue.js",
-      "sourceRoot": "/app/zzz/models",
-      "babelrc": false,
-      "sourceType": "module",
-      "moduleRoot": "/app/zzz/models",
-      "moduleIds": false,
-      "passPerPreset": false,
-      "parserOpts": false,
-      "generatorOpts": false,
-      "basename": "Issue"
-    },
-    "ignored": false,
-    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nvar ObjectId = mongoose.Schema.Types.ObjectId;\n\nvar Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text: String,\n  created_by: String,\n  assigned_to: String,\n  status_text: String,\n  created_on: { type: Date, default: Date.now },\n  updated_on: { type: Date, default: Date.now },\n  open: { type: Boolean, default: true },\n  for_project: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' }\n});\n\nmodule.exports = mongoose.model('Issue', Issue);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklzc3VlLmpzIl0sIm5hbWVzIjpbIm1vbmdvb3NlIiwicmVxdWlyZSIsIk9iamVjdElkIiwiU2NoZW1hIiwiVHlwZXMiLCJJc3N1ZSIsImlzc3VlX3RpdGxlIiwiU3RyaW5nIiwiaXNzdWVfdGV4dCIsImNyZWF0ZWRfYnkiLCJhc3NpZ25lZF90byIsInN0YXR1c190ZXh0IiwiY3JlYXRlZF9vbiIsInR5cGUiLCJEYXRlIiwiZGVmYXVsdCIsIm5vdyIsInVwZGF0ZWRfb24iLCJvcGVuIiwiQm9vbGVhbiIsImZvcl9wcm9qZWN0IiwicmVmIiwibW9kdWxlIiwiZXhwb3J0cyIsIm1vZGVsIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQU1BLFdBQVdDLFFBQVEsVUFBUixDQUFqQjtBQUNBLElBQU1DLFdBQVdGLFNBQVNHLE1BQVQsQ0FBZ0JDLEtBQWhCLENBQXNCRixRQUF2Qzs7QUFFQSxJQUFNRyxRQUFRLElBQUlMLFNBQVNHLE1BQWIsQ0FBb0I7QUFDaENHLGVBQWFDLE1BRG1CO0FBRWhDQyxjQUFhRCxNQUZtQjtBQUdoQ0UsY0FBYUYsTUFIbUI7QUFJaENHLGVBQWFILE1BSm1CO0FBS2hDSSxlQUFhSixNQUxtQjtBQU1oQ0ssY0FBYSxFQUFDQyxNQUFNQyxJQUFQLEVBQWFDLFNBQVNELEtBQUtFLEdBQTNCLEVBTm1CO0FBT2hDQyxjQUFhLEVBQUNKLE1BQU1DLElBQVAsRUFBYUMsU0FBU0QsS0FBS0UsR0FBM0IsRUFQbUI7QUFRaENFLFFBQWEsRUFBQ0wsTUFBTU0sT0FBUCxFQUFnQkosU0FBUyxJQUF6QixFQVJtQjtBQVNoQ0ssZUFBYSxFQUFDUCxNQUFNYixTQUFTRyxNQUFULENBQWdCQyxLQUFoQixDQUFzQkYsUUFBN0IsRUFBdUNtQixLQUFLLFNBQTVDO0FBVG1CLENBQXBCLENBQWQ7O0FBWUFDLE9BQU9DLE9BQVAsR0FBaUJ2QixTQUFTd0IsS0FBVCxDQUFlLE9BQWYsRUFBd0JuQixLQUF4QixDQUFqQiIsImZpbGUiOiJJc3N1ZS5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3p6ei9tb2RlbHMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBtb25nb29zZSA9IHJlcXVpcmUoJ21vbmdvb3NlJyk7XG5jb25zdCBPYmplY3RJZCA9IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZDtcblxuY29uc3QgSXNzdWUgPSBuZXcgbW9uZ29vc2UuU2NoZW1hKHtcbiAgaXNzdWVfdGl0bGU6IFN0cmluZyxcbiAgaXNzdWVfdGV4dDogIFN0cmluZyxcbiAgY3JlYXRlZF9ieTogIFN0cmluZyxcbiAgYXNzaWduZWRfdG86IFN0cmluZyxcbiAgc3RhdHVzX3RleHQ6IFN0cmluZyxcbiAgY3JlYXRlZF9vbjogIHt0eXBlOiBEYXRlLCBkZWZhdWx0OiBEYXRlLm5vd30sXG4gIHVwZGF0ZWRfb246ICB7dHlwZTogRGF0ZSwgZGVmYXVsdDogRGF0ZS5ub3d9LFxuICBvcGVuOiAgICAgICAge3R5cGU6IEJvb2xlYW4sIGRlZmF1bHQ6IHRydWV9LFxuICBmb3JfcHJvamVjdDoge3R5cGU6IG1vbmdvb3NlLlNjaGVtYS5UeXBlcy5PYmplY3RJZCwgcmVmOiAnUHJvamVjdCd9LFxufSk7XG5cbm1vZHVsZS5leHBvcnRzID0gbW9uZ29vc2UubW9kZWwoJ0lzc3VlJywgSXNzdWUpOyJdfQ==",
-    "ast": null,
-    "map": {
-      "version": 3,
-      "sources": [
-        "Issue.js"
-      ],
-      "names": [
-        "mongoose",
-        "require",
-        "ObjectId",
-        "Schema",
-        "Types",
-        "Issue",
-        "issue_title",
-        "String",
-        "issue_text",
-        "created_by",
-        "assigned_to",
-        "status_text",
-        "created_on",
-        "type",
-        "Date",
-        "default",
-        "now",
-        "updated_on",
-        "open",
-        "Boolean",
-        "for_project",
-        "ref",
-        "module",
-        "exports",
-        "model"
-      ],
-      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACA,IAAMC,WAAWF,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAAvC;;AAEA,IAAMG,QAAQ,IAAIL,SAASG,MAAb,CAAoB;AAChCG,eAAaC,MADmB;AAEhCC,cAAaD,MAFmB;AAGhCE,cAAaF,MAHmB;AAIhCG,eAAaH,MAJmB;AAKhCI,eAAaJ,MALmB;AAMhCK,cAAa,EAACC,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EANmB;AAOhCC,cAAa,EAACJ,MAAMC,IAAP,EAAaC,SAASD,KAAKE,GAA3B,EAPmB;AAQhCE,QAAa,EAACL,MAAMM,OAAP,EAAgBJ,SAAS,IAAzB,EARmB;AAShCK,eAAa,EAACP,MAAMb,SAASG,MAAT,CAAgBC,KAAhB,CAAsBF,QAA7B,EAAuCmB,KAAK,SAA5C;AATmB,CAApB,CAAd;;AAYAC,OAAOC,OAAP,GAAiBvB,SAASwB,KAAT,CAAe,OAAf,EAAwBnB,KAAxB,CAAjB",
-      "file": "Issue.js",
-      "sourceRoot": "/app/zzz/models",
-      "sourcesContent": [
-        "const mongoose = require('mongoose');\nconst ObjectId = mongoose.Schema.Types.ObjectId;\n\nconst Issue = new mongoose.Schema({\n  issue_title: String,\n  issue_text:  String,\n  created_by:  String,\n  assigned_to: String,\n  status_text: String,\n  created_on:  {type: Date, default: Date.now},\n  updated_on:  {type: Date, default: Date.now},\n  open:        {type: Boolean, default: true},\n  for_project: {type: mongoose.Schema.Types.ObjectId, ref: 'Project'},\n});\n\nmodule.exports = mongoose.model('Issue', Issue);"
-      ]
-    },
-    "mtime": 1544836423000
   }
 }

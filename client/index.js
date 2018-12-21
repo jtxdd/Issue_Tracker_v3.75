@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Projects } from '../_app/Projects.js';
-import { Home } from '../_app/Home.js';
-import { Filter } from '../_app/Filter.js';
-import { NewIssue } from '../_app/NewIssue.js';
 import { ProjectIssue } from '../_app/ProjectIssue.js';
+import { Issues } from '../_app/Issues.js';
+import { TopBar } from '../_app/TopBar.js';
+import { ToolBar } from '../_app/ToolBar.js';
+
+const Home = () => {
+  return(
+    <div className="">
+      <h3>Select A Project</h3>
+    </div>
+  );
+};
 
 class App extends Component {
   constructor(props) {
@@ -13,38 +21,32 @@ class App extends Component {
     this.state = {
       projects: [],
       issues: [],
-      id: '',
-      open: '',
-      title: '',
-      text: '',
-      creator: '',
-      assignee: '',
-      status: '',
-      createDate: '',
-      updateDate: '',
-      filterToggle: false,
-      newIssueToggle: false,
-      new_title: '',
-      new_text: '',
-      new_creator: '',
-      new_assignee: '',
-      new_status: ''
+      creating: false,
+      filtering: false,
+      updateMessage: '',
+      selected: '',
+      message: '',
+      sort: {
+        projects:{sorted: false, style: ''},
+        issues:{sorted: false, style: ''}
+      }
     };
-    this.handleFetch = this.handleFetch.bind(this);
+    this.genKeyId  = this.genKeyId.bind(this);
+    this.submitNew = this.submitNew.bind(this);
+    this.getProjects  = this.getProjects.bind(this);
+    this.handleToggle = this.handleToggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.submitFilter = this.submitFilter.bind(this);
-    this.toggleFilter = this.toggleFilter.bind(this);
-    this.clearFilters = this.clearFilters.bind(this);
-    this.resetFilters = this.resetFilters.bind(this);
-    this.toggleNewIssue = this.toggleNewIssue.bind(this);
-    this.submitNewIssue = this.submitNewIssue.bind(this);
-    this.cancelNewIssue = this.cancelNewIssue.bind(this);
-    this.resetNewIssue = this.resetNewIssue.bind(this);
-    this.handleError = this.handleError.bind(this);
-    this.handleUpdateIssue = this.handleUpdateIssue.bind(this);
+    this.handleFetch  = this.handleFetch.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
+    this.handleSort = this.handleSort.bind(this);
+    this.handleNotify = this.handleNotify.bind(this);
   }
   
   componentDidMount() {
+    this.getProjects();
+  }
+  
+  getProjects() {
     fetch('/projects')
       .then(res => res.json())
       .then(result => {
@@ -55,107 +57,22 @@ class App extends Component {
       });
   }
   
-  handleFetch(url) {
-    fetch(url)
-      .then(res => res.json())
-      .then(result => {
-        this.setState({issues: result.docs});
-      });
-    this.props.history.push(url);
-  }
-  
-  handleUpdateIssue(options) {
-    const url = this.props.location.pathname;
-    fetch(url, options)
-      .then(res => res.json())
-      .then(result => this.setState({ issues: result.docs }));
-    this.props.history.push(url);
-  }
-  
-  handleError(err) {
-    err.then(error => console.log(error));
-  }
-  
-  toggleFilter() {
-    this.setState(prev => ({filterToggle: !prev.filterToggle, newIssueToggle: false}));
-  }
-  
-  toggleNewIssue() {
-    this.setState(prev => ({newIssueToggle: !prev.newIssueToggle, filterToggle: false}));
-  }
-  
-  clearFilters() {
-    this.handleFetch(this.props.location.pathname);
-    this.resetFilters();
-  }
-  
-  resetFilters() {
-    this.setState({
-      id: '',
-      open: '',
-      title: '',
-      text: '',
-      creator: '',
-      assignee: '',
-      status: '',
-      createDate: '',
-      updateDate: '',
-    });
-  }
-  
-  submitFilter() {
-    let model = ['_id=', 'open=', 'issue_title=', 'issue_text=', 'created_by=', 'assigned_to=', 'status_text=', 'created_on=', 'updated_on='];
-    let filters = ['id', 'open', 'title', 'text', 'creator', 'assignee', 'status', 'createDate', 'updateDate'];
-    let urlStr = this.props.location.pathname + '?';
-    let filter = filters.map((el, i) => {
-      return this.state[el] ? model[i] + this.state[el] + '&' : ''
-    }).reduce((acc, curr) => acc += curr).slice(0, -1);
-    let route = urlStr + filter;
-    this.handleFetch(route);
-  }
-  
-  submitNewIssue(e) {
-    e.preventDefault();
-    let issue = {
-      issue_title: this.state.new_title,
-      issue_text:  this.state.new_text,
-      created_by:  this.state.new_creator,
-      assigned_to: this.state.new_assignee,
-      status_text: this.state.new_status,
-      created_on:  new Date().toISOString(),
-      updated_on:  new Date().toISOString(),
-      open:        true,
+  genKeyId() {
+    const rngChar = () => {
+      const rand = Math.floor(Math.random() * 26) + 97;
+      return String.fromCharCode(rand);
     };
-    let options = {
-      method: 'POST', 
-      body: JSON.stringify(issue), 
-      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+    let arr = Array(3).fill().map(el => rngChar());
+    return arr.join('');
+  }
+  
+  handleToggle(e) {
+    const toggle = {
+      filter:  () => this.setState(prev => ({ filtering: !prev.filtering, creating: false })),
+      newIssue:() => this.setState(prev => ({ creating: !prev.creating, filtering: false })),
+      message: () => this.setState(prev => ({ message: !prev.message }))
     };
-    
-    fetch(this.props.location.pathname, options)
-      .then(res => {
-        if (res.ok) {
-          this.resetNewIssue();
-          this.props.history.push(this.props.location.pathname)
-        } else {
-          this.handleError(res.json());
-        }
-      });
-  }
-  
-  cancelNewIssue() {
-    this.resetNewIssue();
-  }
-  
-  resetNewIssue() {
-    this.setState(prev => ({
-      newIssueToggle: !prev.newIssueToggle,
-      new_title: '',
-      new_text: '',
-      new_creator: '',
-      new_assignee: '',
-      new_status: ''
-    }));
+    toggle[e.target.id.split('_')[0]]();
   }
   
   handleChange(e) {
@@ -164,77 +81,114 @@ class App extends Component {
     this.setState({ [name]: value });
   }
   
+  handleFetch(url, options) {
+    let selected = url.slice(url.lastIndexOf('/') + 1).replace(/_/g, ' ');
+    let Fetch = options ? fetch(url, options) : fetch(url);
+    
+    Fetch.then(res => res.json())
+      .then(result => {
+        result.docs.forEach(el => {
+          el.key = el._id + '_' + this.genKeyId();
+        });
+        this.setState({issues: result.docs, selected: selected});
+        this.props.history.push(url);
+      });
+  }
+  
+  handleDelete(url, options) {
+    let issues = this.state.issues;
+    let id = JSON.parse(options.body)._id;
+    
+    issues = issues.filter(el => el._id !== id);
+    
+    fetch(url, options).then(res => res.json())
+      .then(result => {
+        if (result.docs) {
+          this.setState({ issues: issues, message: result.message });
+        } else {
+          this.setState({ message: result.message });
+        }
+      });
+  }
+  
+  submitNew(url, options) {
+    let issues = this.state.issues;
+    
+    fetch(url, options).then(res => res.json())
+      .then(result => {
+        if (result.docs) {
+          result.value.key = result.value._id + '_' + this.genKeyId();
+          issues = [...issues, result.value];
+          this.setState({ issues: issues, updateMessage: result.message });
+        } else {
+          this.setState({ message: 'Insert failed - ' + result.message });
+        }
+    });
+  }
+  
+  handleSort(e) {
+    let { sort, projects } = this.state;
+    
+    const a_z = () => projects.sort((a,b) => a.title.localeCompare(b.title));
+    const z_a = () => projects.sort((a,b) => b.title.localeCompare(a.title));
+    
+    let sorter = {
+      projects:() => {
+        if (sort.projects.sorted) {
+          projects = sort.projects.style === 'a-z' ? z_a() : a_z();
+          sort.projects.style = sort.projects.style === 'a-z' ? 'z-a' : 'a-z';
+        } else {
+          projects = a_z();
+          sort.projects.sorted = true;
+          sort.projects.style = 'a-z';
+        }
+        return {projects: projects, sort: sort}
+      },
+      
+      issues:() => {}
+    };
+    
+    let sorted = sorter[e.target.id.split('_')[1]]();
+    this.setState({ projects: sorted.projects, sort: sorted.sort });
+  }
+  
+  handleNotify(message) {
+    this.setState({ message });
+  }
+  
   render() {
     return(
-      <div className="container-fluid">
-        
-        <div className="row">
-          <div className="col">
-            <Projects 
-              projects={this.state.projects.length && this.state.projects}
-              clickedProject={this.handleFetch}
-            />
-          </div>
-          
-          <div className="col">
-            {this.props.location.pathname === '/' ? (
-              <h6>Select a project</h6>
-            ) : (
-              <div>
-                <button type="button" onClick={this.toggleFilter}>Filter</button>
-                <button type="button" onClick={this.toggleNewIssue}>New Issue</button>
-              </div>
-            )}
-            <div className={this.state.filterToggle ? 'show-filter' : 'hide-filter'}>
-              <Filter
-                clearFilters={this.clearFilters}
-                submitFilter={this.submitFilter}
-                cancelFilter={this.toggleFilter}
-                change={this.handleChange}
-                open={this.state.open}
-                id={this.state.id}
-                text={this.state.text}
-                status={this.state.status}
-                updateDate={this.state.updateDate}
-                createDate={this.state.createDate}
-                creator={this.state.creator}
-                assignee={this.state.assignee}
-                title={this.state.title}
-              />
-            </div>
-            <div className={this.state.newIssueToggle ? 'show-newIssue' : 'hide-newIssue'}>
-              <NewIssue 
-                newTitle={this.state.new_title}
-                newText={this.state.new_text}
-                newCreator={this.state.new_creator}
-                newAssignee={this.state.new_assignee}
-                newStatus={this.state.new_status}
-                change={this.handleChange}
-                submitNewIssue={this.submitNewIssue}
-                cancelNewIssue={this.cancelNewIssue}
-              />
-            </div>
-          </div>
+      <div>
+        <TopBar />
+        <Projects 
+          projects={this.state.projects.length && this.state.projects}
+          getIssues={(e) => this.handleFetch(e.target.id)}
+          sort={this.handleSort}
+        />
+        <div id="toolbar">
+          <ToolBar 
+            toggle={this.handleToggle}
+            location={this.props.location.pathname === '/'}
+            filtering={this.state.filtering}
+            creating={this.state.creating}
+            fetch={this.handleFetch}
+            submitNew={this.submitNew}
+            message={this.state.message}
+          />
         </div>
-        
-        <div className="row">
-          <div className="col">
-            <div className="d-flex flex-column align-items-center w-100">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/api/issues/:project" render={(props) => 
-                  {return this.state.issues.length && this.state.issues.map(el => 
-                    <ProjectIssue
-                      {...props}
-                      key={el._id}
-                      issue={el} 
-                      update={this.handleUpdateIssue} 
-                    />
-                  )}}
-                />
-              </Switch>
-            </div>
-          </div>
+        <div id="content">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/api/issues/:project" render={(props) => 
+              <Issues
+                {...props}
+                selected={this.state.selected}
+                issues={this.state.issues.length && this.state.issues}
+                updateIssues={this.handleDelete}
+                notify={this.handleNotify}
+              />
+            }/>
+          </Switch>
         </div>
       </div>
     );
@@ -248,15 +202,169 @@ ReactDOM.render((
 ), document.getElementById('application'));
 
 
+
 /*
-  <Route path="/api/issues/:project" component={(props) => <Issues {...props} issues={this.state.issues.length && this.state.issues} />} />
-  <Route path="/api/issues/:project" component={(props) => <Issues {...props} />} />
+  <Alert 
+    message={this.state.message}
+    toggle={this.handleToggle}
+  />
+  <ToggleButtons 
+    click={this.handleToggle} 
+    hide={this.props.location.pathname === '/'} 
+  />
+  <div id="toolbar-form">
+    <Filter 
+      filtering={this.state.filtering}
+      toggle={this.handleToggle}
+      filter={this.handleFetch}
+    />
+    <NewIssue 
+      creating={this.state.creating}
+      toggle={this.handleToggle}
+      submit={this.submitNew}
+    />
+  </div>
 */
 
 /*
-  handleFilter(e) {
-    let query = e.target.value ? '?open=' : '';
-    let val = query ? e.target.value === 'open' ? 'true' : 'false' : '';
-    this.props.history.push(this.props.location.pathname + query + val);
+const { new_title, new_text, new_creator, new_assignee, new_status } = this.state;
+const newIssueState = [new_title, new_text, new_creator, new_assignee, new_status];
+  <NewIssue
+    creating={this.state.creating}
+    clear={this.resetForm}
+    change={this.handleChange}
+    submit={this.submitForm}
+    {...newIssueState}
+  />
+  
+  const { open, id, text, status, updateDate, createDate, creator, assignee, title } = this.state;
+  const filterState = [open, id, text, status, updateDate, createDate, creator, assignee, title];
+  <Filter
+    filtering={this.state.filtering}
+    clear={this.resetForm}
+    change={this.handleChange}
+    submit={this.submitForm}
+    {...filterState}
+  />
+  
+*/
+
+
+
+/*submitForm(e) {
+    const submit = {
+      filter:() => {
+        const model = ['_id=', 'open=', 'issue_title=', 'issue_text=', 'created_by=', 'assigned_to=', 'status_text=', 'created_on=', 'updated_on='];
+        const filters = ['id', 'open', 'title', 'text', 'creator', 'assignee', 'status', 'createDate', 'updateDate'];
+        const url = this.props.location.pathname + '?';
+        const search = filters.map((el, i) => {
+          return this.state[el] ? model[i] + this.state[el] + '&' : ''
+        }).reduce((acc, curr) => acc += curr).slice(0, -1);
+        const route = url + search;
+        this.handleFetch(route);
+      },
+      
+      newIssue:() => {
+        const { new_title, new_text, new_creator, new_assignee, new_status } = this.state;
+        const issue = {
+          issue_title: new_title,
+          issue_text:  new_text,
+          created_by:  new_creator,
+          assigned_to: new_assignee,
+          status_text: new_status,
+          created_on:  new Date().toISOString(),
+          updated_on:  new Date().toISOString(),
+          open:        true,
+        };
+        const options = {
+          method: 'POST', 
+          body: JSON.stringify(issue), 
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+        };
+        fetch(this.props.location.pathname, options)
+          .then(res => res.json())
+          .then(result => {
+            if (result.docs) {
+              let issues = this.state.issues;
+              result.value.key = result.value._id + '_' + this.genKeyId();
+              issues = [...issues, result.value];
+              this.setState({ issues: issues, updateMessage: result.message });
+              //this.resetForm({target:{id: 'submit_newIssue'}});
+            } else {
+              this.setState({updateMessage: 'Insert Failed - ' + result.message});
+            }
+          });
+        
+      }
+    };
+    
+    const form = e.target.id.split('_')[1];
+    submit[form]();
+  }*/
+
+
+/*
+  this.resetForm = this.resetForm.bind(this);
+
+  resetForm(e) {
+    const reset = {
+      filter: () => {
+        this.setState({
+          filtering: false,
+          id: '',
+          open: '',
+          title: '',
+          text: '',
+          creator: '',
+          assignee: '',
+          status: '',
+          createDate: '',
+          updateDate: ''
+        });
+        this.handleFetch(this.props.location.pathname);
+      },
+      
+      newIssue:() => {
+        this.setState({
+          creating: false,
+          new_title: '',
+          new_text: '',
+          new_creator: '',
+          new_assignee: '',
+          new_status: ''
+        });
+      }
+    };
+    
+    const form = e.target.id.split('_')[1];
+    reset[form]();
   }
+*/
+
+
+/*
+  this.dismissUpdateMessage = this.dismissUpdateMessage.bind(this);
+
+  dismissUpdateMessage() {
+    this.setState(prev => ({updateMessage: !prev.updateMessage}));
+  }
+*/
+
+/*
+this.getIssues = this.getIssues.bind(this);
+
+getIssues(url) {
+    fetch(url).then(res => res.json())
+      .then(result => {
+        result.docs.forEach(el => el.key = el._id + '_' + this.genKeyId());
+        this.setState({ issues: result.docs });
+        this.props.history.push(url);
+      });
+  }
+
+
+  <Projects 
+    projects={this.state.projects.length && this.state.projects
+    clicked_project={this.getIssues}
+  />
 */

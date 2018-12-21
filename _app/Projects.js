@@ -1,57 +1,47 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-/*class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { projects: [], len: 0 };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  
-  componentDidMount() {
-    fetch('/projects')
-      .then(res => res.json())
-      .then(result => this.setState({ projects: result.docs, len: result.docs.length}));
-  }
-  
-  handleClick(e) {
-    this.props.fetch(e.target.id);
-  }
-  
-  render() {
-    const base = '/api/issues/';
-    const title = (title) => { return title.replace(/\s/g, '_') };
-    return(
-      <div>
-        {this.state.projects.length && this.state.projects.map((el, i) => 
-          <div key={el.project_id}>
-            <Link id={base + title(el.title)} to={base + title(el.title)} onClick={this.handleClick}>{el.title}</Link>
-          </div>
-        )}
-      </div>
-    );
-  }
-}*/
 
-const Projects = (props) => {
-  const clicked = (e) => {
-    props.clickedProject(e.target.id);
-  };
+
+const Nav_Head = (props) => {
   return(
-    <div>
-      {props.projects.length ? (
-        props.projects.map(el => 
-          <div key={el.project_id}>
-            <Link id={el.route} to={el.route} onClick={clicked}>
-              {el.title}
-            </Link>
-          </div>
-      )) : (
-        <span>Loading...</span>
-      )}
+    <div className="row border-bottom border-white mr-0">
+      <div className="col-8">
+        <h5 className="m-2 text-info">PROJECTS</h5>
+      </div>
+      <div className="col- align-self-center pr-0 ml-auto mr-2">
+        <button id="sort_projects" className="btn btn-sm btn-outline-info fas fa-sort" type="button" title="Sort title" onClick={props.sort} />
+      </div>
     </div>
   );
 };
 
 
+
+
+const Projects = (props) => {
+  return(
+    <aside>
+      <nav className="nav flex-column">
+        <Nav_Head sort={props.sort} />
+        {props.projects.length ? (
+          props.projects.map(el => 
+            <div key={el.project_id}>
+              <NavLink id={el.route} to={el.route} className="project nav-link" activeClassName="selected" onClick={props.getIssues}>
+                {el.title}
+              </NavLink>
+            </div>
+        )) : (
+          <span>Loading...</span>
+        )}
+      </nav>
+    </aside>
+  );
+};
+
+
 export { Projects };
+
+/*
+  const clicked = (e) => props.clicked_project(e.target.id);
+*/

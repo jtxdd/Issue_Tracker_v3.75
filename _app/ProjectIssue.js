@@ -16,104 +16,228 @@ class ProjectIssue extends Component {
       created_on: '',
       updated_on: '',
       saveState: {},
-      updating: false
+      updating: false,
+      message: '',
+      route: '',
+      confirm:(action, ID) => {
+        return window.confirm(`${action} Issue Id: ${ID}`)
+      },
+      request:(method, data) => {
+        return {
+          method: method, 
+          body: JSON.stringify(data), 
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+        }
+      },
+      formatDate:(date) => {
+        const options = {
+          year: '2-digit', month: '2-digit', day: '2-digit', 
+          hour: '2-digit', minute: '2-digit'
+        };
+        return new Date(date).toLocaleString([], options);
+      }
     };
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.handleUpdate = this.handleUpdate.bind(this);
+    this.dismissMessage = this.dismissMessage.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.toggleUpdating = this.toggleUpdating.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleCancel = this.handleCancel.bind(this);
-    this.handleOpen = this.handleOpen.bind(this);
+    this.handleData = this.handleData.bind(this);
+    this.handleAutoDismiss = this.handleAutoDismiss.bind(this);
   }
   
   componentDidMount() {
-    this.setState({
-      _id: this.props.issue._id,
-      open: this.props.issue.open,
-      issue_title: this.props.issue.issue_title,
-      issue_text: this.props.issue.issue_text,
-      created_by: this.props.issue.created_by,
-      assigned_to: this.props.issue.assigned_to,
-      status_text: this.props.issue.status_text,
-      created_on: new Date(this.props.issue.created_on).toLocaleString(),
-      updated_on: new Date(this.props.issue.updated_on).toLocaleString(),
-      updating: false,
-      saveState: this.props.issue
-    });
+    this.handleData('mount', this.props.issue);
   }
   
-  handleDelete() {
-    //this DELETE id === deleteOne
+  handleChange(e) {
+    const name = e.target.name;
+    const value = e.target.value;
+    this.setState({ [name]: value });
+  }
+  
+  toggleUpdating(e) {
+    e.preventDefault();
+    
+    this.setState(prev => ({
+      updating: !prev.updating, 
+      readOnly: false, 
+      message: '' 
+    }));
+  }
+  
+  dismissMessage() {
+    this.setState(prev => ({message: !prev.message}));
+  }
+  
+  handleAutoDismiss() {
+    setTimeout(this.dismissMessage, 3000);
+  }
+  
+  handleOpen() {
+    this.setState(prev => ({ open: !prev.open }));
+  }
+  
+  handleData(action, data) {
+    const { saveState: ss, formatDate } = this.state;
+    
+    let issueActions = {
+      mount:(data) => {
+        const route = this.props.location.pathname;
+        this.setState({
+          _id:  data._id,
+          open: data.open,
+          issue_title: data.issue_title,
+          issue_text:  data.issue_text,
+          created_by:  data.created_by,
+          assigned_to: data.assigned_to,
+          status_text: data.status_text,
+          created_on:  formatDate(data.created_on),
+          updated_on:  formatDate(data.updated_on),
+          saveState:   data,
+          route: route
+        });
+      },
+      
+      update:(data) => {
+        if (data.docs) {
+          const d = data.docs.value;
+          this.setState({
+            _id:  d._id,
+            open: d.open,
+            issue_title: d.issue_title,
+            issue_text:  d.issue_text,
+            created_by:  d.created_by,
+            assigned_to: d.assigned_to,
+            status_text: d.status_text,
+            created_on: formatDate(d.created_on),
+            updated_on: formatDate(d.updated_on),
+            message:  data.message,
+            readOnly: true,
+            updating: false
+          });
+        } else {
+          this.setState({
+            _id:  ss._id,
+            open: ss.open,
+            issue_title: ss.issue_title,
+            issue_text:  ss.issue_text,
+            created_by:  ss.created_by,
+            assigned_to: ss.assigned_to,
+            status_text: ss.status_text,
+            created_on:  formatDate(ss.created_on),
+            updated_on:  formatDate(ss.updated_on),
+            message:  data.message,
+            readOnly: true,
+            updating: false,
+          });
+        }
+        this.props.notification(data.message);
+        this.handleAutoDismiss();
+      },
+      
+      close:(data) => {
+        if (data.docs) {
+          const d = data.docs.value;
+          this.setState({
+            open: d.open,
+            updated_on: formatDate(d.updated_on),
+            message:  data.message,
+            updating: false,
+            readOnly: true,
+          });
+        } else {
+          this.setState({
+            open: ss.open,
+            updated_on: formatDate(ss.updated_on),
+            message:  data.message,
+            readOnly: true,
+            updating: false
+          });
+        }
+        this.props.notification(data.message);
+        this.handleAutoDismiss();
+      }
+    };
+    
+    issueActions[action](data);
+  }
+  
+  handleDelete(e) {
+    e.preventDefault();
+    const { request, confirm, route, _id } = this.state;
+    
+    if (confirm('Deleting', _id)) {
+      const options = request('DELETE', {_id: _id});
+      this.props.update(route, options);
+    }
   }
   
   handleClose(e) {
     e.preventDefault();
-    let update = {_id: this.state._id, close: true};
-    let options = {
-      method: 'PUT', 
-      body: JSON.stringify(update), 
-      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
-    };
-    this.setState(prev => ({ updating: !prev.updating, readOnly: !prev.readOnly }));
-    this.props.update(options);
+    const { request, confirm, route, _id } = this.state;
+    
+    if (confirm('Closing', _id)) {
+      const options = request('PUT', {_id: _id, close: true});
+      
+      fetch(route, options)
+        .then(res => res.json())
+        .then(result => this.handleData('close', result));
+    }
   }
   
   handleCancel(e) {
     e.preventDefault();
-    let ss = this.state.saveState;
+    const { saveState: ss, formatDate } = this.state;
+    
     this.setState({
-      _id: ss._id,
+      _id:  ss._id,
       open: ss.open,
       issue_title: ss.issue_title,
-      issue_text: ss.issue_text,
-      created_by: ss.created_by,
+      issue_text:  ss.issue_text,
+      created_by:  ss.created_by,
       assigned_to: ss.assigned_to,
       status_text: ss.status_text,
-      created_on: ss.created_on,
-      updated_on: ss.updated_on,
+      created_on:  formatDate(ss.created_on),
+      updated_on:  formatDate(ss.updated_on),
       readOnly: true,
-      updating:false
+      updating: false
     });
-  }
-  
-  handleUpdate(e) {
-    e.preventDefault();
-    this.setState(prev => ({ updating: !prev.updating, readOnly: false }));
-  }
-  
-  handleOpen(e) {
-    //console.log(e.target.textContent);
-    this.setState(prev => ({ open: !prev.open }));
   }
   
   handleSubmit(e) {
     e.preventDefault();
+    const { request, confirm, route, _id, saveState } = this.state;
+    
     let update = this.state;
+    update.created_on = new Date(saveState.created_on).toISOString();
     update.updated_on = new Date().toISOString();
     delete update.readOnly;
     delete update.saveState;
     delete update.updating;
     
-    let options = {
-      method: 'PUT', 
-      body: JSON.stringify(update), 
-      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
-    };
-    
-    this.props.update(options);
-    this.setState(prev => ({ updating: false, readOnly: true }));
-  }
-  
-  handleChange(e) {
-    let name = e.target.name;
-    let value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
-    this.setState({ [name]: value });
+    if (confirm('Updating', _id)) {
+      const options = request('PUT', update);
+      
+       fetch(route, options)
+        .then(res => res.json())
+        .then(result => this.handleData('update', result));
+    }
+
   }
   
   render() {
     return(
-      <form className="w-75 mb-5 border" onSubmit={this.handleSubmit}>
+      <form className="w-75 mb-5" onSubmit={this.handleSubmit}>
+        {/*<div className="row justify-content-center mb-3">
+          <div className="col text-center clearfix">
+            <h6 className={this.state.message ? 'show-message float-left' : 'hide-message'}>{this.state.message}</h6>
+            <button type="button" className={this.state.message ? 'show-message float-right btn btn-sm btn-danger fas fa-times' : 'hide-message'} onClick={this.dismissMessage} />
+          </div>
+        </div>*/}
         
         <div className="row border-bottom">
           <div className="col px-0 d-flex clearfix">
@@ -209,11 +333,12 @@ class ProjectIssue extends Component {
         <div className="row border-bottom">
           <IssueButtons 
             cancel={this.handleCancel}
-            updater={this.handleUpdate}
+            updater={this.toggleUpdating}
             delete={this.handleDelete}
             close={this.handleClose}
             save={this.handleSubmit}
             updating={this.state.updating}
+            canClose={this.state.open}
           />
         </div>
       </form>
@@ -222,17 +347,3 @@ class ProjectIssue extends Component {
 }
 
 export { ProjectIssue };
-
-
-/*
-  <span className="float-right">
-            <div className="input-group input-group-sm">
-                  <div className="input-group-append h-100 justify-content-center">
-                    <div className="input-group-text h-100 lbl-w-4 justify-content-center">
-                      <input className="h-100" type="checkbox" name="open" checked={this.state.open} onChange={this.handleChange} />
-                      <label>{this.state.open ? 'Open' : 'Closed'}</label>
-                    </div>
-                  </div>
-                </div>
-              </span>
-*/
