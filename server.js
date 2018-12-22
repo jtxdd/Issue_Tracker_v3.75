@@ -15,14 +15,12 @@ const URL         = process.env.DB;
 const dbName      = 'fcc_jtodd';
 const client      = new MongoClient(URL, {useNewUrlParser: true});
 
-//app.use('/public', express.static(process.cwd() + '/public'));
 app.use(express.static('public'));
 app.use(cors({origin: '*'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet.xssFilter());
 
-//For FCC testing purposes
 fccTestingRoutes(app);
     
 client.connect(err => {

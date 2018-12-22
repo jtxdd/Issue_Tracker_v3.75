@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 37);
+/******/ 	return __webpack_require__(__webpack_require__.s = 36);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,9 +74,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(66);
-} else {
   module.exports = __webpack_require__(65);
+} else {
+  module.exports = __webpack_require__(64);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -297,11 +297,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(44)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(43)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(43)();
+  module.exports = __webpack_require__(42)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -381,11 +381,11 @@ module.exports = warning;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(37);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(38);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__createHashHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(39);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(8);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
@@ -635,8 +635,8 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(6);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -778,33 +778,33 @@ module.exports = warning;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(46);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(47);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(20);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(48);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(49);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(50);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(51);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(21);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(14);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(52);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(53);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(54);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(55);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(56);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
 
 
@@ -1266,7 +1266,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _IssueButtons = __webpack_require__(34);
+var _IssueButtons = __webpack_require__(33);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1297,10 +1297,9 @@ var ProjectIssue = function (_Component) {
       status_text: '',
       created_on: '',
       updated_on: '',
-      saveState: {},
       updating: false,
-      message: '',
       route: '',
+      saveState: {},
       confirm: function confirm(action, ID) {
         return window.confirm(action + ' Issue Id: ' + ID);
       },
@@ -1320,7 +1319,6 @@ var ProjectIssue = function (_Component) {
       }
     };
     _this.handleChange = _this.handleChange.bind(_this);
-    _this.dismissMessage = _this.dismissMessage.bind(_this);
     _this.handleOpen = _this.handleOpen.bind(_this);
     _this.handleSubmit = _this.handleSubmit.bind(_this);
     _this.toggleUpdating = _this.toggleUpdating.bind(_this);
@@ -1328,7 +1326,6 @@ var ProjectIssue = function (_Component) {
     _this.handleDelete = _this.handleDelete.bind(_this);
     _this.handleCancel = _this.handleCancel.bind(_this);
     _this.handleData = _this.handleData.bind(_this);
-    _this.handleAutoDismiss = _this.handleAutoDismiss.bind(_this);
     return _this;
   }
 
@@ -1352,22 +1349,9 @@ var ProjectIssue = function (_Component) {
       this.setState(function (prev) {
         return {
           updating: !prev.updating,
-          readOnly: false,
-          message: ''
+          readOnly: false
         };
       });
-    }
-  }, {
-    key: 'dismissMessage',
-    value: function dismissMessage() {
-      this.setState(function (prev) {
-        return { message: !prev.message };
-      });
-    }
-  }, {
-    key: 'handleAutoDismiss',
-    value: function handleAutoDismiss() {
-      setTimeout(this.dismissMessage, 3000);
     }
   }, {
     key: 'handleOpen',
@@ -1385,7 +1369,6 @@ var ProjectIssue = function (_Component) {
           ss = _state.saveState,
           formatDate = _state.formatDate;
 
-
       var issueActions = {
         mount: function mount(data) {
           var route = _this2.props.location.pathname;
@@ -1399,7 +1382,17 @@ var ProjectIssue = function (_Component) {
             status_text: data.status_text,
             created_on: formatDate(data.created_on),
             updated_on: formatDate(data.updated_on),
-            saveState: data,
+            saveState: {
+              _id: data._id,
+              open: data.open,
+              issue_title: data.issue_title,
+              issue_text: data.issue_text,
+              created_by: data.created_by,
+              assigned_to: data.assigned_to,
+              status_text: data.status_text,
+              created_on: formatDate(data.created_on),
+              updated_on: formatDate(data.updated_on)
+            },
             route: route
           });
         },
@@ -1417,7 +1410,6 @@ var ProjectIssue = function (_Component) {
               status_text: d.status_text,
               created_on: formatDate(d.created_on),
               updated_on: formatDate(d.updated_on),
-              message: data.message,
               readOnly: true,
               updating: false
             });
@@ -1432,13 +1424,11 @@ var ProjectIssue = function (_Component) {
               status_text: ss.status_text,
               created_on: formatDate(ss.created_on),
               updated_on: formatDate(ss.updated_on),
-              message: data.message,
               readOnly: true,
               updating: false
             });
           }
           _this2.props.notification(data.message);
-          _this2.handleAutoDismiss();
         },
 
         close: function close(data) {
@@ -1447,7 +1437,6 @@ var ProjectIssue = function (_Component) {
             _this2.setState({
               open: d.open,
               updated_on: formatDate(d.updated_on),
-              message: data.message,
               updating: false,
               readOnly: true
             });
@@ -1455,13 +1444,11 @@ var ProjectIssue = function (_Component) {
             _this2.setState({
               open: ss.open,
               updated_on: formatDate(ss.updated_on),
-              message: data.message,
               readOnly: true,
               updating: false
             });
           }
           _this2.props.notification(data.message);
-          _this2.handleAutoDismiss();
         }
       };
 
@@ -1539,20 +1526,19 @@ var ProjectIssue = function (_Component) {
           request = _state5.request,
           confirm = _state5.confirm,
           route = _state5.route,
-          _id = _state5._id,
-          saveState = _state5.saveState;
+          saveState = _state5.saveState,
+          _id = _state5._id;
 
 
-      var update = this.state;
-      update.created_on = new Date(saveState.created_on).toISOString();
+      var update = {};
+      Object.keys(saveState).forEach(function (el) {
+        return update[el] = _this4.state[el];
+      });
+      update.created_on = new Date(update.created_on).toISOString();
       update.updated_on = new Date().toISOString();
-      delete update.readOnly;
-      delete update.saveState;
-      delete update.updating;
 
       if (confirm('Updating', _id)) {
         var options = request('PUT', update);
-
         fetch(route, options).then(function (res) {
           return res.json();
         }).then(function (result) {
@@ -1912,7 +1898,7 @@ module.exports = invariant;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(4);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -2234,7 +2220,7 @@ var generatePath = function generatePath() {
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(42)
+var isarray = __webpack_require__(41)
 
 /**
  * Expose `pathToRegexp`.
@@ -2670,9 +2656,9 @@ function pathToRegexp (path, keys, options) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(71);
-} else {
   module.exports = __webpack_require__(70);
+} else {
+  module.exports = __webpack_require__(69);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -2729,7 +2715,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Issues = function Issues(props) {
   return _react2.default.createElement(
     'div',
-    null,
+    { className: 'content' },
     _react2.default.createElement(
       'h3',
       { id: 'selected-title' },
@@ -2764,7 +2750,7 @@ exports.Issues = Issues;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Projects = undefined;
+exports.SideNav = undefined;
 
 var _react = __webpack_require__(0);
 
@@ -2796,6 +2782,24 @@ var Nav_Head = function Nav_Head(props) {
 };
 
 var Projects = function Projects(props) {
+  return props.projects.length ? props.projects.map(function (el) {
+    return _react2.default.createElement(
+      'div',
+      { key: el.project_id },
+      _react2.default.createElement(
+        _reactRouterDom.NavLink,
+        { id: el.route, to: el.route, className: 'project nav-link', activeClassName: 'selected', onClick: props.getIssues },
+        el.title
+      )
+    );
+  }) : _react2.default.createElement(
+    'span',
+    null,
+    'Loading...'
+  );
+};
+
+var SideNav = function SideNav(props) {
   return _react2.default.createElement(
     'aside',
     null,
@@ -2803,30 +2807,15 @@ var Projects = function Projects(props) {
       'nav',
       { className: 'nav flex-column' },
       _react2.default.createElement(Nav_Head, { sort: props.sort }),
-      props.projects.length ? props.projects.map(function (el) {
-        return _react2.default.createElement(
-          'div',
-          { key: el.project_id },
-          _react2.default.createElement(
-            _reactRouterDom.NavLink,
-            { id: el.route, to: el.route, className: 'project nav-link', activeClassName: 'selected', onClick: props.getIssues },
-            el.title
-          )
-        );
-      }) : _react2.default.createElement(
-        'span',
-        null,
-        'Loading...'
-      )
+      _react2.default.createElement(Projects, {
+        projects: props.projects,
+        getIssues: props.getIssues
+      })
     )
   );
 };
 
-exports.Projects = Projects;
-
-/*
-  const clicked = (e) => props.clicked_project(e.target.id);
-*/
+exports.SideNav = SideNav;
 
 /***/ }),
 /* 29 */
@@ -2844,28 +2833,39 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ToggleButtons = __webpack_require__(36);
+var _ToggleButtons = __webpack_require__(35);
 
-var _Filter = __webpack_require__(33);
+var _Filter = __webpack_require__(32);
 
-var _NewIssue = __webpack_require__(35);
-
-var _Alert = __webpack_require__(32);
+var _NewIssue = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ToolBar = function ToolBar(props) {
   return _react2.default.createElement(
     'div',
-    { className: props.location ? 'toolbar-close' : 'toolbar-open' },
+    { id: 'toolbar', className: props.location ? 'toolbar-close' : 'toolbar-open' },
     _react2.default.createElement(_ToggleButtons.ToggleButtons, {
       click: props.toggle,
       hide: props.location,
       message: props.message
     }),
-    _react2.default.createElement(
+    props.form ? _react2.default.createElement(
       'div',
-      { id: 'toolbar-form' },
+      { id: 'toolbar-form', className: 'form-out btm-brd' },
+      _react2.default.createElement(_Filter.Filter, {
+        filtering: props.filtering,
+        toggle: props.toggle,
+        filter: props.fetch
+      }),
+      _react2.default.createElement(_NewIssue.NewIssue, {
+        creating: props.creating,
+        toggle: props.toggle,
+        submit: props.submitNew
+      })
+    ) : _react2.default.createElement(
+      'div',
+      { id: 'toolbar-form', className: 'form-in' },
       _react2.default.createElement(_Filter.Filter, {
         filtering: props.filtering,
         toggle: props.toggle,
@@ -2882,13 +2882,6 @@ var ToolBar = function ToolBar(props) {
 
 exports.ToolBar = ToolBar;
 
-/*
-  <Alert 
-          message={props.message}
-          toggle={props.toggle}
-        />
-*/
-
 /***/ }),
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2899,7 +2892,7 @@ exports.ToolBar = ToolBar;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.TopBar = undefined;
+exports.TopNav = undefined;
 
 var _react = __webpack_require__(0);
 
@@ -2909,10 +2902,10 @@ var _reactRouterDom = __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TopBar = function TopBar() {
+var TopNav = function TopNav() {
   return _react2.default.createElement(
     'header',
-    { id: 'topBar' },
+    { id: 'topNav' },
     _react2.default.createElement(
       'nav',
       { className: 'navbar navbar-dark bg-dark' },
@@ -2929,7 +2922,7 @@ var TopBar = function TopBar() {
   );
 };
 
-exports.TopBar = TopBar;
+exports.TopNav = TopNav;
 
 /***/ }),
 /* 31 */
@@ -2970,57 +2963,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(46);
-} else {
   module.exports = __webpack_require__(45);
+} else {
+  module.exports = __webpack_require__(44);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Alert = undefined;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Alert = function Alert(props) {
-  return props.message ? _react2.default.createElement(
-    "div",
-    { className: "clearfix" },
-    _react2.default.createElement(
-      "h6",
-      { className: "float-left" },
-      props.message
-    ),
-    _react2.default.createElement("button", { id: "message_dismiss", type: "button", className: "float-right btn btn-sm btn-danger fas fa-times", onClick: props.toggle })
-  ) : _react2.default.createElement("span", null);
-};
-
-exports.Alert = Alert;
-
-/*
-  <div className="row justify-content-center mb-3">
-    <div className="col text-center clearfix">
-      <h6 className="float-left">{props.message}</h6>
-      <button id="message_dismiss" type="button" className="float-right btn btn-sm btn-danger fas fa-times" onClick={props.toggle} />
-    </div>
-  </div>
-*/
-
-/***/ }),
-/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3125,10 +3076,10 @@ var Filter = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'form',
-        { id: 'submit_filter', className: this.props.filtering ? 'show-filter mt-2 w-75' : 'hide-filter', onSubmit: this.handleSubmit },
+        { id: 'submit_filter', className: this.props.filtering ? 'show-filter' : 'hide-filter', onSubmit: this.handleSubmit },
         _react2.default.createElement(
           'div',
-          { className: 'row border-bottom' },
+          { className: 'row mb-1' },
           _react2.default.createElement(
             'div',
             { className: 'col-sm-6 px-0' },
@@ -3345,116 +3296,8 @@ var Filter = function (_Component) {
 
 exports.Filter = Filter;
 
-/*
-const Filter = (props) => {
-  const submit = (e) => {
-    e.preventDefault();
-    props.submit({target:{id:'submit_filter'}});
-  };
-  return(
-    <form id="submit_filter" className={props.filtering ? 'show-filter mt-2 w-75' : 'hide-filter'} onSubmit={submit}>
-      
-      <div className="row border-bottom">
-        <div className="col-sm-6 px-0">
-          <button id="clear_filter" className="btn btn-sm btn-warning" type="button" onClick={props.clear}>Clear</button>
-        </div>
-        <div className="col-sm-6 px-0 align-self-end">
-          <select name="open" value={props.open} onChange={props.change}>
-            <option value="">All</option>
-            <option value="true">Open</option>
-            <option value="false">Closed</option>
-          </select>
-        </div>
-      </div>
-      
-      <div className="row border-bottom">
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend justify-content-center">
-              <span className="input-group-text lbl-w-3 justify-content-center">ID</span>
-            </div>
-            <input className="form-control" type="text" name="id" value={props.id} onChange={props.change} placeholder="Filter Id" />
-          </div>
-        </div>
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend justify-content-center">
-              <span className="input-group-text lbl-w-4 justify-content-center">Title</span>
-            </div>
-            <input className="form-control" type="text" name="title" value={props.title} onChange={props.change} placeholder="Filter Title" />
-          </div>
-        </div>
-      </div>
-      
-      <div className="row border-bottom">
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend">
-              <span className="input-group-text lbl-w-3">Text</span>
-            </div>
-            <input className="form-control" type="text" name="text" value={props.text} onChange={props.change} placeholder="Filter Text" />
-          </div>
-        </div>
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend justify-content-center">
-              <span className="input-group-text lbl-w-4 justify-content-center">Status</span>
-            </div>
-            <input className="form-control" type="text" name="status" value={props.status} onChange={props.change} placeholder="Filter Status" />
-          </div>
-        </div>
-      </div>
-      
-      <div className="row border-bottom">
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend">
-              <span className="input-group-text lbl-w-6">Created by</span>
-            </div>
-            <input className="form-control" type="text" name="creator" value={props.creator} onChange={props.change} placeholder="Filter Creator" />
-          </div>
-        </div>
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend">
-              <span className="input-group-text">Assigned to</span>
-            </div>
-            <input className="form-control" type="text" name="assignee" value={props.assignee} onChange={props.change} placeholder="Filter Assignee" />
-          </div>
-        </div>
-      </div>
-      
-      <div className="row border-bottom">
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend">
-              <span className="input-group-text lbl-w-6">Created on</span>
-            </div>
-            <input className="form-control" type="date" name="createDate" value={props.createDate} onChange={props.change} placeholder="Filter Create Date" />
-          </div>
-        </div>
-        <div className="col-sm-6 px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend">
-              <span className="input-group-text">Updated on</span>
-            </div>
-            <input className="form-control" type="date" name="updateDate" value={props.updateDate} onChange={props.change} placeholder="Filter Update Date" />
-          </div>
-        </div>
-      </div>
-    
-      <div className="row mt-3 justify-content-end">
-        <button id="cancel_filter" className="btn btn-sm btn-danger mr-2" type="button" onClick={props.clear}>Cancel</button>
-        <button className="btn btn-sm btn-success">Submit</button>
-      </div>
-      
-    </form>
-  );
-};
-*/
-
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3513,7 +3356,7 @@ var IssueButtons = function IssueButtons(props) {
 exports.IssueButtons = IssueButtons;
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3746,77 +3589,10 @@ var NewIssue = function (_Component) {
   return NewIssue;
 }(_react.Component);
 
-/*const NewIssue = (props) => {
-  const submit = (e) => {
-    e.preventDefault();
-    props.submit({target:{id:'submit_newIssue'}});
-  };
-  return(
-    <form id="submit_newIssue" className={props.creating ? 'show-newIssue mt-2 w-75' : 'hide-newIssue'} onSubmit={submit}>
-      
-      <div className="row border-bottom">
-        <div className="col px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend">
-              <span className="input-group-text lbl-w-3">Title</span>
-            </div>
-            <input className="form-control" type="text" name="new_title" value={props.new_title} onChange={props.change} placeholder="New Issue Title" required />
-          </div>
-        </div>
-      </div>
-      
-      <div className="row border-bottom">
-        <div className="col px-0">
-          <div className="input-group input-group-sm ht-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text h-100 lbl-w-3">Text</span>
-            </div>
-            <textarea className="form-control h-100" name="new_text" value={props.new_text} onChange={props.change} required />
-          </div>
-        </div>
-      </div>
-      
-      <div className="row border-bottom">
-        <div className="col-sm-6">
-          <div className="row border-bottom">
-            <div className="input-group input-group-sm">
-              <div className="input-group-prepend">
-                <span className="input-group-text lbl-w-6">Created by</span>
-              </div>
-              <input className="form-control" type="text" name="new_creator" value={props.new_creator} onChange={props.change} placeholder="New Creator" required />
-            </div>
-          </div>
-          <div className="row border-bottom">
-            <div className="input-group input-group-sm">
-              <div className="input-group-prepend">
-                <span className="input-group-text lbl-w-6">Assigned to</span>
-              </div>
-              <input className="form-control" type="text" name="new_assignee" value={props.new_assignee} onChange={props.change} placeholder="New Assignee" />
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-6 d-flex px-0">
-          <div className="input-group input-group-sm">
-            <div className="input-group-prepend justify-content-center">
-              <span className="input-group-text h-100 lbl-w-4 justify-content-center">Status</span>
-            </div>
-            <textarea className="form-control h-100" name="new_status" value={props.new_status} onChange={props.change} />
-          </div>
-        </div>
-      </div>
-      
-      <div className="row mt-3 justify-content-end">
-        <button id="cancel_newIssue" className="btn btn-sm btn-danger mr-2" type="button" onClick={props.clear}>Cancel</button>
-        <button className="btn btn-sm btn-success">Submit</button>
-      </div>
-    </form>
-  );
-};*/
-
 exports.NewIssue = NewIssue;
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3836,10 +3612,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ToggleButtons = function ToggleButtons(props) {
   return _react2.default.createElement(
     'div',
-    { className: props.hide ? 'hide-toggles' : 'show-toggles d-flex' },
+    { id: 'toolbar-buttons', className: props.hide ? 'hide-toggles' : 'show-toggles d-flex' },
     _react2.default.createElement(
       'h6',
-      { id: 'notification' },
+      { id: 'notification', className: props.message ? 'text-fade' : '' },
       props.message
     ),
     _react2.default.createElement(
@@ -3847,12 +3623,12 @@ var ToggleButtons = function ToggleButtons(props) {
       { className: 'ml-auto' },
       props.message ? _react2.default.createElement(
         'button',
-        { id: 'message_dismiss', type: 'button', className: 'btn btn-sm btn-outline-danger', onClick: props.click },
+        { id: 'message_dismiss', type: 'button', className: 'btn btn-sm btn-danger', onClick: props.click },
         _react2.default.createElement('span', { className: 'fas fa-times' })
       ) : _react2.default.createElement('span', null),
       _react2.default.createElement(
         'button',
-        { id: 'filter_toggle', className: 'btn btn-sm btn-outline-secondary', type: 'button', onClick: props.click },
+        { id: 'filter_toggle', className: 'btn btn-sm btn-secondary', type: 'button', onClick: props.click },
         _react2.default.createElement(
           'span',
           null,
@@ -3862,7 +3638,7 @@ var ToggleButtons = function ToggleButtons(props) {
       ),
       _react2.default.createElement(
         'button',
-        { id: 'newIssue_toggle', className: 'btn btn-sm btn-outline-primary', type: 'button', onClick: props.click },
+        { id: 'newIssue_toggle', className: 'btn btn-sm btn-primary', type: 'button', onClick: props.click },
         _react2.default.createElement(
           'span',
           null,
@@ -3876,33 +3652,8 @@ var ToggleButtons = function ToggleButtons(props) {
 
 exports.ToggleButtons = ToggleButtons;
 
-//<div className={props.hide ? 'hide-toggles' : 'show-toggles d-flex justify-content-end'}>
-
-/*
-  <div className={props.hide ? 'hide-toggles' : 'show-toggles clearfix'}>
-      <div className="float-left mr-auto">
-        <h6>{props.message}</h6>
-      </div>
-      <div className="float-right ml-auto">
-        {props.message ? (
-          <button id="message_dismiss" type="button" className="btn btn-sm btn-danger fas fa-times" onClick={props.click} />
-        ) : (
-          <span></span>
-        )}
-        <button id="filter_toggle" className="btn btn-sm btn-outline-secondary" type="button" onClick={props.click}>
-          <span>Filter</span>
-          <span className="ml-1 fas fa-filter" />
-        </button>
-        <button id="newIssue_toggle" className="btn btn-sm btn-outline-primary" type="button" onClick={props.click}>
-          <span>New</span>
-          <span className="ml-1 fas fa-plus" />
-        </button>
-      </div>
-    </div>
-*/
-
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3922,15 +3673,15 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouterDom = __webpack_require__(10);
 
-var _Projects = __webpack_require__(28);
+var _TopNav = __webpack_require__(30);
 
-var _ProjectIssue = __webpack_require__(17);
+var _SideNav = __webpack_require__(28);
+
+var _ToolBar = __webpack_require__(29);
 
 var _Issues = __webpack_require__(27);
 
-var _TopBar = __webpack_require__(30);
-
-var _ToolBar = __webpack_require__(29);
+var _ProjectIssue = __webpack_require__(17);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3949,7 +3700,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Home = function Home() {
   return _react2.default.createElement(
     'div',
-    { className: '' },
+    { className: 'content' },
     _react2.default.createElement(
       'h3',
       null,
@@ -3988,6 +3739,8 @@ var App = function (_Component) {
     _this.handleDelete = _this.handleDelete.bind(_this);
     _this.handleSort = _this.handleSort.bind(_this);
     _this.handleNotify = _this.handleNotify.bind(_this);
+    _this.dismissMessage = _this.dismissMessage.bind(_this);
+    _this.autoDismiss = _this.autoDismiss.bind(_this);
     return _this;
   }
 
@@ -4044,7 +3797,14 @@ var App = function (_Component) {
           });
         }
       };
-      toggle[e.target.id.split('_')[0]]();
+
+      var item = '';
+      if (e.target.id) {
+        item = e.target.id.split('_')[0];
+      } else {
+        item = e.currentTarget.id.split('_')[0];
+      }
+      toggle[item]();
     }
   }, {
     key: 'handleChange',
@@ -4091,6 +3851,7 @@ var App = function (_Component) {
         } else {
           _this5.setState({ message: result.message });
         }
+        _this5.autoDismiss(3000);
       });
     }
   }, {
@@ -4154,6 +3915,19 @@ var App = function (_Component) {
     key: 'handleNotify',
     value: function handleNotify(message) {
       this.setState({ message: message });
+      this.autoDismiss(3000);
+    }
+  }, {
+    key: 'dismissMessage',
+    value: function dismissMessage() {
+      this.setState(function (prev) {
+        return { message: !prev.message };
+      });
+    }
+  }, {
+    key: 'autoDismiss',
+    value: function autoDismiss(val) {
+      setTimeout(this.dismissMessage, val);
     }
   }, {
     key: 'render',
@@ -4163,44 +3937,33 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_TopBar.TopBar, null),
-        _react2.default.createElement(_Projects.Projects, {
+        _react2.default.createElement(_TopNav.TopNav, null),
+        _react2.default.createElement(_SideNav.SideNav, {
           projects: this.state.projects.length && this.state.projects,
           getIssues: function getIssues(e) {
             return _this7.handleFetch(e.target.id);
           },
           sort: this.handleSort
         }),
-        _react2.default.createElement(
-          'div',
-          { id: 'toolbar' },
-          _react2.default.createElement(_ToolBar.ToolBar, {
-            toggle: this.handleToggle,
-            location: this.props.location.pathname === '/',
-            filtering: this.state.filtering,
-            creating: this.state.creating,
-            fetch: this.handleFetch,
-            submitNew: this.submitNew,
-            message: this.state.message
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          { id: 'content' },
-          _react2.default.createElement(
-            _reactRouterDom.Switch,
-            null,
-            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: Home }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/api/issues/:project', render: function render(props) {
-                return _react2.default.createElement(_Issues.Issues, _extends({}, props, {
-                  selected: _this7.state.selected,
-                  issues: _this7.state.issues.length && _this7.state.issues,
-                  updateIssues: _this7.handleDelete,
-                  notify: _this7.handleNotify
-                }));
-              } })
-          )
-        )
+        _react2.default.createElement(_ToolBar.ToolBar, {
+          toggle: this.handleToggle,
+          location: this.props.location.pathname === '/',
+          filtering: this.state.filtering,
+          creating: this.state.creating,
+          fetch: this.handleFetch,
+          submitNew: this.submitNew,
+          message: this.state.message,
+          form: this.state.filtering || this.state.creating
+        }),
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: Home }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/api/issues/:project', render: function render(props) {
+            return _react2.default.createElement(_Issues.Issues, _extends({}, props, {
+              selected: _this7.state.selected,
+              issues: _this7.state.issues.length && _this7.state.issues,
+              updateIssues: _this7.handleDelete,
+              notify: _this7.handleNotify
+            }));
+          } })
       );
     }
   }]);
@@ -4218,170 +3981,8 @@ _reactDom2.default.render(_react2.default.createElement(
     } })
 ), document.getElementById('application'));
 
-/*
-  <Alert 
-    message={this.state.message}
-    toggle={this.handleToggle}
-  />
-  <ToggleButtons 
-    click={this.handleToggle} 
-    hide={this.props.location.pathname === '/'} 
-  />
-  <div id="toolbar-form">
-    <Filter 
-      filtering={this.state.filtering}
-      toggle={this.handleToggle}
-      filter={this.handleFetch}
-    />
-    <NewIssue 
-      creating={this.state.creating}
-      toggle={this.handleToggle}
-      submit={this.submitNew}
-    />
-  </div>
-*/
-
-/*
-const { new_title, new_text, new_creator, new_assignee, new_status } = this.state;
-const newIssueState = [new_title, new_text, new_creator, new_assignee, new_status];
-  <NewIssue
-    creating={this.state.creating}
-    clear={this.resetForm}
-    change={this.handleChange}
-    submit={this.submitForm}
-    {...newIssueState}
-  />
-  
-  const { open, id, text, status, updateDate, createDate, creator, assignee, title } = this.state;
-  const filterState = [open, id, text, status, updateDate, createDate, creator, assignee, title];
-  <Filter
-    filtering={this.state.filtering}
-    clear={this.resetForm}
-    change={this.handleChange}
-    submit={this.submitForm}
-    {...filterState}
-  />
-  
-*/
-
-/*submitForm(e) {
-    const submit = {
-      filter:() => {
-        const model = ['_id=', 'open=', 'issue_title=', 'issue_text=', 'created_by=', 'assigned_to=', 'status_text=', 'created_on=', 'updated_on='];
-        const filters = ['id', 'open', 'title', 'text', 'creator', 'assignee', 'status', 'createDate', 'updateDate'];
-        const url = this.props.location.pathname + '?';
-        const search = filters.map((el, i) => {
-          return this.state[el] ? model[i] + this.state[el] + '&' : ''
-        }).reduce((acc, curr) => acc += curr).slice(0, -1);
-        const route = url + search;
-        this.handleFetch(route);
-      },
-      
-      newIssue:() => {
-        const { new_title, new_text, new_creator, new_assignee, new_status } = this.state;
-        const issue = {
-          issue_title: new_title,
-          issue_text:  new_text,
-          created_by:  new_creator,
-          assigned_to: new_assignee,
-          status_text: new_status,
-          created_on:  new Date().toISOString(),
-          updated_on:  new Date().toISOString(),
-          open:        true,
-        };
-        const options = {
-          method: 'POST', 
-          body: JSON.stringify(issue), 
-          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
-        };
-        fetch(this.props.location.pathname, options)
-          .then(res => res.json())
-          .then(result => {
-            if (result.docs) {
-              let issues = this.state.issues;
-              result.value.key = result.value._id + '_' + this.genKeyId();
-              issues = [...issues, result.value];
-              this.setState({ issues: issues, updateMessage: result.message });
-              //this.resetForm({target:{id: 'submit_newIssue'}});
-            } else {
-              this.setState({updateMessage: 'Insert Failed - ' + result.message});
-            }
-          });
-        
-      }
-    };
-    
-    const form = e.target.id.split('_')[1];
-    submit[form]();
-  }*/
-
-/*
-  this.resetForm = this.resetForm.bind(this);
-
-  resetForm(e) {
-    const reset = {
-      filter: () => {
-        this.setState({
-          filtering: false,
-          id: '',
-          open: '',
-          title: '',
-          text: '',
-          creator: '',
-          assignee: '',
-          status: '',
-          createDate: '',
-          updateDate: ''
-        });
-        this.handleFetch(this.props.location.pathname);
-      },
-      
-      newIssue:() => {
-        this.setState({
-          creating: false,
-          new_title: '',
-          new_text: '',
-          new_creator: '',
-          new_assignee: '',
-          new_status: ''
-        });
-      }
-    };
-    
-    const form = e.target.id.split('_')[1];
-    reset[form]();
-  }
-*/
-
-/*
-  this.dismissUpdateMessage = this.dismissUpdateMessage.bind(this);
-
-  dismissUpdateMessage() {
-    this.setState(prev => ({updateMessage: !prev.updateMessage}));
-  }
-*/
-
-/*
-this.getIssues = this.getIssues.bind(this);
-
-getIssues(url) {
-    fetch(url).then(res => res.json())
-      .then(result => {
-        result.docs.forEach(el => el.key = el._id + '_' + this.genKeyId());
-        this.setState({ issues: result.docs });
-        this.props.history.push(url);
-      });
-  }
-
-
-  <Projects 
-    projects={this.state.projects.length && this.state.projects
-    clicked_project={this.getIssues}
-  />
-*/
-
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4685,7 +4286,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createBrowserHistory);
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5006,7 +4607,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createHashHistory);
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5174,7 +4775,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony default export */ __webpack_exports__["a"] = (createMemoryHistory);
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5249,7 +4850,7 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -5258,7 +4859,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5324,7 +4925,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5887,7 +5488,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5912,7 +5513,7 @@ var React = __webpack_require__(0);
 var _assign = __webpack_require__(7);
 var checkPropTypes = __webpack_require__(12);
 var scheduler = __webpack_require__(25);
-var tracing = __webpack_require__(72);
+var tracing = __webpack_require__(71);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -25622,7 +25223,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25878,7 +25479,7 @@ var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25944,7 +25545,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26009,18 +25610,18 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(58);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26106,51 +25707,51 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(59);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(60);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(61);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(62);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26161,7 +25762,7 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__["a" /* default */]);
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26172,18 +25773,18 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(63);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26240,7 +25841,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26306,7 +25907,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26397,7 +25998,7 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26526,7 +26127,7 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26692,7 +26293,7 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26784,7 +26385,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26792,7 +26393,7 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(22);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -26833,7 +26434,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28681,7 +28282,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28712,7 +28313,7 @@ __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:K,assign:k
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28788,7 +28389,7 @@ function resolvePathname(to) {
 /* harmony default export */ __webpack_exports__["a"] = (resolvePathname);
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29216,7 +28817,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29233,7 +28834,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29875,7 +29476,7 @@ exports.unstable_shouldYield = unstable_shouldYield;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(26)))
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29904,22 +29505,22 @@ exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l|
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(69);
-} else {
   module.exports = __webpack_require__(68);
+} else {
+  module.exports = __webpack_require__(67);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -15,14 +15,26 @@
         font-family: 'Montserrat', sans-serif;
       }
       
-      #topBar {
+      .btn-outline-secondary:focus { box-shadow: 0 0 0 0.05rem rgba(108,117,125,0.5); }
+      
+      .btn-outline-primary:focus { box-shadow: 0 0 0 0.05rem rgba(0,123,255,0.5); }
+      
+      #topNav {
         position:fixed;
         width:100%;
         z-index:1111;
       }
       
-      #topBar > nav {
-        height:3.5rem;
+      #topNav > nav { height:3.5rem; }
+      
+      header > nav > a {
+        text-decoration:none;
+        color:#FFF;
+      }
+      
+      header > nav > a:hover {
+        text-decoration:none;
+        color:#FFF;
       }
       
       aside {
@@ -33,12 +45,15 @@
         top:3.5rem;
         z-index:1;
       }
+      
       aside .project:before {
         content: '\2022';
         color:#17a2b8;
         padding-right:5px;
       }
+      
       aside > nav > div > a { color:#FFF; }
+      
       aside > nav > div > a:hover { color:#fe5757; }
       
       .nav-link {
@@ -46,23 +61,11 @@
         margin:0.5rem;
       }
       
-      header > nav > a {
-        text-decoration:none;
-        color:#FFF;
-      }
-      header > nav > a:hover {
-        text-decoration:none;
-        color:#FFF;
-      }
-      
-      #selected-title {
-        position:relative;
-      }
-      
       .selected {
         box-shadow:0 -3px 0 0 rgba(255,255,255,0.3) inset;
         color:#ffc107;
       }
+      
       .selected:after {
         position:absolute;
         right:1rem;
@@ -78,89 +81,81 @@
         margin-right:14rem;
       }
       
-      .toolbar-open {
-        animation:slideDown 500ms linear forwards;
-        /*background-color:#6c6c6d;*/
-        /*border:1px solid #6c6c6d;*/
-        box-shadow:0 0 0.1rem 0 #6c6c6d inset;
-      }
-      .toolbar-close {
-        animation:slideUp 500ms linear forwards;
-      }
+      .toolbar-open { animation:slideDown 500ms linear forwards; }
+      .toolbar-close { display:none; }
+      
+      #toolbar-buttons { box-shadow:0 0 0.1rem 0 #6c6c6d inset; }
       
       #toolbar-form {
+        display:flex;
+        justify-content:center;
         position:relative;
-        left:14rem;
-        margin-right:14rem;
       }
+      
+      .form-out { animation:formSlideOut 400ms ease forwards; }
+      
+      .form-in { animation:formSlideIn 400ms ease forwards; }
+      
+      .btm-brd { border-bottom:1px solid rgb(10,11,12); }
+      
+      .text-fade { animation:fadeOut 3000ms linear 1500ms forwards; }
       
       #notification {
         position:relative;
         top:0.5rem;
         left:1rem;
       }
+            
+      .show-toggles { visibility:visible; }
       
-      #content {
-        position:relative;
-        left:14rem;
-        top:3.5rem;
-        margin-right:14rem;
-        padding:1rem;
-      }
-      
-      #issue-list {
-        position:relative;
-        top:1rem;
-      }
+      .hide-toggles { display:none; }
       
       .show-filter {
-        display:block;
-        transition:all 300ms linear;
+        animation:fadeIn 1100ms ease forwards;
+        margin-top:0.5rem;
       }
+      
       .hide-filter {
+        animation:fadeOut 1100ms ease forwards;
         transition:all 300ms linear;
         display:none;
       }
       
       .show-newIssue {
         display:block;
-        animation:fadeIn 300ms ease;
+        animation:fadeIn 1s ease forwards;
       }
+      
       .hide-newIssue {
         display:none;
-        /*animation doesnt show atm becuase instant display none*/
         animation:fadeOut 300ms ease;
       }
       
-      /*does this do anything???*/
-      .form-control { transition:all 300ms linear; }
+      #selected-title { position:relative; }
       
+      .content {
+        position:relative;
+        left:14rem;
+        top:3.5rem;
+        margin-right:14rem;
+        padding:1rem;
+        animation:fadeIn 1s ease alternate;
+      }
+      
+      #issue-list {
+        position:relative;
+        top:1rem;
+      }
+            
       .input-group-text {
         font-weight:700;
         justify-content:end;
       }
       
       .ht-3 { height: 3rem; }
-      
       .lbl-w-3 { width: 3.1rem; }
       .lbl-w-4 { width: 4.9rem; }
-      .lbl-w-6 { width: 6.1rem; }
-      
-      .hide-primary { display: none; }
-      .show-primary { display: flex;}
-      
-      .hide-secondary { display: none; }
-      .show-secondary { display: flex; }
-      
-      .show-message { visibility:visible; }
-      .hide-message { visibility:hidden; }
-      
-      .show-toggles { visibility:visible; }
-      .hide-toggles { display:none; }
-      
-      .show-alertButton {}
-      .hide-alertButton { display: none; }
-      
+      .lbl-w-6 { width: 6.1rem; }            
       
       @keyframes fadeIn {
         from { opacity:0; }
@@ -173,21 +168,24 @@
       }
       
       @keyframes slideDown {
-        /*from {transform:translate(0,-2rem);}*/
         from {transform:translate(0,0);}
         to {transform:translate(0,2rem);}
       }
       
       @keyframes slideUp {
-        /*from {transform:translate(0,0);}
-        to {transform:translate(0,-2rem);}*/
         from {transform:translate(0,1rem);}
         to {transform:translate(0,0);}
       }
       
+      @keyframes formSlideOut {
+        from {height:0;}
+        to {height:15rem;}
+      }
       
-      
-      
+      @keyframes formSlideIn {
+        from {height:15rem;}
+        to {height:0;}
+      }      
     </style>
   </head>
   <body>
