@@ -1,6 +1,6 @@
 import MongoClient from 'mongodb';
 import { ObjectId } from 'mongodb';
-const issue   = require('../zzz/models/Issue.js');
+const issue  = require('../models/Issue.js');
 
 module.exports = (app, db) => {
   const Projects = db.collection('projects');
@@ -124,13 +124,6 @@ module.exports = (app, db) => {
       if (validId) {
         let query = {_id: ObjectId(req.body._id)};
         
-        /*Issues.deleteOne(query, (err, docs) => {
-          if (err) {
-            return res.json({docs: err});
-          } else {
-            return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});
-          }
-        });*/
         Issues.findOneAndDelete(query, (err, docs) => {
           if (err) return res.json({docs: '', message: err});
           return res.json({docs: docs, message: 'Deleted _id: ' + req.body._id});
@@ -145,30 +138,3 @@ module.exports = (app, db) => {
       
   app.use((req, res) => res.status(404).type('text').send('Not Found'));
 };
-
-/*
-  Issues.findOne(query, (err, docs) => {
-    IF FOUND THEN ISSUES UPDATEONE
-      IF UPDATEONE FAIL 
-        RETURN COULD NOT UPDATE
-  });
-  
-  Issues.updateOne(query, update, (err, docs) => {
-    if (err) return res.json({result: err});
-    if (docs.modifiedCount) {
-      Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
-        if (err) return res.json({docs: err});
-        Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs, message: 'Successfully Updated'}));
-      });
-    } else {
-      return res.json({docs: '', message: 'could not update'});
-    }
-  });
-*/
-
- /*
-  Projects.findOne({title: req.params.project.replace(/\_/g, ' ')}, (err, doc) => {
-    if (err) return res.json({docs: err});
-    Issues.find({for_project: doc.project_id}).toArray((err, docs) => err ? res.json({docs: err}) : res.json({docs: docs}));
-  });
-*/

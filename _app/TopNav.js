@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const TopBar = () => {
+const TopNav = () => {
   return(
-    <header id="topBar">
+    <header id="topNav">
       <nav className="navbar navbar-dark bg-dark">
         <NavLink to="/">
           <h3>Issue Tracker</h3>
@@ -13,4 +13,4 @@ const TopBar = () => {
   );
 };
 
-export { TopBar };
+export { TopNav };

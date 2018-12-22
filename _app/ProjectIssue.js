@@ -15,10 +15,9 @@ class ProjectIssue extends Component {
       status_text: '',
       created_on: '',
       updated_on: '',
-      saveState: {},
       updating: false,
-      message: '',
       route: '',
+      saveState: {},
       confirm:(action, ID) => {
         return window.confirm(`${action} Issue Id: ${ID}`)
       },
@@ -38,7 +37,6 @@ class ProjectIssue extends Component {
       }
     };
     this.handleChange = this.handleChange.bind(this);
-    this.dismissMessage = this.dismissMessage.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.toggleUpdating = this.toggleUpdating.bind(this);
@@ -46,7 +44,6 @@ class ProjectIssue extends Component {
     this.handleDelete = this.handleDelete.bind(this);
     this.handleCancel = this.handleCancel.bind(this);
     this.handleData = this.handleData.bind(this);
-    this.handleAutoDismiss = this.handleAutoDismiss.bind(this);
   }
   
   componentDidMount() {
@@ -65,25 +62,15 @@ class ProjectIssue extends Component {
     this.setState(prev => ({
       updating: !prev.updating, 
       readOnly: false, 
-      message: '' 
     }));
   }
-  
-  dismissMessage() {
-    this.setState(prev => ({message: !prev.message}));
-  }
-  
-  handleAutoDismiss() {
-    setTimeout(this.dismissMessage, 3000);
-  }
-  
+      
   handleOpen() {
     this.setState(prev => ({ open: !prev.open }));
   }
   
   handleData(action, data) {
     const { saveState: ss, formatDate } = this.state;
-    
     let issueActions = {
       mount:(data) => {
         const route = this.props.location.pathname;
@@ -97,7 +84,17 @@ class ProjectIssue extends Component {
           status_text: data.status_text,
           created_on:  formatDate(data.created_on),
           updated_on:  formatDate(data.updated_on),
-          saveState:   data,
+          saveState: {
+            _id:  data._id,
+            open: data.open,
+            issue_title: data.issue_title,
+            issue_text:  data.issue_text,
+            created_by:  data.created_by,
+            assigned_to: data.assigned_to,
+            status_text: data.status_text,
+            created_on:  formatDate(data.created_on),
+            updated_on:  formatDate(data.updated_on),
+          },
           route: route
         });
       },
@@ -115,7 +112,6 @@ class ProjectIssue extends Component {
             status_text: d.status_text,
             created_on: formatDate(d.created_on),
             updated_on: formatDate(d.updated_on),
-            message:  data.message,
             readOnly: true,
             updating: false
           });
@@ -130,13 +126,11 @@ class ProjectIssue extends Component {
             status_text: ss.status_text,
             created_on:  formatDate(ss.created_on),
             updated_on:  formatDate(ss.updated_on),
-            message:  data.message,
             readOnly: true,
             updating: false,
           });
         }
         this.props.notification(data.message);
-        this.handleAutoDismiss();
       },
       
       close:(data) => {
@@ -145,7 +139,6 @@ class ProjectIssue extends Component {
           this.setState({
             open: d.open,
             updated_on: formatDate(d.updated_on),
-            message:  data.message,
             updating: false,
             readOnly: true,
           });
@@ -153,13 +146,11 @@ class ProjectIssue extends Component {
           this.setState({
             open: ss.open,
             updated_on: formatDate(ss.updated_on),
-            message:  data.message,
             readOnly: true,
             updating: false
           });
         }
         this.props.notification(data.message);
-        this.handleAutoDismiss();
       }
     };
     
@@ -210,35 +201,24 @@ class ProjectIssue extends Component {
   
   handleSubmit(e) {
     e.preventDefault();
-    const { request, confirm, route, _id, saveState } = this.state;
+    const { request, confirm, route, saveState, _id } = this.state;
     
-    let update = this.state;
-    update.created_on = new Date(saveState.created_on).toISOString();
+    let update = {};
+    Object.keys(saveState).forEach(el => update[el] = this.state[el]);
+    update.created_on = new Date(update.created_on).toISOString();
     update.updated_on = new Date().toISOString();
-    delete update.readOnly;
-    delete update.saveState;
-    delete update.updating;
     
     if (confirm('Updating', _id)) {
       const options = request('PUT', update);
-      
        fetch(route, options)
         .then(res => res.json())
         .then(result => this.handleData('update', result));
     }
-
   }
   
   render() {
     return(
       <form className="w-75 mb-5" onSubmit={this.handleSubmit}>
-        {/*<div className="row justify-content-center mb-3">
-          <div className="col text-center clearfix">
-            <h6 className={this.state.message ? 'show-message float-left' : 'hide-message'}>{this.state.message}</h6>
-            <button type="button" className={this.state.message ? 'show-message float-right btn btn-sm btn-danger fas fa-times' : 'hide-message'} onClick={this.dismissMessage} />
-          </div>
-        </div>*/}
-        
         <div className="row border-bottom">
           <div className="col px-0 d-flex clearfix">
             <div className="input-group input-group-sm float-left">

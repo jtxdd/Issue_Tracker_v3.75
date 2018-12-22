@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-
 
 const Nav_Head = (props) => {
   return(
@@ -16,32 +14,32 @@ const Nav_Head = (props) => {
   );
 };
 
-
-
-
 const Projects = (props) => {
+  return(props.projects.length ? (
+    props.projects.map(el => 
+      <div key={el.project_id}>
+        <NavLink id={el.route} to={el.route} className="project nav-link" activeClassName="selected" onClick={props.getIssues}>
+          {el.title}
+        </NavLink>
+      </div>
+    )) : (
+      <span>Loading...</span>
+    )
+  );
+};
+
+const SideNav = (props) => {
   return(
     <aside>
       <nav className="nav flex-column">
         <Nav_Head sort={props.sort} />
-        {props.projects.length ? (
-          props.projects.map(el => 
-            <div key={el.project_id}>
-              <NavLink id={el.route} to={el.route} className="project nav-link" activeClassName="selected" onClick={props.getIssues}>
-                {el.title}
-              </NavLink>
-            </div>
-        )) : (
-          <span>Loading...</span>
-        )}
+        <Projects 
+          projects={props.projects}
+          getIssues={props.getIssues}
+        />
       </nav>
     </aside>
   );
 };
 
-
-export { Projects };
-
-/*
-  const clicked = (e) => props.clicked_project(e.target.id);
-*/
+export { SideNav };
